@@ -1,0 +1,3141 @@
+{
+  "id": "6a5bc249c44d001ef3af684d",
+  "name": "exp-B12-rep1",
+  "model_id": "6a5bc236c44d001ef3af6848",
+  "seed": 1201,
+  "steps": 600,
+  "termination": {
+    "type": "population",
+    "operator": "eq",
+    "value": 0,
+    "target_uid": "person"
+  },
+  "agents": [
+    {
+      "id": 151,
+      "agent_uid": "person",
+      "name": "Person #1",
+      "position": {
+        "x": 5,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 152,
+      "agent_uid": "person",
+      "name": "Person #2",
+      "position": {
+        "x": 16,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 153,
+      "agent_uid": "person",
+      "name": "Person #3",
+      "position": {
+        "x": 25,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 154,
+      "agent_uid": "person",
+      "name": "Person #4",
+      "position": {
+        "x": 4,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 155,
+      "agent_uid": "person",
+      "name": "Person #5",
+      "position": {
+        "x": 6,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 156,
+      "agent_uid": "person",
+      "name": "Person #6",
+      "position": {
+        "x": 5,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 157,
+      "agent_uid": "person",
+      "name": "Person #7",
+      "position": {
+        "x": 2,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 158,
+      "agent_uid": "person",
+      "name": "Person #8",
+      "position": {
+        "x": 18,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 159,
+      "agent_uid": "person",
+      "name": "Person #9",
+      "position": {
+        "x": 4,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 160,
+      "agent_uid": "person",
+      "name": "Person #10",
+      "position": {
+        "x": 6,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 161,
+      "agent_uid": "person",
+      "name": "Person #11",
+      "position": {
+        "x": 24,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 162,
+      "agent_uid": "person",
+      "name": "Person #12",
+      "position": {
+        "x": 3,
+        "y": 7
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 163,
+      "agent_uid": "person",
+      "name": "Person #13",
+      "position": {
+        "x": 10,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 164,
+      "agent_uid": "person",
+      "name": "Person #14",
+      "position": {
+        "x": 24,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 165,
+      "agent_uid": "person",
+      "name": "Person #15",
+      "position": {
+        "x": 24,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 166,
+      "agent_uid": "person",
+      "name": "Person #16",
+      "position": {
+        "x": 1,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 167,
+      "agent_uid": "person",
+      "name": "Person #17",
+      "position": {
+        "x": 11,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 168,
+      "agent_uid": "person",
+      "name": "Person #18",
+      "position": {
+        "x": 4,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 169,
+      "agent_uid": "person",
+      "name": "Person #19",
+      "position": {
+        "x": 11,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 170,
+      "agent_uid": "person",
+      "name": "Person #20",
+      "position": {
+        "x": 2,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 171,
+      "agent_uid": "person",
+      "name": "Person #21",
+      "position": {
+        "x": 17,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 172,
+      "agent_uid": "person",
+      "name": "Person #22",
+      "position": {
+        "x": 24,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 173,
+      "agent_uid": "person",
+      "name": "Person #23",
+      "position": {
+        "x": 15,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 174,
+      "agent_uid": "person",
+      "name": "Person #24",
+      "position": {
+        "x": 20,
+        "y": 1
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 175,
+      "agent_uid": "person",
+      "name": "Person #25",
+      "position": {
+        "x": 12,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 176,
+      "agent_uid": "person",
+      "name": "Person #26",
+      "position": {
+        "x": 24,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 177,
+      "agent_uid": "person",
+      "name": "Person #27",
+      "position": {
+        "x": 16,
+        "y": 10
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 178,
+      "agent_uid": "person",
+      "name": "Person #28",
+      "position": {
+        "x": 14,
+        "y": 17
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 179,
+      "agent_uid": "person",
+      "name": "Person #29",
+      "position": {
+        "x": 12,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 180,
+      "agent_uid": "person",
+      "name": "Person #30",
+      "position": {
+        "x": 18,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 181,
+      "agent_uid": "person",
+      "name": "Person #31",
+      "position": {
+        "x": 16,
+        "y": 10
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 182,
+      "agent_uid": "person",
+      "name": "Person #32",
+      "position": {
+        "x": 15,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 183,
+      "agent_uid": "person",
+      "name": "Person #33",
+      "position": {
+        "x": 20,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 184,
+      "agent_uid": "person",
+      "name": "Person #34",
+      "position": {
+        "x": 10,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 185,
+      "agent_uid": "person",
+      "name": "Person #35",
+      "position": {
+        "x": 20,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 186,
+      "agent_uid": "person",
+      "name": "Person #36",
+      "position": {
+        "x": 15,
+        "y": 5
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 187,
+      "agent_uid": "person",
+      "name": "Person #37",
+      "position": {
+        "x": 5,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 188,
+      "agent_uid": "person",
+      "name": "Person #38",
+      "position": {
+        "x": 10,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 189,
+      "agent_uid": "person",
+      "name": "Person #39",
+      "position": {
+        "x": 6,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 190,
+      "agent_uid": "person",
+      "name": "Person #40",
+      "position": {
+        "x": 5,
+        "y": 16
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 191,
+      "agent_uid": "person",
+      "name": "Person #41",
+      "position": {
+        "x": 24,
+        "y": 5
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 192,
+      "agent_uid": "person",
+      "name": "Person #42",
+      "position": {
+        "x": 4,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 193,
+      "agent_uid": "person",
+      "name": "Person #43",
+      "position": {
+        "x": 8,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 194,
+      "agent_uid": "person",
+      "name": "Person #44",
+      "position": {
+        "x": 13,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 195,
+      "agent_uid": "person",
+      "name": "Person #45",
+      "position": {
+        "x": 5,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 196,
+      "agent_uid": "person",
+      "name": "Person #46",
+      "position": {
+        "x": 2,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 197,
+      "agent_uid": "person",
+      "name": "Person #47",
+      "position": {
+        "x": 21,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 198,
+      "agent_uid": "person",
+      "name": "Person #48",
+      "position": {
+        "x": 15,
+        "y": 2
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 199,
+      "agent_uid": "person",
+      "name": "Person #49",
+      "position": {
+        "x": 15,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 200,
+      "agent_uid": "person",
+      "name": "Person #50",
+      "position": {
+        "x": 4,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 201,
+      "agent_uid": "person",
+      "name": "Person #51",
+      "position": {
+        "x": 25,
+        "y": 5
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 202,
+      "agent_uid": "person",
+      "name": "Person #52",
+      "position": {
+        "x": 14,
+        "y": 5
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 203,
+      "agent_uid": "person",
+      "name": "Person #53",
+      "position": {
+        "x": 12,
+        "y": 7
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 204,
+      "agent_uid": "person",
+      "name": "Person #54",
+      "position": {
+        "x": 22,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 205,
+      "agent_uid": "person",
+      "name": "Person #55",
+      "position": {
+        "x": 12,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 206,
+      "agent_uid": "person",
+      "name": "Person #56",
+      "position": {
+        "x": 3,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 207,
+      "agent_uid": "person",
+      "name": "Person #57",
+      "position": {
+        "x": 4,
+        "y": 2
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 208,
+      "agent_uid": "person",
+      "name": "Person #58",
+      "position": {
+        "x": 5,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 209,
+      "agent_uid": "person",
+      "name": "Person #59",
+      "position": {
+        "x": 21,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 210,
+      "agent_uid": "person",
+      "name": "Person #60",
+      "position": {
+        "x": 24,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 211,
+      "agent_uid": "person",
+      "name": "Person #61",
+      "position": {
+        "x": 9,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 212,
+      "agent_uid": "person",
+      "name": "Person #62",
+      "position": {
+        "x": 6,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 213,
+      "agent_uid": "person",
+      "name": "Person #63",
+      "position": {
+        "x": 13,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 214,
+      "agent_uid": "person",
+      "name": "Person #64",
+      "position": {
+        "x": 11,
+        "y": 10
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 215,
+      "agent_uid": "person",
+      "name": "Person #65",
+      "position": {
+        "x": 18,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 216,
+      "agent_uid": "person",
+      "name": "Person #66",
+      "position": {
+        "x": 23,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 217,
+      "agent_uid": "person",
+      "name": "Person #67",
+      "position": {
+        "x": 2,
+        "y": 1
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 218,
+      "agent_uid": "person",
+      "name": "Person #68",
+      "position": {
+        "x": 4,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 219,
+      "agent_uid": "person",
+      "name": "Person #69",
+      "position": {
+        "x": 4,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 220,
+      "agent_uid": "person",
+      "name": "Person #70",
+      "position": {
+        "x": 3,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 221,
+      "agent_uid": "person",
+      "name": "Person #71",
+      "position": {
+        "x": 19,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 222,
+      "agent_uid": "person",
+      "name": "Person #72",
+      "position": {
+        "x": 25,
+        "y": 1
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 223,
+      "agent_uid": "person",
+      "name": "Person #73",
+      "position": {
+        "x": 9,
+        "y": 16
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 224,
+      "agent_uid": "person",
+      "name": "Person #74",
+      "position": {
+        "x": 2,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 225,
+      "agent_uid": "person",
+      "name": "Person #75",
+      "position": {
+        "x": 14,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 226,
+      "agent_uid": "person",
+      "name": "Person #76",
+      "position": {
+        "x": 16,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 227,
+      "agent_uid": "person",
+      "name": "Person #77",
+      "position": {
+        "x": 12,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 228,
+      "agent_uid": "person",
+      "name": "Person #78",
+      "position": {
+        "x": 13,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 229,
+      "agent_uid": "person",
+      "name": "Person #79",
+      "position": {
+        "x": 6,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 230,
+      "agent_uid": "person",
+      "name": "Person #80",
+      "position": {
+        "x": 19,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 231,
+      "agent_uid": "person",
+      "name": "Person #81",
+      "position": {
+        "x": 25,
+        "y": 5
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 232,
+      "agent_uid": "person",
+      "name": "Person #82",
+      "position": {
+        "x": 10,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 233,
+      "agent_uid": "person",
+      "name": "Person #83",
+      "position": {
+        "x": 15,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 234,
+      "agent_uid": "person",
+      "name": "Person #84",
+      "position": {
+        "x": 22,
+        "y": 7
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 235,
+      "agent_uid": "person",
+      "name": "Person #85",
+      "position": {
+        "x": 3,
+        "y": 13
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 236,
+      "agent_uid": "person",
+      "name": "Person #86",
+      "position": {
+        "x": 14,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 237,
+      "agent_uid": "person",
+      "name": "Person #87",
+      "position": {
+        "x": 19,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 238,
+      "agent_uid": "person",
+      "name": "Person #88",
+      "position": {
+        "x": 21,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 239,
+      "agent_uid": "person",
+      "name": "Person #89",
+      "position": {
+        "x": 9,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 240,
+      "agent_uid": "person",
+      "name": "Person #90",
+      "position": {
+        "x": 14,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 241,
+      "agent_uid": "person",
+      "name": "Person #91",
+      "position": {
+        "x": 16,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 242,
+      "agent_uid": "person",
+      "name": "Person #92",
+      "position": {
+        "x": 7,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 243,
+      "agent_uid": "person",
+      "name": "Person #93",
+      "position": {
+        "x": 21,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 244,
+      "agent_uid": "person",
+      "name": "Person #94",
+      "position": {
+        "x": 8,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 245,
+      "agent_uid": "person",
+      "name": "Person #95",
+      "position": {
+        "x": 9,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 246,
+      "agent_uid": "person",
+      "name": "Person #96",
+      "position": {
+        "x": 11,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 247,
+      "agent_uid": "person",
+      "name": "Person #97",
+      "position": {
+        "x": 21,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 248,
+      "agent_uid": "person",
+      "name": "Person #98",
+      "position": {
+        "x": 15,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 249,
+      "agent_uid": "person",
+      "name": "Person #99",
+      "position": {
+        "x": 20,
+        "y": 17
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 250,
+      "agent_uid": "person",
+      "name": "Person #100",
+      "position": {
+        "x": 8,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 251,
+      "agent_uid": "person",
+      "name": "Person #101",
+      "position": {
+        "x": 6,
+        "y": 5
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 252,
+      "agent_uid": "person",
+      "name": "Person #102",
+      "position": {
+        "x": 3,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 253,
+      "agent_uid": "person",
+      "name": "Person #103",
+      "position": {
+        "x": 17,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 254,
+      "agent_uid": "person",
+      "name": "Person #104",
+      "position": {
+        "x": 25,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 255,
+      "agent_uid": "person",
+      "name": "Person #105",
+      "position": {
+        "x": 8,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 256,
+      "agent_uid": "person",
+      "name": "Person #106",
+      "position": {
+        "x": 23,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 257,
+      "agent_uid": "person",
+      "name": "Person #107",
+      "position": {
+        "x": 9,
+        "y": 17
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 258,
+      "agent_uid": "person",
+      "name": "Person #108",
+      "position": {
+        "x": 25,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 259,
+      "agent_uid": "person",
+      "name": "Person #109",
+      "position": {
+        "x": 12,
+        "y": 2
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 260,
+      "agent_uid": "person",
+      "name": "Person #110",
+      "position": {
+        "x": 25,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 261,
+      "agent_uid": "person",
+      "name": "Person #111",
+      "position": {
+        "x": 1,
+        "y": 13
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 262,
+      "agent_uid": "person",
+      "name": "Person #112",
+      "position": {
+        "x": 6,
+        "y": 17
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 263,
+      "agent_uid": "person",
+      "name": "Person #113",
+      "position": {
+        "x": 6,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 264,
+      "agent_uid": "person",
+      "name": "Person #114",
+      "position": {
+        "x": 8,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 265,
+      "agent_uid": "person",
+      "name": "Person #115",
+      "position": {
+        "x": 4,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 266,
+      "agent_uid": "person",
+      "name": "Person #116",
+      "position": {
+        "x": 6,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 267,
+      "agent_uid": "person",
+      "name": "Person #117",
+      "position": {
+        "x": 16,
+        "y": 16
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 268,
+      "agent_uid": "person",
+      "name": "Person #118",
+      "position": {
+        "x": 12,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 269,
+      "agent_uid": "person",
+      "name": "Person #119",
+      "position": {
+        "x": 14,
+        "y": 2
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 270,
+      "agent_uid": "person",
+      "name": "Person #120",
+      "position": {
+        "x": 7,
+        "y": 1
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 271,
+      "agent_uid": "person",
+      "name": "Person #121",
+      "position": {
+        "x": 3,
+        "y": 10
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 272,
+      "agent_uid": "person",
+      "name": "Person #122",
+      "position": {
+        "x": 15,
+        "y": 17
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 273,
+      "agent_uid": "person",
+      "name": "Person #123",
+      "position": {
+        "x": 16,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 274,
+      "agent_uid": "person",
+      "name": "Person #124",
+      "position": {
+        "x": 24,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 275,
+      "agent_uid": "person",
+      "name": "Person #125",
+      "position": {
+        "x": 4,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 276,
+      "agent_uid": "person",
+      "name": "Person #126",
+      "position": {
+        "x": 14,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 277,
+      "agent_uid": "person",
+      "name": "Person #127",
+      "position": {
+        "x": 8,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 278,
+      "agent_uid": "person",
+      "name": "Person #128",
+      "position": {
+        "x": 9,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 279,
+      "agent_uid": "person",
+      "name": "Person #129",
+      "position": {
+        "x": 24,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 280,
+      "agent_uid": "person",
+      "name": "Person #130",
+      "position": {
+        "x": 9,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 281,
+      "agent_uid": "person",
+      "name": "Person #131",
+      "position": {
+        "x": 21,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 282,
+      "agent_uid": "person",
+      "name": "Person #132",
+      "position": {
+        "x": 5,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 283,
+      "agent_uid": "person",
+      "name": "Person #133",
+      "position": {
+        "x": 25,
+        "y": 7
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 284,
+      "agent_uid": "person",
+      "name": "Person #134",
+      "position": {
+        "x": 23,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 285,
+      "agent_uid": "person",
+      "name": "Person #135",
+      "position": {
+        "x": 10,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 286,
+      "agent_uid": "person",
+      "name": "Person #136",
+      "position": {
+        "x": 6,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 287,
+      "agent_uid": "person",
+      "name": "Person #137",
+      "position": {
+        "x": 25,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 288,
+      "agent_uid": "person",
+      "name": "Person #138",
+      "position": {
+        "x": 13,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 289,
+      "agent_uid": "person",
+      "name": "Person #139",
+      "position": {
+        "x": 23,
+        "y": 17
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 290,
+      "agent_uid": "person",
+      "name": "Person #140",
+      "position": {
+        "x": 11,
+        "y": 7
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 291,
+      "agent_uid": "person",
+      "name": "Person #141",
+      "position": {
+        "x": 6,
+        "y": 1
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 292,
+      "agent_uid": "person",
+      "name": "Person #142",
+      "position": {
+        "x": 21,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 293,
+      "agent_uid": "person",
+      "name": "Person #143",
+      "position": {
+        "x": 19,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 294,
+      "agent_uid": "person",
+      "name": "Person #144",
+      "position": {
+        "x": 25,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 295,
+      "agent_uid": "person",
+      "name": "Person #145",
+      "position": {
+        "x": 16,
+        "y": 1
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 296,
+      "agent_uid": "person",
+      "name": "Person #146",
+      "position": {
+        "x": 24,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 297,
+      "agent_uid": "person",
+      "name": "Person #147",
+      "position": {
+        "x": 24,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 298,
+      "agent_uid": "person",
+      "name": "Person #148",
+      "position": {
+        "x": 13,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 299,
+      "agent_uid": "person",
+      "name": "Person #149",
+      "position": {
+        "x": 4,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 300,
+      "agent_uid": "person",
+      "name": "Person #150",
+      "position": {
+        "x": 21,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    }
+  ],
+  "environment": {
+    "width": 64,
+    "height": 27,
+    "torus": false,
+    "collision_mode": "block",
+    "global_properties": {
+      "evacuated_count": 0
+    },
+    "shapes": [
+      {
+        "id": 1,
+        "shape_uid": "wall_north",
+        "name": "North wall",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 64,
+        "height": 1,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 2,
+        "shape_uid": "wall_south",
+        "name": "South wall",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 0,
+          "y": 26
+        },
+        "width": 64,
+        "height": 1,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 3,
+        "shape_uid": "wall_west",
+        "name": "West wall",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 0,
+          "y": 1
+        },
+        "width": 1,
+        "height": 25,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 4,
+        "shape_uid": "wall_r1_upper",
+        "name": "Room-1 east wall upper",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 26,
+          "y": 1
+        },
+        "width": 1,
+        "height": 11,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 5,
+        "shape_uid": "wall_r1_lower",
+        "name": "Room-1 east wall lower",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 26,
+          "y": 15
+        },
+        "width": 1,
+        "height": 11,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 6,
+        "shape_uid": "block_upper",
+        "name": "Corridor upper block",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 27,
+          "y": 1
+        },
+        "width": 10,
+        "height": 10,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 7,
+        "shape_uid": "block_lower",
+        "name": "Corridor lower block",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 27,
+          "y": 16
+        },
+        "width": 10,
+        "height": 10,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 8,
+        "shape_uid": "wall_r2_upper",
+        "name": "Room-2 west wall upper",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 37,
+          "y": 1
+        },
+        "width": 1,
+        "height": 10,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 9,
+        "shape_uid": "wall_r2_lower",
+        "name": "Room-2 west wall lower",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 37,
+          "y": 16
+        },
+        "width": 1,
+        "height": 10,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 10,
+        "shape_uid": "wall_east_upper",
+        "name": "East wall upper",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 63,
+          "y": 1
+        },
+        "width": 1,
+        "height": 11,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 11,
+        "shape_uid": "wall_east_lower",
+        "name": "East wall lower",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 63,
+          "y": 15
+        },
+        "width": 1,
+        "height": 11,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 12,
+        "shape_uid": "door_zone",
+        "name": "Room-1 door",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#33cc33"
+        },
+        "position": {
+          "x": 26,
+          "y": 12
+        },
+        "width": 1,
+        "height": 3,
+        "fill": false,
+        "stroke": true
+      },
+      {
+        "id": 13,
+        "shape_uid": "exit_zone",
+        "name": "Final exit",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#33cc33"
+        },
+        "position": {
+          "x": 63,
+          "y": 12
+        },
+        "width": 1,
+        "height": 3,
+        "fill": false,
+        "stroke": true
+      },
+      {
+        "id": 14,
+        "shape_uid": "room1_zone",
+        "name": "Room 1 region",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": false,
+        "properties": {
+          "color": "#eeeeee"
+        },
+        "position": {
+          "x": 1,
+          "y": 1
+        },
+        "width": 26,
+        "height": 25,
+        "fill": false,
+        "stroke": true
+      },
+      {
+        "id": 15,
+        "shape_uid": "spawn_zone",
+        "name": "Spawn region",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": false,
+        "properties": {
+          "color": "#eeeeee"
+        },
+        "position": {
+          "x": 1,
+          "y": 1
+        },
+        "width": 25,
+        "height": 25,
+        "fill": false,
+        "stroke": true
+      }
+    ]
+  },
+  "widgets": [
+    {
+      "id": "people_remaining_monitor",
+      "type": "monitor",
+      "title": "People Remaining in Hall",
+      "source": {
+        "type": "population",
+        "agent_uids": [
+          "person"
+        ]
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      }
+    },
+    {
+      "id": "people_evacuated_monitor",
+      "type": "monitor",
+      "title": "People Evacuated",
+      "source": {
+        "type": "global_property",
+        "property_uid": "evacuated_count"
+      },
+      "position": {
+        "x": 0,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      }
+    },
+    {
+      "id": "evacuation_time_series",
+      "type": "line_chart",
+      "title": "Evacuation Progress Over Time",
+      "series": [
+        {
+          "label": "People Remaining",
+          "color": "#3366cc",
+          "source": {
+            "type": "population",
+            "agent_uids": [
+              "person"
+            ]
+          }
+        },
+        {
+          "label": "People Evacuated",
+          "color": "#dc3912",
+          "source": {
+            "type": "global_property",
+            "property_uid": "evacuated_count"
+          }
+        }
+      ],
+      "position": {
+        "x": 6,
+        "y": 0,
+        "w": 10,
+        "h": 5
+      }
+    }
+  ],
+  "status": "finished",
+  "status_text": "finished",
+  "status_history": [
+    {
+      "status": "ready",
+      "at": "2026-07-18T18:13:29.405Z",
+      "by": "dev.user"
+    },
+    {
+      "status": "generating",
+      "at": "2026-07-18T18:13:29.438Z",
+      "by": "dev.user"
+    },
+    {
+      "status": "ready",
+      "at": "2026-07-18T18:13:29.442Z",
+      "by": "system"
+    },
+    {
+      "status": "running",
+      "at": "2026-07-18T18:13:31.492Z",
+      "by": "system"
+    },
+    {
+      "status": "finished",
+      "at": "2026-07-18T18:13:50.025Z",
+      "by": "system"
+    }
+  ],
+  "generation_runs": [
+    {
+      "seq": 1,
+      "seed": 1201,
+      "scope": {
+        "kind": "full"
+      },
+      "status": "completed",
+      "started_at": "2026-07-18T18:13:29.438Z",
+      "finished_at": "2026-07-18T18:13:29.442Z",
+      "requests": 0
+    }
+  ],
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_tokens": 0,
+      "calls": 0,
+      "latency_ms": 0
+    }
+  },
+  "execution_runs": [
+    {
+      "seq": 1,
+      "started_at": "2026-07-18T18:13:31.492Z",
+      "finished_at": "2026-07-18T18:13:50.025Z",
+      "steps_completed": 600,
+      "status": "finished",
+      "active_duration_ms": 18533,
+      "termination_reason": "max_steps"
+    }
+  ],
+  "statistics": {
+    "steps_completed": 600,
+    "total_agents": 3,
+    "population": [
+      {
+        "agent_uid": "person",
+        "current": 3,
+        "peak": 150,
+        "min": 3,
+        "spawned": 0,
+        "removed": 147
+      }
+    ],
+    "agents_spawned": 0,
+    "agents_removed": 147,
+    "interactions": 0,
+    "events": 0,
+    "rule_executions": 9985,
+    "movement_distance": 9721.107218759778,
+    "by_rule": [
+      {
+        "rule_id": "exit_when_at_door",
+        "executions": 147
+      },
+      {
+        "rule_id": "walk_room1",
+        "executions": 4889
+      },
+      {
+        "rule_id": "walk_to_exit",
+        "executions": 4949
+      }
+    ]
+  },
+  "current_step": 600,
+  "created_at": "2026-07-18T18:13:29.405Z",
+  "created_by": "dev.user",
+  "updated_at": "2026-07-18T18:13:50.025Z",
+  "updated_by": "dev.user",
+  "started_at": "2026-07-18T18:13:31.492Z",
+  "finished_at": "2026-07-18T18:13:50.025Z",
+  "model_snapshot": {
+    "name": "exp-B12-bottleneck",
+    "description": "EXP-B stretch Test 12 / V7 (30-model-spec.md \u00a78): Room 1 (150 persons, 10x10 m) -> 1.2 m door -> 2 m corridor -> Room 2 -> 1.2 m exit; qualitative pass = congestion localizes upstream (zone-1 occupancy >> zone-2). Derived from exp-evac-V2-reference (D27/D30).",
+    "is_spatial": true,
+    "agents": [
+      {
+        "uid": "person",
+        "name": "Person",
+        "type": "agent",
+        "move_type": "movable",
+        "properties": [
+          {
+            "uid": "has_exited",
+            "name": "Has exited",
+            "type": "boolean",
+            "description": "True if the visitor has exited through the door.",
+            "default_value": false,
+            "immutable": false
+          },
+          {
+            "uid": "color",
+            "name": "color",
+            "type": "color",
+            "default_value": "#8B5CF6",
+            "immutable": false
+          }
+        ],
+        "initialization": {
+          "population_count": 150,
+          "count_mode": "fixed",
+          "placement": {
+            "type": "at_shape",
+            "shape_uid": "spawn_zone"
+          }
+        },
+        "footprint": {
+          "kind": "circle",
+          "radius": 0.5
+        }
+      }
+    ],
+    "environment": {
+      "uid": "environment",
+      "width": 64,
+      "height": 27,
+      "torus": false,
+      "collision_mode": "block",
+      "global_properties": [
+        {
+          "uid": "evacuated_count",
+          "name": "Evacuated Count",
+          "type": "number",
+          "description": "Total number of visitors who have exited.",
+          "default_value": 0,
+          "immutable": false
+        }
+      ],
+      "shapes": [
+        {
+          "uid": "wall_north",
+          "name": "North wall",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "width": {
+              "value": 64
+            },
+            "height": {
+              "value": 1
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "wall_south",
+          "name": "South wall",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 0,
+              "y": 26
+            },
+            "width": {
+              "value": 64
+            },
+            "height": {
+              "value": 1
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "wall_west",
+          "name": "West wall",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 0,
+              "y": 1
+            },
+            "width": {
+              "value": 1
+            },
+            "height": {
+              "value": 25
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "wall_r1_upper",
+          "name": "Room-1 east wall upper",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 26,
+              "y": 1
+            },
+            "width": {
+              "value": 1
+            },
+            "height": {
+              "value": 11
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "wall_r1_lower",
+          "name": "Room-1 east wall lower",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 26,
+              "y": 15
+            },
+            "width": {
+              "value": 1
+            },
+            "height": {
+              "value": 11
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "block_upper",
+          "name": "Corridor upper block",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 27,
+              "y": 1
+            },
+            "width": {
+              "value": 10
+            },
+            "height": {
+              "value": 10
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "block_lower",
+          "name": "Corridor lower block",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 27,
+              "y": 16
+            },
+            "width": {
+              "value": 10
+            },
+            "height": {
+              "value": 10
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "wall_r2_upper",
+          "name": "Room-2 west wall upper",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 37,
+              "y": 1
+            },
+            "width": {
+              "value": 1
+            },
+            "height": {
+              "value": 10
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "wall_r2_lower",
+          "name": "Room-2 west wall lower",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 37,
+              "y": 16
+            },
+            "width": {
+              "value": 1
+            },
+            "height": {
+              "value": 10
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "wall_east_upper",
+          "name": "East wall upper",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 63,
+              "y": 1
+            },
+            "width": {
+              "value": 1
+            },
+            "height": {
+              "value": 11
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "wall_east_lower",
+          "name": "East wall lower",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 63,
+              "y": 15
+            },
+            "width": {
+              "value": 1
+            },
+            "height": {
+              "value": 11
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "door_zone",
+          "name": "Room-1 door",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#33cc33",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 26,
+              "y": 12
+            },
+            "width": {
+              "value": 1
+            },
+            "height": {
+              "value": 3
+            },
+            "fill": false,
+            "stroke": true
+          }
+        },
+        {
+          "uid": "exit_zone",
+          "name": "Final exit",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#33cc33",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 63,
+              "y": 12
+            },
+            "width": {
+              "value": 1
+            },
+            "height": {
+              "value": 3
+            },
+            "fill": false,
+            "stroke": true
+          }
+        },
+        {
+          "uid": "room1_zone",
+          "name": "Room 1 region",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": false,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#eeeeee",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 1,
+              "y": 1
+            },
+            "width": {
+              "value": 26
+            },
+            "height": {
+              "value": 25
+            },
+            "fill": false,
+            "stroke": true
+          }
+        },
+        {
+          "uid": "spawn_zone",
+          "name": "Spawn region",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": false,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#eeeeee",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 1,
+              "y": 1
+            },
+            "width": {
+              "value": 25
+            },
+            "height": {
+              "value": 25
+            },
+            "fill": false,
+            "stroke": true
+          }
+        }
+      ]
+    }
+  },
+  "validation": {
+    "errors": null,
+    "warnings": null,
+    "start_ready": true
+  }
+}

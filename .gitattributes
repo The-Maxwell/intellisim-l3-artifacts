@@ -1,0 +1,4 @@
+# Everything is committed byte-for-byte: the code folders must stay identical to the published tree
+# intellisim-experiment-artifacts @ v0.1.2, and the experiment materials are hash-pinned
+# (results/exp-h/PROVENANCE.md, protocol 37 section 8). Never let git normalise line endings here.
+* -text

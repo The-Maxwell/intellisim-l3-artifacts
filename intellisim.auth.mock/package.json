@@ -1,0 +1,14 @@
+{
+  "name": "intellisim.auth.mock",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "oauth2-mock-server": "^7.1.2"
+  }
+}

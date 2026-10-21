@@ -1,0 +1,148 @@
+{
+  "id": "6a63a3254ccaa6983ac98319",
+  "simulation_id": "6a5bc249c44d001ef3af684d",
+  "name": "EXP-H report 3",
+  "context_message": "Analyze this simulation's results. Context: 150 people move out of a building section consisting of two rooms connected by a corridor. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini"
+  },
+  "selection": {
+    "step_from": 0,
+    "step_to": 599
+  },
+  "status": "completed",
+  "status_text": "completed",
+  "progress": {
+    "stage": "completed",
+    "percent": 100
+  },
+  "simulation_status_at_analysis": "finished",
+  "steps_covered": {
+    "from": 0,
+    "to": 599,
+    "sampling": 1,
+    "count": 61
+  },
+  "report": {
+    "sections": [
+      {
+        "key": "dynamics",
+        "title": "Population & Property Dynamics in exp-B12-bottleneck",
+        "narrative": "The simulation begins with a static population of 150 persons from step 0 through step 20, indicating initial movement is negligible until congestion builds at the 1.2 m door. At step 30 the first exits occur, reducing the population to 141; by step 100 only 3 persons remain inside. Between steps 30 and 100 the population declines steadily, with 147 removals executed by the “exit_when_at_door” rule. After step 100 the count plateaus at 3 until simulation end (step 599), showing a residual group unable to pass through the bottleneck.\n\nEvacuation throughput is highest between steps 30 and 70, where the population falls from 141 to 30 (111 exits over 40 steps, ~2.8 persons/step). This rate slows markedly after step 70, indicating increased queuing or jams at the door. The final 3 individuals persist for nearly 500 steps, suggesting that local congestion patterns prevent their exit despite continuous application of movement rules.\n\nNo replenishment or oscillatory behavior is observed; the system evolves from a high-density plateau to a rapid evacuation phase, then to a long-lived slow‐exit tail. The emergent residual group and the two-phase decline (rapid then slow) reflect the spatial bottleneck dynamics rather than any property changes or interventions.",
+        "key_findings": [
+          "Initial plateau: 150 persons from step 0–20 before any exits.",
+          "Rapid evacuation phase: population drops from 150 to 3 between steps 30–100.",
+          "Peak throughput ~2.8 persons/step during steps 30–70.",
+          "Slow‐exit tail: 3 persons remain from step 100 to 599.",
+          "No new agents spawn; total removed = 147.",
+          "Movement rules (“walk_room1” and “walk_to_exit”) executed ~9.8k times, highlighting persistent attempts despite slowdown."
+        ],
+        "causal_links": [
+          "Narrow 1.2 m door → localized congestion upstream, reducing per‐step exit rate after step 70.",
+          "High density in Room 1 → delayed initial flow, leading to evacuation plateau until congestion breaks."
+        ],
+        "emergent_phenomena": [
+          "Formation of a steady exit queue causing two-phase evacuation curve (rapid then slow).",
+          "Long‐lived residual group of 3 agents, self‐trapped by bottleneck despite continuous movement rules."
+        ]
+      },
+      {
+        "key": "spatial",
+        "title": "Spatial & Interaction Patterns in exp-B12-bottleneck",
+        "narrative": "At step 0, the 150 agents are broadly dispersed within Room 1 (positions ranging roughly x=2–26, y=2–25), exhibiting no evident pre-evacuation clustering. As the simulation progresses, agents converge toward the 1.2 m-wide door, funnel through a 2 m corridor, and exit through a second 1.2 m bottleneck. By step 299 only three agents remain (at positions x=24,26,27 y=13) and these persist unchanged through step 599, indicating a stable queue at the exit.\n\nThe narrow door at both ingress and egress points generates pronounced upstream congestion: while the corridor and downstream Room 2 quickly clear, occupancy builds immediately upstream of the door until only three agents occupy that zone. Movement rule executions (4 889 for room walking and 4 949 for corridor walking) confirm sustained directed motion toward the exit without lateral clustering or alternate path formation.\n\nSpatial segregation emerges between a high‐density cluster at the bottleneck and near‐zero density in the corridor and downstream areas. The effective corridor width (2 m) supports rapid clearance, whereas the 1.2 m doors limit throughput, leading to arch‐like queuing patterns at the final exit.",
+        "key_findings": [
+          "Initial agent distribution in Room 1 is uniform (x≈2–26, y≈2–25 at step 0).",
+          "By step 299, only 3 of 150 agents remain queued at the exit; this persists to step 599.",
+          "147 agents evacuated via exit_when_at_door rule over 600 steps.",
+          "The 2 m corridor stays largely clear, while 1.2 m doors induce upstream congestion.",
+          "Walk_to_exit (4 949) and walk_room1 (4 889) rule executions reflect continuous directed movement."
+        ],
+        "causal_links": [
+          "1.2 m door width → limited throughput → accumulation of agents upstream.",
+          "2 m corridor width → minimal in‐corridor congestion → rapid downstream clearance.",
+          "Repeated walk_to_exit executions → sustained directional movement toward bottleneck."
+        ],
+        "emergent_phenomena": [
+          "Self‐organized single‐file queue at the exit bottleneck.",
+          "Spatial segregation into high‐density upstream cluster and empty downstream region.",
+          "Persistent arching at the doorway despite free corridor flow."
+        ]
+      },
+      {
+        "key": "emergence",
+        "title": "Emergent Behavior & Causal Relationships in exp-B12-bottleneck",
+        "narrative": "The evacuation unfolds in two distinct phases: an initial delay (steps 0–20) with no exits as agents traverse Room 1 and align at the 1.2 m door, followed by a rapid evacuation (steps 30–100) where 147 agents exit. Throughput peaks around step 50 (75 agents remaining at step 50) and then slows as the supply of upstream agents diminishes and congestion persists.\nAfter step 100 only three agents remain upstream of the door, and they fail to exit through the narrow bottleneck for the remaining 500 steps. This persistent residual group reflects a metastable congested state: although capacity allows periodic exits (147 in 70 steps, ≈2.1 agents/step), local clogs at the door intermittently halt flow.\nRule-execution counts (4,889 walk_room1 vs. 4,949 walk_to_exit) indicate balanced movement activity on both sides of the bottleneck. The lack of interactions and events underscores that the emergent queue dynamics arise purely from spatial constraints and simple exit rules. The evacuation curve exhibits an S-shape, transitioning from zero flow to high throughput and then to an asymptotic tail where capacity underutilization persists due to clogging.",
+        "key_findings": [
+          "No agents exit before step 30, indicating alignment time to reach the door.",
+          "147 of 150 agents evacuated by step 100; 3 remain in a persistent congested cluster.",
+          "Average throughput ≈2.1 agents/step between steps 30 and 100.",
+          "No inter-agent interactions or events were recorded; congestion emerges from spatial constraint alone.",
+          "Movement rule executions nearly balanced: walk_room1 (4,889) vs. walk_to_exit (4,949)."
+        ],
+        "causal_links": [
+          "Narrow 1.2 m door width → queue formation upstream (no exits until step 30) → onset of throughput phase.",
+          "High local density at door (steps 30–100) → peak flow (~2.1 agents/step) → depletion of upstream supply.",
+          "Persistent small cluster (3 agents after step 100) + narrow doorway → metastable clog state with zero exits until step 600."
+        ],
+        "emergent_phenomena": [
+          "Self-organized queue formation at bottleneck without explicit interaction rules",
+          "Phase transition from no-flow (steps 0–20) to high-flow regime (steps 30–100)",
+          "Metastable congestion: residual group of 3 agents trapped indefinitely",
+          "S-shaped evacuation curve arising from spatial constraints"
+        ]
+      }
+    ],
+    "executive_summary": "In this bottleneck evacuation scenario, 150 agents begin uniformly dispersed in Room 1 and remain static until congestion at a 1.2 m door builds up. A two‐phase dynamic emerges: no exits occur until step 30 as agents align at the door, followed by a rapid evacuation from steps 30–100 with peak throughput of ~2.8 persons/step. After step 100 only three agents remain queued indefinitely, forming a persistent, metastable cluster unable to pass the narrow exit despite continuous movement attempts. Spatial constraints alone generate an S‐shaped evacuation curve, with a rapid clearance phase and a long asymptotic tail of residual agents.\n\nSpatial analysis shows the 2 m corridor and downstream room clear quickly, while the 1.2 m doors upstream sustain high‐density arch‐like queues. Walk rules execute nearly 9.8k times without inter‐agent interactions, underscoring that bottleneck width is the sole limiter of throughput. The emergent single‐file queue and trapped residual group highlight the need to address narrow‐door congestion for efficient evacuation.",
+    "conclusions": [
+      "The evacuation exhibits three stages: an initial delay (steps 0–20), a high‐throughput phase (steps 30–100, ~2.8 persons/step), and a long‐lived slow‐exit tail (3 agents persistent to step 599).",
+      "A 1.2 m door width creates upstream congestion and limits flow, while the 2 m corridor remains underutilized with minimal in‐corridor jams.",
+      "Spatial constraints alone (no interactions/events) drive self‐organized single‐file queue formation and an S‐shaped evacuation curve.",
+      "A small residual cluster of three agents enters a metastable clogged state, unable to exit despite continued walk_to_exit and walk_room1 rule executions.",
+      "Overall, door width is the critical parameter controlling throughput and residual congestion patterns."
+    ],
+    "recommendations": [
+      "Perform a parameter sweep on door widths (e.g., 1.2 m, 1.5 m, 2 m) to quantify throughput gains and eliminate long‐tail congestion.",
+      "Introduce additional or wider exits downstream to relieve upstream queuing and test multi‐door evacuation scenarios.",
+      "Incorporate simple inter‐agent interaction rules (e.g., pushing or gap‐closing behavior) to assess whether behavioral dynamics mitigate or exacerbate clogging.",
+      "Test alternative initial distributions (clustered vs. uniform) to evaluate sensitivity of evacuation delay and peak flow onset.",
+      "Simulate variations in agent walking speed or introduce heterogeneous speeds to examine their effect on queue formation and throughput.",
+      "Investigate dynamic routing (e.g., random detours or adaptive path choice) to explore potential redistribution of flow and reduction of bottleneck effects."
+    ]
+  },
+  "file": {
+    "uid": "dbbaf388-f54a-4bda-8b9e-75f1c051d9b9",
+    "name": "EXP-H report 3.pdf",
+    "mime_type": "application/pdf",
+    "size": 109657,
+    "created_at": "2026-07-24T17:39:14.932Z"
+  },
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 9008,
+      "completion_tokens": 3984,
+      "reasoning_tokens": 1792,
+      "total_tokens": 12992,
+      "calls": 4,
+      "latency_ms": 28780
+    },
+    "by_model": [
+      {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini-2025-04-16",
+        "prompt_tokens": 9008,
+        "completion_tokens": 3984,
+        "reasoning_tokens": 1792,
+        "total_tokens": 12992,
+        "calls": 4,
+        "latency_ms": 28780
+      }
+    ]
+  },
+  "requests": 4,
+  "created_at": "2026-07-24T17:38:45.776Z",
+  "created_by": "dev.user",
+  "started_at": "2026-07-24T17:38:45.779Z",
+  "finished_at": "2026-07-24T17:39:14.932Z"
+}

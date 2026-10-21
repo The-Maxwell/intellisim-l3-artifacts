@@ -1,0 +1,18 @@
+{
+  "simulation_id": "6a5bbcaac44d001ef3ac207c",
+  "body": {
+    "context_message": "Analyze this simulation's results. Context: People are evacuating a single room through one door. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+    "language": "en",
+    "llm_target": {
+      "provider_uid": "openai",
+      "model_uid": "o4-mini",
+      "generation": {
+        "max_tokens": {
+          "uint": 16000
+        }
+      }
+    },
+    "selection": {},
+    "name": "EXP-H2 F2 report 1"
+  }
+}

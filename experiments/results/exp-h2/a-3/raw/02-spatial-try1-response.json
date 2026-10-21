@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ERMQoAszNRhhuLuvcog0Kxspn66qM",
+  "object": "chat.completion",
+  "created": 1790189790,
+  "model": "o4-mini-2025-04-16",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"title\":\"Spatial & Interaction Patterns\",\"narrative\":\"The provided evidence includes model structure and run configuration but lacks any recorded spatial metrics or occupancy time‐series by zone or agent positions. Without per‐step spatial distributions or aggregated zone occupancies, we cannot characterize clustering, bottleneck congestion profiles, or formation of queues in front of the door or corridor. Consequently, no quantitative patterns of aggregation or dispersion can be reliably inferred.\\n\\nKey spatial features of the two‐room plus corridor layout (Room 1 → door → corridor → Room 2 → exit) are described in the model, but the run output does not include occupancy counts by area, density heatmaps, proximity interactions, or path trajectories for the 150 agents. Thus, the typical local congestion upstream of the 1.2 m door and in the 2 m corridor cannot be confirmed from the provided data. Any statement about queue formation, territory effects, or segregation would be speculative.\\n\\nIn the absence of spatial and interaction data, no causal relationships between layout geometry and evacuation flow can be established, nor can we identify emergent system‐level behaviors such as self‐organized lane formation or clogging dynamics. Future data collection should include zone‐based occupancy time series or distance‐based proximity counts to enable spatial pattern analysis.\",\"key_findings\":[],\"causal_links\":[],\"emergent_phenomena\":[]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 752,
+    "completion_tokens": 501,
+    "total_tokens": 1253,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 192,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

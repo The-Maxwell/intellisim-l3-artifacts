@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ERMaiKwCd4yKs5f8qUd8rlx7hG1Yo",
+  "object": "chat.completion",
+  "created": 1790190404,
+  "model": "o4-mini-2025-04-16",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"title\":\"Population & Property Dynamics\",\"narrative\":\"The provided evidence contains model configuration and run metadata but does not include any aggregated time‐series data on agent counts or property values. As such, key metrics like the number of burning, unburned, or burned‐out trees over time are not available for analysis. Without this data, dynamics such as spread phases, peak fire intensity, or equilibrium states cannot be quantified or described.\",\"key_findings\":[],\"causal_links\":[],\"emergent_phenomena\":[]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 789,
+    "completion_tokens": 317,
+    "total_tokens": 1106,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 192,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

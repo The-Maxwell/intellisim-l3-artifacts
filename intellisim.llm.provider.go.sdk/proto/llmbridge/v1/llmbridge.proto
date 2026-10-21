@@ -1,0 +1,231 @@
+syntax = "proto3";
+
+package llmbridge.v1;
+
+option go_package = "github.com/The-Maxwell/intellisim.llm.provider.go.sdk/proto/llmbridge/v1;llmbridgev1";
+
+// LLMBridge — gRPC service hosted by intellisim.core. Providers are pure clients.
+service LLMBridge {
+  // Provider connects + registers in one shot; the returned stream carries invocations
+  // from core. The stream IS liveness: when it breaks, core unregisters the provider
+  // and fails its pending invocations; the provider reconnects with backoff.
+  rpc Connect(ConnectRequest) returns (stream Invocation);
+
+  // Provider delivers the result of one invocation. Unary: independent HTTP/2 calls on
+  // the same connection — no head-of-line blocking, natural per-result liveness signal.
+  rpc CompleteInvocation(CompleteInvocationRequest) returns (CompleteInvocationAck);
+}
+
+// ==================== Enums ====================
+
+// Mirrors core's common.LLMEffort.
+enum Effort {
+  EFFORT_UNSPECIFIED = 0; // model/provider default
+  EFFORT_MINIMAL = 1;
+  EFFORT_LOW = 2;
+  EFFORT_MEDIUM = 3;
+  EFFORT_HIGH = 4;
+  EFFORT_MAX = 5;
+}
+
+// Closed list of model purposes. Custom values are not allowed.
+enum ModelCapability {
+  MODEL_CAPABILITY_UNSPECIFIED = 0;
+  MODEL_CAPABILITY_CHAT = 1;                 // general conversation
+  MODEL_CAPABILITY_MODEL_GENERATION = 2;     // Level 1 — ABM model generation
+  MODEL_CAPABILITY_SIMULATION_EXECUTION = 3; // Level 2 — full-control strategies
+  MODEL_CAPABILITY_SIMULATION_DECISIONS = 4; // Level 2 — decision-only strategies
+  MODEL_CAPABILITY_RESULTS_ANALYSIS = 5;     // Level 3 — results analysis
+  MODEL_CAPABILITY_VISION_ANALYSIS = 6;      // image → environment/shapes
+  MODEL_CAPABILITY_SIMULATION_GENERATION = 7; // Level 2 — simulation generation (env + agent seeding)
+}
+
+enum ResponseFormat {
+  RESPONSE_FORMAT_UNSPECIFIED = 0; // provider default (text)
+  RESPONSE_FORMAT_TEXT = 1;
+  RESPONSE_FORMAT_JSON = 2;        // provider must request JSON output from the LLM
+}
+
+enum ErrorCode {
+  ERROR_CODE_UNSPECIFIED = 0;
+  ERROR_CODE_INVALID_REQUEST = 1;
+  ERROR_CODE_MODEL_NOT_SUPPORTED = 2;
+  ERROR_CODE_EFFORT_NOT_SUPPORTED = 3;
+  ERROR_CODE_CAPABILITY_NOT_SUPPORTED = 4;
+  ERROR_CODE_UPSTREAM_ERROR = 5;   // LLM API call failed
+  ERROR_CODE_TIMEOUT = 6;
+  ERROR_CODE_INTERNAL = 7;         // handler panic, unexpected provider failure
+}
+
+// ==================== Registration (inside Connect) ====================
+
+message ConnectRequest {
+  string provider_uid = 1;  // e.g. "openai" — what LLMTarget.ProviderUID refers to
+  string name = 2;
+  string description = 3;
+  string version = 4;
+  repeated Model models = 5; // must be non-empty
+}
+
+message Model {
+  string uid = 1;                             // e.g. "gpt-4o" — what LLMTarget.ModelUID refers to
+  string name = 2;
+  repeated ModelCapability capabilities = 3;  // closed enum; must be non-empty
+  repeated Effort efforts = 4;                // allowed efforts; empty = model has no effort control
+  uint32 context_window = 5;
+  uint32 max_output_tokens = 6;
+  repeated ConfigParam config_params = 7;     // empty = no tunable config
+  bool reasoning = 8;                         // UI hint; provider-declared
+  uint32 max_images = 9;                      // max images this model accepts in ONE vision request
+                                              // (0 = unset → core treats as 1; only meaningful for VISION_ANALYSIS)
+}
+
+// ==================== Invocation (core → provider, via stream) ====================
+
+message Invocation {
+  string invocation_id = 1; // UUID; correlates the completion
+  string model_uid = 2;     // REQUIRED — core resolves & validates the target before sending
+  Effort effort = 3;        // UNSPECIFIED = model default
+  optional uint64 timeout_ms = 4; // core's deadline; provider aborts the call after this (absent = SDK default)
+  oneof request {
+    SimpleRequest simple = 5;
+    ChatRequest chat = 6;
+    VisionRequest vision = 7;
+    ReasoningRequest reasoning = 8;
+  }
+  ResponseFormat response_format = 9;  // core-controlled; not user-facing
+}
+
+// A single configuration value. Exactly one variant is set.
+message ConfigValue {
+  oneof value {
+    double     double_value = 1;
+    int64      int_value    = 2;
+    uint64     uint_value   = 3;
+    bool       bool_value   = 4;
+    string     string_value = 5;  // also carries ENUM selections
+    StringList list_value   = 6;
+  }
+}
+message StringList { repeated string values = 1; }
+
+// Per-request generation tuning. Keys + validity are defined by the model's
+// advertised ConfigParam descriptors. All optional — absent = provider/model default.
+message GenerationConfig {
+  map<string, ConfigValue> params = 1;
+}
+
+// Universal descriptor of one tunable parameter a model accepts (advertised at registration).
+enum ConfigParamType {
+  CONFIG_PARAM_TYPE_UNSPECIFIED = 0;
+  CONFIG_PARAM_TYPE_DOUBLE      = 1;
+  CONFIG_PARAM_TYPE_INT         = 2;
+  CONFIG_PARAM_TYPE_UINT        = 3;
+  CONFIG_PARAM_TYPE_BOOL        = 4;
+  CONFIG_PARAM_TYPE_STRING      = 5;
+  CONFIG_PARAM_TYPE_ENUM        = 6;
+  CONFIG_PARAM_TYPE_STRING_LIST = 7;
+}
+message ConfigParam {
+  string          key           = 1;
+  ConfigParamType type          = 2;
+  bool            required      = 3;
+  string          label         = 4;
+  string          description   = 5;
+  optional double min           = 6;
+  optional double max           = 7;
+  repeated string enum_values   = 8;
+  ConfigValue     default_value = 9;
+}
+
+message ChatMessage {
+  string role = 1;    // "system" | "user" | "assistant"
+  string content = 2;
+}
+
+message SimpleRequest {
+  string message = 1;
+  string system_prompt = 2;
+  GenerationConfig config = 3;
+}
+
+message ChatRequest {
+  string message = 1;        // the new user message
+  string system_message = 2;
+  repeated ChatMessage history = 3; // already fitted to context window by core
+  GenerationConfig config = 4;
+}
+
+// One reference image for a vision request. Optional per-image description is
+// emitted as a text label immediately before the image in the prompt, so the
+// model can tell multiple images apart (e.g. "floor plan", "obstacle layer").
+message VisionImage {
+  bytes image_data = 1;      // raw bytes on the wire; base64 stays at the edges
+  string image_format = 2;   // "png" | "jpeg" | "webp" | "gif"
+  string description = 3;    // optional label fed as a text part before the image
+}
+
+message VisionRequest {
+  string message = 1;
+  reserved 2, 3;             // were: bytes image_data; string image_format (single-image v1)
+  string detail = 4;         // "auto" | "low" | "high"
+  string system_prompt = 5;
+  GenerationConfig config = 6;
+  repeated VisionImage images = 7; // 1..N reference images analysed in ONE call
+}
+
+message ReasoningRequest {
+  string prompt = 1;
+  string context = 2;        // e.g. simulation summary/metrics
+  string system_prompt = 3;
+  GenerationConfig config = 4;
+}
+
+// ==================== Completion (provider → core, unary) ====================
+
+message CompleteInvocationRequest {
+  string provider_uid = 1;   // sanity check: must match the invoked provider
+  string invocation_id = 2;
+  oneof result {
+    Completion completion = 3;        // for simple | chat | vision
+    ReasoningCompletion reasoning = 4;
+    Error error = 5;
+  }
+}
+
+message Completion {
+  string text = 1;
+  string finish_reason = 2;
+  TokenUsage usage = 3;
+}
+
+message ReasoningCompletion {
+  string analysis = 1;
+  string reasoning = 2;      // reasoning trace/summary
+  string finish_reason = 3;
+  TokenUsage usage = 4;
+}
+
+// Maps 1:1 onto common.TokenUsage (core adds ProviderUID + Calls=1 itself).
+message TokenUsage {
+  string model_uid = 1;      // model ACTUALLY used
+  Effort effort = 2;         // effort ACTUALLY applied
+  uint64 prompt_tokens = 3;
+  uint64 completion_tokens = 4;
+  uint64 total_tokens = 5;
+  double latency_ms = 6;     // provider-measured wall clock
+  // reasoning_tokens is the portion of completion_tokens spent on internal
+  // reasoning by reasoning models (o3/o4-mini). It is a SUBSET of
+  // completion_tokens (already included in completion_tokens/total_tokens),
+  // reported for cost insight only. 0 for non-reasoning models.
+  uint64 reasoning_tokens = 7;
+}
+
+message Error {
+  ErrorCode code = 1;
+  string message = 2;
+}
+
+message CompleteInvocationAck {
+  bool accepted = 1; // false = core no longer waits (timed out / reconnected) — provider drops it
+}

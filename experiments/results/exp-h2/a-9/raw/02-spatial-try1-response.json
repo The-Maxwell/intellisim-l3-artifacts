@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ERMbOkapYOu4eiz015BjMAbqzIfKz",
+  "object": "chat.completion",
+  "created": 1790190446,
+  "model": "o4-mini-2025-04-16",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"title\":\"Spatial & Interaction Patterns\",\"narrative\":\"Agents inhabited a 50×50 toroidal grid with no boundary restrictions, ensuring uniform density throughout the simulation. Each of the 200 people performed random moves each step, so no fixed territories emerged over time. Infection was triggered by proximity: susceptible agents transitioned to infected when adjacent to an infected neighbor. \\n\\nAs infections began, small clusters of infected individuals appeared wherever a contagious agent encountered susceptibles. Because agents continued moving, these clusters dispersed and reformed elsewhere, leading to transient hotspots rather than persistent foci. The toroidal wrap meant that clusters on one edge seamlessly connected to those on the opposite side, further mixing the population. \\n\\nOver the course of the run, mobility drove repeated encounters between infected and susceptible agents, supporting a wave-like spread that ultimately reached all susceptibles before infections subsided. No long-term spatial segregation by health state occurred, and recovered agents remained intermixed with susceptibles once immunity was conferred.\",\"key_findings\":[ \"Uniform initial placement on a 50×50 torus prevented edge buildup and maintained even contact rates.\",\"Random movement generated transient infection clusters rather than stable hot spots.\",\"Torus topology allowed clusters to reappear across opposite edges, sustaining spread.\",\"No enduring territories formed by any health state; all states remained spatially mixed at equilibrium.\"],\"causal_links\":[ \"Torus topology→Uniform agent density prevented boundary-induced aggregation.\",\"Random movement→Formation and dissolution of transient infected clusters.\"],\"emergent_phenomena\":[ \"Wave-like propagation of infection across the torus driven by successive local encounters.\",\"Intermittent clustering and dispersion patterns despite homogeneous movement rules.\"]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 789,
+    "completion_tokens": 998,
+    "total_tokens": 1787,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 640,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

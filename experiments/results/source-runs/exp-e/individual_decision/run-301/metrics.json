@@ -1,0 +1,21 @@
+{
+ "sim_id": "6a63810f4ccaa6983ac81367",
+ "seed": 301,
+ "condition": "individual_decision",
+ "status": "finished",
+ "termination_reason": "condition_met",
+ "steps": 46,
+ "D_T": 9,
+ "active_duration_ms": 560389,
+ "api_calls_total": 514,
+ "api_calls_decision": 514,
+ "prompt_tokens": 296096,
+ "completion_tokens": 10799,
+ "reasoning_tokens": 0,
+ "total_tokens": 306895,
+ "logical_consultations_pred": 900,
+ "decision_events_measured": 494,
+ "label_counts": {
+  "proceed_to_exit": 494
+ }
+}

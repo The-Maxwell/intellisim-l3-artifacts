@@ -1,0 +1,10 @@
+{
+  "context_message": "Analyze this simulation's results. Context: 150 people move out of a building section consisting of two rooms connected by a corridor. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini"
+  },
+  "selection": {},
+  "name": "EXP-H report 3"
+}

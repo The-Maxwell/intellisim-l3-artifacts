@@ -1,0 +1,4929 @@
+{
+  "id": "6a5bc463c44d001ef3b8f824",
+  "name": "exp-B4-N300-rep1",
+  "model_id": "6a5bc3b6c44d001ef3b60fb2",
+  "seed": 421,
+  "steps": 900,
+  "termination": {
+    "type": "population",
+    "operator": "eq",
+    "value": 0,
+    "target_uid": "person"
+  },
+  "agents": [
+    {
+      "id": 301,
+      "agent_uid": "person",
+      "name": "Person #1",
+      "position": {
+        "x": 17,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 302,
+      "agent_uid": "person",
+      "name": "Person #2",
+      "position": {
+        "x": 34,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 303,
+      "agent_uid": "person",
+      "name": "Person #3",
+      "position": {
+        "x": 39,
+        "y": 17
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 304,
+      "agent_uid": "person",
+      "name": "Person #4",
+      "position": {
+        "x": 10,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 305,
+      "agent_uid": "person",
+      "name": "Person #5",
+      "position": {
+        "x": 10,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 306,
+      "agent_uid": "person",
+      "name": "Person #6",
+      "position": {
+        "x": 27,
+        "y": 27
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 307,
+      "agent_uid": "person",
+      "name": "Person #7",
+      "position": {
+        "x": 20,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 308,
+      "agent_uid": "person",
+      "name": "Person #8",
+      "position": {
+        "x": 40,
+        "y": 28
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 309,
+      "agent_uid": "person",
+      "name": "Person #9",
+      "position": {
+        "x": 3,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 310,
+      "agent_uid": "person",
+      "name": "Person #10",
+      "position": {
+        "x": 31,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 311,
+      "agent_uid": "person",
+      "name": "Person #11",
+      "position": {
+        "x": 19,
+        "y": 5
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 312,
+      "agent_uid": "person",
+      "name": "Person #12",
+      "position": {
+        "x": 19,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 313,
+      "agent_uid": "person",
+      "name": "Person #13",
+      "position": {
+        "x": 25,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 314,
+      "agent_uid": "person",
+      "name": "Person #14",
+      "position": {
+        "x": 12,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 315,
+      "agent_uid": "person",
+      "name": "Person #15",
+      "position": {
+        "x": 8,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 316,
+      "agent_uid": "person",
+      "name": "Person #16",
+      "position": {
+        "x": 7,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 317,
+      "agent_uid": "person",
+      "name": "Person #17",
+      "position": {
+        "x": 5,
+        "y": 17
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 318,
+      "agent_uid": "person",
+      "name": "Person #18",
+      "position": {
+        "x": 6,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 319,
+      "agent_uid": "person",
+      "name": "Person #19",
+      "position": {
+        "x": 21,
+        "y": 2
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 320,
+      "agent_uid": "person",
+      "name": "Person #20",
+      "position": {
+        "x": 10,
+        "y": 26
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 321,
+      "agent_uid": "person",
+      "name": "Person #21",
+      "position": {
+        "x": 13,
+        "y": 28
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 322,
+      "agent_uid": "person",
+      "name": "Person #22",
+      "position": {
+        "x": 5,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 323,
+      "agent_uid": "person",
+      "name": "Person #23",
+      "position": {
+        "x": 27,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 324,
+      "agent_uid": "person",
+      "name": "Person #24",
+      "position": {
+        "x": 28,
+        "y": 27
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 325,
+      "agent_uid": "person",
+      "name": "Person #25",
+      "position": {
+        "x": 3,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 326,
+      "agent_uid": "person",
+      "name": "Person #26",
+      "position": {
+        "x": 5,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 327,
+      "agent_uid": "person",
+      "name": "Person #27",
+      "position": {
+        "x": 12,
+        "y": 27
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 328,
+      "agent_uid": "person",
+      "name": "Person #28",
+      "position": {
+        "x": 13,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 329,
+      "agent_uid": "person",
+      "name": "Person #29",
+      "position": {
+        "x": 21,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 330,
+      "agent_uid": "person",
+      "name": "Person #30",
+      "position": {
+        "x": 21,
+        "y": 10
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 331,
+      "agent_uid": "person",
+      "name": "Person #31",
+      "position": {
+        "x": 8,
+        "y": 2
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 332,
+      "agent_uid": "person",
+      "name": "Person #32",
+      "position": {
+        "x": 36,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 333,
+      "agent_uid": "person",
+      "name": "Person #33",
+      "position": {
+        "x": 8,
+        "y": 30
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 334,
+      "agent_uid": "person",
+      "name": "Person #34",
+      "position": {
+        "x": 34,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 335,
+      "agent_uid": "person",
+      "name": "Person #35",
+      "position": {
+        "x": 21,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 336,
+      "agent_uid": "person",
+      "name": "Person #36",
+      "position": {
+        "x": 34,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 337,
+      "agent_uid": "person",
+      "name": "Person #37",
+      "position": {
+        "x": 4,
+        "y": 27
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 338,
+      "agent_uid": "person",
+      "name": "Person #38",
+      "position": {
+        "x": 15,
+        "y": 13
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 339,
+      "agent_uid": "person",
+      "name": "Person #39",
+      "position": {
+        "x": 3,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 340,
+      "agent_uid": "person",
+      "name": "Person #40",
+      "position": {
+        "x": 11,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 341,
+      "agent_uid": "person",
+      "name": "Person #41",
+      "position": {
+        "x": 21,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 342,
+      "agent_uid": "person",
+      "name": "Person #42",
+      "position": {
+        "x": 12,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 343,
+      "agent_uid": "person",
+      "name": "Person #43",
+      "position": {
+        "x": 24,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 344,
+      "agent_uid": "person",
+      "name": "Person #44",
+      "position": {
+        "x": 8,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 345,
+      "agent_uid": "person",
+      "name": "Person #45",
+      "position": {
+        "x": 17,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 346,
+      "agent_uid": "person",
+      "name": "Person #46",
+      "position": {
+        "x": 36,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 347,
+      "agent_uid": "person",
+      "name": "Person #47",
+      "position": {
+        "x": 26,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 348,
+      "agent_uid": "person",
+      "name": "Person #48",
+      "position": {
+        "x": 13,
+        "y": 26
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 349,
+      "agent_uid": "person",
+      "name": "Person #49",
+      "position": {
+        "x": 5,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 350,
+      "agent_uid": "person",
+      "name": "Person #50",
+      "position": {
+        "x": 20,
+        "y": 1
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 351,
+      "agent_uid": "person",
+      "name": "Person #51",
+      "position": {
+        "x": 32,
+        "y": 7
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 352,
+      "agent_uid": "person",
+      "name": "Person #52",
+      "position": {
+        "x": 15,
+        "y": 27
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 353,
+      "agent_uid": "person",
+      "name": "Person #53",
+      "position": {
+        "x": 11,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 354,
+      "agent_uid": "person",
+      "name": "Person #54",
+      "position": {
+        "x": 10,
+        "y": 13
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 355,
+      "agent_uid": "person",
+      "name": "Person #55",
+      "position": {
+        "x": 28,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 356,
+      "agent_uid": "person",
+      "name": "Person #56",
+      "position": {
+        "x": 35,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 357,
+      "agent_uid": "person",
+      "name": "Person #57",
+      "position": {
+        "x": 8,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 358,
+      "agent_uid": "person",
+      "name": "Person #58",
+      "position": {
+        "x": 1,
+        "y": 28
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 359,
+      "agent_uid": "person",
+      "name": "Person #59",
+      "position": {
+        "x": 1,
+        "y": 27
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 360,
+      "agent_uid": "person",
+      "name": "Person #60",
+      "position": {
+        "x": 10,
+        "y": 27
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 361,
+      "agent_uid": "person",
+      "name": "Person #61",
+      "position": {
+        "x": 15,
+        "y": 13
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 362,
+      "agent_uid": "person",
+      "name": "Person #62",
+      "position": {
+        "x": 8,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 363,
+      "agent_uid": "person",
+      "name": "Person #63",
+      "position": {
+        "x": 16,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 364,
+      "agent_uid": "person",
+      "name": "Person #64",
+      "position": {
+        "x": 27,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 365,
+      "agent_uid": "person",
+      "name": "Person #65",
+      "position": {
+        "x": 14,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 366,
+      "agent_uid": "person",
+      "name": "Person #66",
+      "position": {
+        "x": 26,
+        "y": 27
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 367,
+      "agent_uid": "person",
+      "name": "Person #67",
+      "position": {
+        "x": 36,
+        "y": 13
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 368,
+      "agent_uid": "person",
+      "name": "Person #68",
+      "position": {
+        "x": 18,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 369,
+      "agent_uid": "person",
+      "name": "Person #69",
+      "position": {
+        "x": 28,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 370,
+      "agent_uid": "person",
+      "name": "Person #70",
+      "position": {
+        "x": 36,
+        "y": 26
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 371,
+      "agent_uid": "person",
+      "name": "Person #71",
+      "position": {
+        "x": 32,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 372,
+      "agent_uid": "person",
+      "name": "Person #72",
+      "position": {
+        "x": 12,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 373,
+      "agent_uid": "person",
+      "name": "Person #73",
+      "position": {
+        "x": 12,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 374,
+      "agent_uid": "person",
+      "name": "Person #74",
+      "position": {
+        "x": 9,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 375,
+      "agent_uid": "person",
+      "name": "Person #75",
+      "position": {
+        "x": 29,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 376,
+      "agent_uid": "person",
+      "name": "Person #76",
+      "position": {
+        "x": 29,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 377,
+      "agent_uid": "person",
+      "name": "Person #77",
+      "position": {
+        "x": 23,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 378,
+      "agent_uid": "person",
+      "name": "Person #78",
+      "position": {
+        "x": 17,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 379,
+      "agent_uid": "person",
+      "name": "Person #79",
+      "position": {
+        "x": 38,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 380,
+      "agent_uid": "person",
+      "name": "Person #80",
+      "position": {
+        "x": 10,
+        "y": 7
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 381,
+      "agent_uid": "person",
+      "name": "Person #81",
+      "position": {
+        "x": 17,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 382,
+      "agent_uid": "person",
+      "name": "Person #82",
+      "position": {
+        "x": 35,
+        "y": 17
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 383,
+      "agent_uid": "person",
+      "name": "Person #83",
+      "position": {
+        "x": 7,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 384,
+      "agent_uid": "person",
+      "name": "Person #84",
+      "position": {
+        "x": 24,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 385,
+      "agent_uid": "person",
+      "name": "Person #85",
+      "position": {
+        "x": 25,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 386,
+      "agent_uid": "person",
+      "name": "Person #86",
+      "position": {
+        "x": 26,
+        "y": 17
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 387,
+      "agent_uid": "person",
+      "name": "Person #87",
+      "position": {
+        "x": 6,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 388,
+      "agent_uid": "person",
+      "name": "Person #88",
+      "position": {
+        "x": 5,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 389,
+      "agent_uid": "person",
+      "name": "Person #89",
+      "position": {
+        "x": 28,
+        "y": 13
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 390,
+      "agent_uid": "person",
+      "name": "Person #90",
+      "position": {
+        "x": 5,
+        "y": 17
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 391,
+      "agent_uid": "person",
+      "name": "Person #91",
+      "position": {
+        "x": 6,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 392,
+      "agent_uid": "person",
+      "name": "Person #92",
+      "position": {
+        "x": 33,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 393,
+      "agent_uid": "person",
+      "name": "Person #93",
+      "position": {
+        "x": 40,
+        "y": 30
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 394,
+      "agent_uid": "person",
+      "name": "Person #94",
+      "position": {
+        "x": 31,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 395,
+      "agent_uid": "person",
+      "name": "Person #95",
+      "position": {
+        "x": 9,
+        "y": 7
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 396,
+      "agent_uid": "person",
+      "name": "Person #96",
+      "position": {
+        "x": 16,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 397,
+      "agent_uid": "person",
+      "name": "Person #97",
+      "position": {
+        "x": 33,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 398,
+      "agent_uid": "person",
+      "name": "Person #98",
+      "position": {
+        "x": 4,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 399,
+      "agent_uid": "person",
+      "name": "Person #99",
+      "position": {
+        "x": 30,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 400,
+      "agent_uid": "person",
+      "name": "Person #100",
+      "position": {
+        "x": 2,
+        "y": 13
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 401,
+      "agent_uid": "person",
+      "name": "Person #101",
+      "position": {
+        "x": 2,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 402,
+      "agent_uid": "person",
+      "name": "Person #102",
+      "position": {
+        "x": 29,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 403,
+      "agent_uid": "person",
+      "name": "Person #103",
+      "position": {
+        "x": 31,
+        "y": 13
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 404,
+      "agent_uid": "person",
+      "name": "Person #104",
+      "position": {
+        "x": 12,
+        "y": 30
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 405,
+      "agent_uid": "person",
+      "name": "Person #105",
+      "position": {
+        "x": 18,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 406,
+      "agent_uid": "person",
+      "name": "Person #106",
+      "position": {
+        "x": 36,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 407,
+      "agent_uid": "person",
+      "name": "Person #107",
+      "position": {
+        "x": 30,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 408,
+      "agent_uid": "person",
+      "name": "Person #108",
+      "position": {
+        "x": 32,
+        "y": 30
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 409,
+      "agent_uid": "person",
+      "name": "Person #109",
+      "position": {
+        "x": 4,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 410,
+      "agent_uid": "person",
+      "name": "Person #110",
+      "position": {
+        "x": 32,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 411,
+      "agent_uid": "person",
+      "name": "Person #111",
+      "position": {
+        "x": 15,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 412,
+      "agent_uid": "person",
+      "name": "Person #112",
+      "position": {
+        "x": 10,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 413,
+      "agent_uid": "person",
+      "name": "Person #113",
+      "position": {
+        "x": 19,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 414,
+      "agent_uid": "person",
+      "name": "Person #114",
+      "position": {
+        "x": 17,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 415,
+      "agent_uid": "person",
+      "name": "Person #115",
+      "position": {
+        "x": 6,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 416,
+      "agent_uid": "person",
+      "name": "Person #116",
+      "position": {
+        "x": 38,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 417,
+      "agent_uid": "person",
+      "name": "Person #117",
+      "position": {
+        "x": 1,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 418,
+      "agent_uid": "person",
+      "name": "Person #118",
+      "position": {
+        "x": 40,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 419,
+      "agent_uid": "person",
+      "name": "Person #119",
+      "position": {
+        "x": 20,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 420,
+      "agent_uid": "person",
+      "name": "Person #120",
+      "position": {
+        "x": 4,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 421,
+      "agent_uid": "person",
+      "name": "Person #121",
+      "position": {
+        "x": 3,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 422,
+      "agent_uid": "person",
+      "name": "Person #122",
+      "position": {
+        "x": 3,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 423,
+      "agent_uid": "person",
+      "name": "Person #123",
+      "position": {
+        "x": 14,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 424,
+      "agent_uid": "person",
+      "name": "Person #124",
+      "position": {
+        "x": 38,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 425,
+      "agent_uid": "person",
+      "name": "Person #125",
+      "position": {
+        "x": 29,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 426,
+      "agent_uid": "person",
+      "name": "Person #126",
+      "position": {
+        "x": 17,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 427,
+      "agent_uid": "person",
+      "name": "Person #127",
+      "position": {
+        "x": 14,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 428,
+      "agent_uid": "person",
+      "name": "Person #128",
+      "position": {
+        "x": 8,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 429,
+      "agent_uid": "person",
+      "name": "Person #129",
+      "position": {
+        "x": 15,
+        "y": 7
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 430,
+      "agent_uid": "person",
+      "name": "Person #130",
+      "position": {
+        "x": 3,
+        "y": 2
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 431,
+      "agent_uid": "person",
+      "name": "Person #131",
+      "position": {
+        "x": 23,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 432,
+      "agent_uid": "person",
+      "name": "Person #132",
+      "position": {
+        "x": 33,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 433,
+      "agent_uid": "person",
+      "name": "Person #133",
+      "position": {
+        "x": 16,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 434,
+      "agent_uid": "person",
+      "name": "Person #134",
+      "position": {
+        "x": 35,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 435,
+      "agent_uid": "person",
+      "name": "Person #135",
+      "position": {
+        "x": 10,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 436,
+      "agent_uid": "person",
+      "name": "Person #136",
+      "position": {
+        "x": 20,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 437,
+      "agent_uid": "person",
+      "name": "Person #137",
+      "position": {
+        "x": 26,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 438,
+      "agent_uid": "person",
+      "name": "Person #138",
+      "position": {
+        "x": 3,
+        "y": 16
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 439,
+      "agent_uid": "person",
+      "name": "Person #139",
+      "position": {
+        "x": 34,
+        "y": 30
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 440,
+      "agent_uid": "person",
+      "name": "Person #140",
+      "position": {
+        "x": 24,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 441,
+      "agent_uid": "person",
+      "name": "Person #141",
+      "position": {
+        "x": 31,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 442,
+      "agent_uid": "person",
+      "name": "Person #142",
+      "position": {
+        "x": 17,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 443,
+      "agent_uid": "person",
+      "name": "Person #143",
+      "position": {
+        "x": 32,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 444,
+      "agent_uid": "person",
+      "name": "Person #144",
+      "position": {
+        "x": 11,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 445,
+      "agent_uid": "person",
+      "name": "Person #145",
+      "position": {
+        "x": 11,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 446,
+      "agent_uid": "person",
+      "name": "Person #146",
+      "position": {
+        "x": 28,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 447,
+      "agent_uid": "person",
+      "name": "Person #147",
+      "position": {
+        "x": 22,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 448,
+      "agent_uid": "person",
+      "name": "Person #148",
+      "position": {
+        "x": 6,
+        "y": 27
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 449,
+      "agent_uid": "person",
+      "name": "Person #149",
+      "position": {
+        "x": 20,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 450,
+      "agent_uid": "person",
+      "name": "Person #150",
+      "position": {
+        "x": 16,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 451,
+      "agent_uid": "person",
+      "name": "Person #151",
+      "position": {
+        "x": 12,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 452,
+      "agent_uid": "person",
+      "name": "Person #152",
+      "position": {
+        "x": 12,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 453,
+      "agent_uid": "person",
+      "name": "Person #153",
+      "position": {
+        "x": 18,
+        "y": 1
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 454,
+      "agent_uid": "person",
+      "name": "Person #154",
+      "position": {
+        "x": 4,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 455,
+      "agent_uid": "person",
+      "name": "Person #155",
+      "position": {
+        "x": 14,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 456,
+      "agent_uid": "person",
+      "name": "Person #156",
+      "position": {
+        "x": 9,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 457,
+      "agent_uid": "person",
+      "name": "Person #157",
+      "position": {
+        "x": 12,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 458,
+      "agent_uid": "person",
+      "name": "Person #158",
+      "position": {
+        "x": 39,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 459,
+      "agent_uid": "person",
+      "name": "Person #159",
+      "position": {
+        "x": 24,
+        "y": 16
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 460,
+      "agent_uid": "person",
+      "name": "Person #160",
+      "position": {
+        "x": 6,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 461,
+      "agent_uid": "person",
+      "name": "Person #161",
+      "position": {
+        "x": 34,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 462,
+      "agent_uid": "person",
+      "name": "Person #162",
+      "position": {
+        "x": 9,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 463,
+      "agent_uid": "person",
+      "name": "Person #163",
+      "position": {
+        "x": 25,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 464,
+      "agent_uid": "person",
+      "name": "Person #164",
+      "position": {
+        "x": 28,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 465,
+      "agent_uid": "person",
+      "name": "Person #165",
+      "position": {
+        "x": 21,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 466,
+      "agent_uid": "person",
+      "name": "Person #166",
+      "position": {
+        "x": 35,
+        "y": 27
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 467,
+      "agent_uid": "person",
+      "name": "Person #167",
+      "position": {
+        "x": 22,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 468,
+      "agent_uid": "person",
+      "name": "Person #168",
+      "position": {
+        "x": 25,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 469,
+      "agent_uid": "person",
+      "name": "Person #169",
+      "position": {
+        "x": 22,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 470,
+      "agent_uid": "person",
+      "name": "Person #170",
+      "position": {
+        "x": 13,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 471,
+      "agent_uid": "person",
+      "name": "Person #171",
+      "position": {
+        "x": 22,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 472,
+      "agent_uid": "person",
+      "name": "Person #172",
+      "position": {
+        "x": 39,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 473,
+      "agent_uid": "person",
+      "name": "Person #173",
+      "position": {
+        "x": 4,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 474,
+      "agent_uid": "person",
+      "name": "Person #174",
+      "position": {
+        "x": 8,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 475,
+      "agent_uid": "person",
+      "name": "Person #175",
+      "position": {
+        "x": 30,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 476,
+      "agent_uid": "person",
+      "name": "Person #176",
+      "position": {
+        "x": 36,
+        "y": 2
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 477,
+      "agent_uid": "person",
+      "name": "Person #177",
+      "position": {
+        "x": 25,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 478,
+      "agent_uid": "person",
+      "name": "Person #178",
+      "position": {
+        "x": 23,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 479,
+      "agent_uid": "person",
+      "name": "Person #179",
+      "position": {
+        "x": 30,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 480,
+      "agent_uid": "person",
+      "name": "Person #180",
+      "position": {
+        "x": 9,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 481,
+      "agent_uid": "person",
+      "name": "Person #181",
+      "position": {
+        "x": 17,
+        "y": 2
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 482,
+      "agent_uid": "person",
+      "name": "Person #182",
+      "position": {
+        "x": 27,
+        "y": 27
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 483,
+      "agent_uid": "person",
+      "name": "Person #183",
+      "position": {
+        "x": 34,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 484,
+      "agent_uid": "person",
+      "name": "Person #184",
+      "position": {
+        "x": 13,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 485,
+      "agent_uid": "person",
+      "name": "Person #185",
+      "position": {
+        "x": 30,
+        "y": 5
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 486,
+      "agent_uid": "person",
+      "name": "Person #186",
+      "position": {
+        "x": 8,
+        "y": 5
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 487,
+      "agent_uid": "person",
+      "name": "Person #187",
+      "position": {
+        "x": 38,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 488,
+      "agent_uid": "person",
+      "name": "Person #188",
+      "position": {
+        "x": 31,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 489,
+      "agent_uid": "person",
+      "name": "Person #189",
+      "position": {
+        "x": 27,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 490,
+      "agent_uid": "person",
+      "name": "Person #190",
+      "position": {
+        "x": 8,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 491,
+      "agent_uid": "person",
+      "name": "Person #191",
+      "position": {
+        "x": 35,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 492,
+      "agent_uid": "person",
+      "name": "Person #192",
+      "position": {
+        "x": 2,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 493,
+      "agent_uid": "person",
+      "name": "Person #193",
+      "position": {
+        "x": 11,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 494,
+      "agent_uid": "person",
+      "name": "Person #194",
+      "position": {
+        "x": 6,
+        "y": 16
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 495,
+      "agent_uid": "person",
+      "name": "Person #195",
+      "position": {
+        "x": 39,
+        "y": 16
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 496,
+      "agent_uid": "person",
+      "name": "Person #196",
+      "position": {
+        "x": 12,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 497,
+      "agent_uid": "person",
+      "name": "Person #197",
+      "position": {
+        "x": 9,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 498,
+      "agent_uid": "person",
+      "name": "Person #198",
+      "position": {
+        "x": 33,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 499,
+      "agent_uid": "person",
+      "name": "Person #199",
+      "position": {
+        "x": 18,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 500,
+      "agent_uid": "person",
+      "name": "Person #200",
+      "position": {
+        "x": 19,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 501,
+      "agent_uid": "person",
+      "name": "Person #201",
+      "position": {
+        "x": 26,
+        "y": 27
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 502,
+      "agent_uid": "person",
+      "name": "Person #202",
+      "position": {
+        "x": 40,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 503,
+      "agent_uid": "person",
+      "name": "Person #203",
+      "position": {
+        "x": 4,
+        "y": 27
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 504,
+      "agent_uid": "person",
+      "name": "Person #204",
+      "position": {
+        "x": 7,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 505,
+      "agent_uid": "person",
+      "name": "Person #205",
+      "position": {
+        "x": 31,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 506,
+      "agent_uid": "person",
+      "name": "Person #206",
+      "position": {
+        "x": 26,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 507,
+      "agent_uid": "person",
+      "name": "Person #207",
+      "position": {
+        "x": 23,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 508,
+      "agent_uid": "person",
+      "name": "Person #208",
+      "position": {
+        "x": 31,
+        "y": 13
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 509,
+      "agent_uid": "person",
+      "name": "Person #209",
+      "position": {
+        "x": 14,
+        "y": 16
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 510,
+      "agent_uid": "person",
+      "name": "Person #210",
+      "position": {
+        "x": 24,
+        "y": 10
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 511,
+      "agent_uid": "person",
+      "name": "Person #211",
+      "position": {
+        "x": 22,
+        "y": 26
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 512,
+      "agent_uid": "person",
+      "name": "Person #212",
+      "position": {
+        "x": 30,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 513,
+      "agent_uid": "person",
+      "name": "Person #213",
+      "position": {
+        "x": 4,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 514,
+      "agent_uid": "person",
+      "name": "Person #214",
+      "position": {
+        "x": 9,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 515,
+      "agent_uid": "person",
+      "name": "Person #215",
+      "position": {
+        "x": 21,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 516,
+      "agent_uid": "person",
+      "name": "Person #216",
+      "position": {
+        "x": 20,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 517,
+      "agent_uid": "person",
+      "name": "Person #217",
+      "position": {
+        "x": 10,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 518,
+      "agent_uid": "person",
+      "name": "Person #218",
+      "position": {
+        "x": 29,
+        "y": 5
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 519,
+      "agent_uid": "person",
+      "name": "Person #219",
+      "position": {
+        "x": 17,
+        "y": 2
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 520,
+      "agent_uid": "person",
+      "name": "Person #220",
+      "position": {
+        "x": 10,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 521,
+      "agent_uid": "person",
+      "name": "Person #221",
+      "position": {
+        "x": 21,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 522,
+      "agent_uid": "person",
+      "name": "Person #222",
+      "position": {
+        "x": 32,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 523,
+      "agent_uid": "person",
+      "name": "Person #223",
+      "position": {
+        "x": 20,
+        "y": 13
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 524,
+      "agent_uid": "person",
+      "name": "Person #224",
+      "position": {
+        "x": 13,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 525,
+      "agent_uid": "person",
+      "name": "Person #225",
+      "position": {
+        "x": 39,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 526,
+      "agent_uid": "person",
+      "name": "Person #226",
+      "position": {
+        "x": 31,
+        "y": 10
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 527,
+      "agent_uid": "person",
+      "name": "Person #227",
+      "position": {
+        "x": 34,
+        "y": 30
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 528,
+      "agent_uid": "person",
+      "name": "Person #228",
+      "position": {
+        "x": 2,
+        "y": 1
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 529,
+      "agent_uid": "person",
+      "name": "Person #229",
+      "position": {
+        "x": 7,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 530,
+      "agent_uid": "person",
+      "name": "Person #230",
+      "position": {
+        "x": 37,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 531,
+      "agent_uid": "person",
+      "name": "Person #231",
+      "position": {
+        "x": 19,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 532,
+      "agent_uid": "person",
+      "name": "Person #232",
+      "position": {
+        "x": 14,
+        "y": 16
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 533,
+      "agent_uid": "person",
+      "name": "Person #233",
+      "position": {
+        "x": 16,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 534,
+      "agent_uid": "person",
+      "name": "Person #234",
+      "position": {
+        "x": 28,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 535,
+      "agent_uid": "person",
+      "name": "Person #235",
+      "position": {
+        "x": 31,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 536,
+      "agent_uid": "person",
+      "name": "Person #236",
+      "position": {
+        "x": 21,
+        "y": 24
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 537,
+      "agent_uid": "person",
+      "name": "Person #237",
+      "position": {
+        "x": 30,
+        "y": 14
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 538,
+      "agent_uid": "person",
+      "name": "Person #238",
+      "position": {
+        "x": 2,
+        "y": 26
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 539,
+      "agent_uid": "person",
+      "name": "Person #239",
+      "position": {
+        "x": 32,
+        "y": 16
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 540,
+      "agent_uid": "person",
+      "name": "Person #240",
+      "position": {
+        "x": 11,
+        "y": 16
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 541,
+      "agent_uid": "person",
+      "name": "Person #241",
+      "position": {
+        "x": 17,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 542,
+      "agent_uid": "person",
+      "name": "Person #242",
+      "position": {
+        "x": 14,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 543,
+      "agent_uid": "person",
+      "name": "Person #243",
+      "position": {
+        "x": 31,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 544,
+      "agent_uid": "person",
+      "name": "Person #244",
+      "position": {
+        "x": 29,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 545,
+      "agent_uid": "person",
+      "name": "Person #245",
+      "position": {
+        "x": 22,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 546,
+      "agent_uid": "person",
+      "name": "Person #246",
+      "position": {
+        "x": 7,
+        "y": 30
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 547,
+      "agent_uid": "person",
+      "name": "Person #247",
+      "position": {
+        "x": 16,
+        "y": 5
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 548,
+      "agent_uid": "person",
+      "name": "Person #248",
+      "position": {
+        "x": 2,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 549,
+      "agent_uid": "person",
+      "name": "Person #249",
+      "position": {
+        "x": 6,
+        "y": 5
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 550,
+      "agent_uid": "person",
+      "name": "Person #250",
+      "position": {
+        "x": 40,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 551,
+      "agent_uid": "person",
+      "name": "Person #251",
+      "position": {
+        "x": 14,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 552,
+      "agent_uid": "person",
+      "name": "Person #252",
+      "position": {
+        "x": 39,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 553,
+      "agent_uid": "person",
+      "name": "Person #253",
+      "position": {
+        "x": 13,
+        "y": 4
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 554,
+      "agent_uid": "person",
+      "name": "Person #254",
+      "position": {
+        "x": 33,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 555,
+      "agent_uid": "person",
+      "name": "Person #255",
+      "position": {
+        "x": 26,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 556,
+      "agent_uid": "person",
+      "name": "Person #256",
+      "position": {
+        "x": 23,
+        "y": 30
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 557,
+      "agent_uid": "person",
+      "name": "Person #257",
+      "position": {
+        "x": 1,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 558,
+      "agent_uid": "person",
+      "name": "Person #258",
+      "position": {
+        "x": 2,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 559,
+      "agent_uid": "person",
+      "name": "Person #259",
+      "position": {
+        "x": 39,
+        "y": 5
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 560,
+      "agent_uid": "person",
+      "name": "Person #260",
+      "position": {
+        "x": 29,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 561,
+      "agent_uid": "person",
+      "name": "Person #261",
+      "position": {
+        "x": 31,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 562,
+      "agent_uid": "person",
+      "name": "Person #262",
+      "position": {
+        "x": 24,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 563,
+      "agent_uid": "person",
+      "name": "Person #263",
+      "position": {
+        "x": 16,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 564,
+      "agent_uid": "person",
+      "name": "Person #264",
+      "position": {
+        "x": 20,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 565,
+      "agent_uid": "person",
+      "name": "Person #265",
+      "position": {
+        "x": 11,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 566,
+      "agent_uid": "person",
+      "name": "Person #266",
+      "position": {
+        "x": 37,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 567,
+      "agent_uid": "person",
+      "name": "Person #267",
+      "position": {
+        "x": 22,
+        "y": 11
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 568,
+      "agent_uid": "person",
+      "name": "Person #268",
+      "position": {
+        "x": 15,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 569,
+      "agent_uid": "person",
+      "name": "Person #269",
+      "position": {
+        "x": 29,
+        "y": 26
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 570,
+      "agent_uid": "person",
+      "name": "Person #270",
+      "position": {
+        "x": 12,
+        "y": 16
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 571,
+      "agent_uid": "person",
+      "name": "Person #271",
+      "position": {
+        "x": 16,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 572,
+      "agent_uid": "person",
+      "name": "Person #272",
+      "position": {
+        "x": 17,
+        "y": 19
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 573,
+      "agent_uid": "person",
+      "name": "Person #273",
+      "position": {
+        "x": 33,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 574,
+      "agent_uid": "person",
+      "name": "Person #274",
+      "position": {
+        "x": 12,
+        "y": 30
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 575,
+      "agent_uid": "person",
+      "name": "Person #275",
+      "position": {
+        "x": 35,
+        "y": 17
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 576,
+      "agent_uid": "person",
+      "name": "Person #276",
+      "position": {
+        "x": 11,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 577,
+      "agent_uid": "person",
+      "name": "Person #277",
+      "position": {
+        "x": 40,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 578,
+      "agent_uid": "person",
+      "name": "Person #278",
+      "position": {
+        "x": 32,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 579,
+      "agent_uid": "person",
+      "name": "Person #279",
+      "position": {
+        "x": 36,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 580,
+      "agent_uid": "person",
+      "name": "Person #280",
+      "position": {
+        "x": 34,
+        "y": 12
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 581,
+      "agent_uid": "person",
+      "name": "Person #281",
+      "position": {
+        "x": 19,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 582,
+      "agent_uid": "person",
+      "name": "Person #282",
+      "position": {
+        "x": 18,
+        "y": 13
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 583,
+      "agent_uid": "person",
+      "name": "Person #283",
+      "position": {
+        "x": 39,
+        "y": 15
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 584,
+      "agent_uid": "person",
+      "name": "Person #284",
+      "position": {
+        "x": 25,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 585,
+      "agent_uid": "person",
+      "name": "Person #285",
+      "position": {
+        "x": 23,
+        "y": 9
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 586,
+      "agent_uid": "person",
+      "name": "Person #286",
+      "position": {
+        "x": 35,
+        "y": 23
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 587,
+      "agent_uid": "person",
+      "name": "Person #287",
+      "position": {
+        "x": 36,
+        "y": 10
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 588,
+      "agent_uid": "person",
+      "name": "Person #288",
+      "position": {
+        "x": 27,
+        "y": 20
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 589,
+      "agent_uid": "person",
+      "name": "Person #289",
+      "position": {
+        "x": 3,
+        "y": 21
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 590,
+      "agent_uid": "person",
+      "name": "Person #290",
+      "position": {
+        "x": 5,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 591,
+      "agent_uid": "person",
+      "name": "Person #291",
+      "position": {
+        "x": 18,
+        "y": 16
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 592,
+      "agent_uid": "person",
+      "name": "Person #292",
+      "position": {
+        "x": 17,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 593,
+      "agent_uid": "person",
+      "name": "Person #293",
+      "position": {
+        "x": 36,
+        "y": 6
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 594,
+      "agent_uid": "person",
+      "name": "Person #294",
+      "position": {
+        "x": 18,
+        "y": 7
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 595,
+      "agent_uid": "person",
+      "name": "Person #295",
+      "position": {
+        "x": 19,
+        "y": 18
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 596,
+      "agent_uid": "person",
+      "name": "Person #296",
+      "position": {
+        "x": 12,
+        "y": 25
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 597,
+      "agent_uid": "person",
+      "name": "Person #297",
+      "position": {
+        "x": 7,
+        "y": 3
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 598,
+      "agent_uid": "person",
+      "name": "Person #298",
+      "position": {
+        "x": 40,
+        "y": 29
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 599,
+      "agent_uid": "person",
+      "name": "Person #299",
+      "position": {
+        "x": 13,
+        "y": 22
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    },
+    {
+      "id": 600,
+      "agent_uid": "person",
+      "name": "Person #300",
+      "position": {
+        "x": 6,
+        "y": 8
+      },
+      "properties": {
+        "color": "#8B5CF6",
+        "has_exited": false
+      },
+      "state": ""
+    }
+  ],
+  "environment": {
+    "width": 48,
+    "height": 32,
+    "torus": false,
+    "collision_mode": "block",
+    "global_properties": {
+      "evacuated_count": 0
+    },
+    "shapes": [
+      {
+        "id": 1,
+        "shape_uid": "wall_north",
+        "name": "North wall",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 48,
+        "height": 1,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 2,
+        "shape_uid": "wall_south",
+        "name": "South wall",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 0,
+          "y": 31
+        },
+        "width": 48,
+        "height": 1,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 3,
+        "shape_uid": "wall_west",
+        "name": "West wall",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 0,
+          "y": 1
+        },
+        "width": 1,
+        "height": 30,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 4,
+        "shape_uid": "wall_east_upper",
+        "name": "Opening wall upper",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 41,
+          "y": 1
+        },
+        "width": 1,
+        "height": 10,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 5,
+        "shape_uid": "wall_east_lower",
+        "name": "Opening wall lower",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#555555"
+        },
+        "position": {
+          "x": 41,
+          "y": 21
+        },
+        "width": 1,
+        "height": 10,
+        "fill": true,
+        "stroke": false
+      },
+      {
+        "id": 6,
+        "shape_uid": "opening_zone",
+        "name": "Opening (4 m)",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#33cc33"
+        },
+        "position": {
+          "x": 41,
+          "y": 11
+        },
+        "width": 1,
+        "height": 10,
+        "fill": false,
+        "stroke": true
+      },
+      {
+        "id": 7,
+        "shape_uid": "removal_zone",
+        "name": "Removal zone",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": true,
+        "properties": {
+          "color": "#3366cc"
+        },
+        "position": {
+          "x": 44,
+          "y": 1
+        },
+        "width": 4,
+        "height": 30,
+        "fill": false,
+        "stroke": true
+      },
+      {
+        "id": 8,
+        "shape_uid": "room_zone",
+        "name": "Holding room region",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": false,
+        "properties": {
+          "color": "#eeeeee"
+        },
+        "position": {
+          "x": 1,
+          "y": 1
+        },
+        "width": 41,
+        "height": 30,
+        "fill": false,
+        "stroke": true
+      },
+      {
+        "id": 9,
+        "shape_uid": "spawn_zone",
+        "name": "Spawn region",
+        "type": "rectangle",
+        "layer": 1,
+        "visible": false,
+        "properties": {
+          "color": "#eeeeee"
+        },
+        "position": {
+          "x": 1,
+          "y": 1
+        },
+        "width": 40,
+        "height": 30,
+        "fill": false,
+        "stroke": true
+      }
+    ]
+  },
+  "widgets": [
+    {
+      "id": "people_remaining_monitor",
+      "type": "monitor",
+      "title": "People Remaining in Hall",
+      "source": {
+        "type": "population",
+        "agent_uids": [
+          "person"
+        ]
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      }
+    },
+    {
+      "id": "people_evacuated_monitor",
+      "type": "monitor",
+      "title": "People Evacuated",
+      "source": {
+        "type": "global_property",
+        "property_uid": "evacuated_count"
+      },
+      "position": {
+        "x": 0,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      }
+    },
+    {
+      "id": "evacuation_time_series",
+      "type": "line_chart",
+      "title": "Evacuation Progress Over Time",
+      "series": [
+        {
+          "label": "People Remaining",
+          "color": "#3366cc",
+          "source": {
+            "type": "population",
+            "agent_uids": [
+              "person"
+            ]
+          }
+        },
+        {
+          "label": "People Evacuated",
+          "color": "#dc3912",
+          "source": {
+            "type": "global_property",
+            "property_uid": "evacuated_count"
+          }
+        }
+      ],
+      "position": {
+        "x": 6,
+        "y": 0,
+        "w": 10,
+        "h": 5
+      }
+    }
+  ],
+  "status": "finished",
+  "status_text": "finished",
+  "status_history": [
+    {
+      "status": "ready",
+      "at": "2026-07-18T18:22:27.236Z",
+      "by": "dev.user"
+    },
+    {
+      "status": "generating",
+      "at": "2026-07-18T18:22:27.27Z",
+      "by": "dev.user"
+    },
+    {
+      "status": "ready",
+      "at": "2026-07-18T18:22:27.276Z",
+      "by": "system"
+    },
+    {
+      "status": "running",
+      "at": "2026-07-18T18:22:29.314Z",
+      "by": "system"
+    },
+    {
+      "status": "finished",
+      "at": "2026-07-18T18:23:14.507Z",
+      "by": "system"
+    }
+  ],
+  "generation_runs": [
+    {
+      "seq": 1,
+      "seed": 421,
+      "scope": {
+        "kind": "full"
+      },
+      "status": "completed",
+      "started_at": "2026-07-18T18:22:27.27Z",
+      "finished_at": "2026-07-18T18:22:27.276Z",
+      "requests": 0
+    }
+  ],
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_tokens": 0,
+      "calls": 0,
+      "latency_ms": 0
+    }
+  },
+  "execution_runs": [
+    {
+      "seq": 1,
+      "started_at": "2026-07-18T18:22:29.314Z",
+      "finished_at": "2026-07-18T18:23:14.507Z",
+      "steps_completed": 900,
+      "status": "finished",
+      "active_duration_ms": 45192,
+      "termination_reason": "max_steps"
+    }
+  ],
+  "statistics": {
+    "steps_completed": 900,
+    "total_agents": 3,
+    "population": [
+      {
+        "agent_uid": "person",
+        "current": 3,
+        "peak": 300,
+        "min": 3,
+        "spawned": 0,
+        "removed": 297
+      }
+    ],
+    "agents_spawned": 0,
+    "agents_removed": 297,
+    "interactions": 0,
+    "events": 0,
+    "rule_executions": 13006,
+    "movement_distance": 11524.712071536202,
+    "by_rule": [
+      {
+        "rule_id": "exit_when_at_door",
+        "executions": 297
+      },
+      {
+        "rule_id": "walk_out",
+        "executions": 511
+      },
+      {
+        "rule_id": "walk_to_opening",
+        "executions": 12198
+      }
+    ]
+  },
+  "current_step": 900,
+  "created_at": "2026-07-18T18:22:27.236Z",
+  "created_by": "dev.user",
+  "updated_at": "2026-07-18T18:23:14.507Z",
+  "updated_by": "dev.user",
+  "started_at": "2026-07-18T18:22:29.314Z",
+  "finished_at": "2026-07-18T18:23:14.507Z",
+  "model_snapshot": {
+    "name": "exp-B4-flow",
+    "description": "EXP-B stretch Test 4 / V9 (30-model-spec.md \u00a78): 16x12 m holding room feeding a 4.0 m (10-cell) opening; assigned speed 1.10 m/s = 0.825 cells/step; density measured in a 4x2 m rectangle upstream; specific flow vs density curve vs RiMEA reference points. N varied 50/150/300 between batteries.",
+    "is_spatial": true,
+    "agents": [
+      {
+        "uid": "person",
+        "name": "Person",
+        "type": "agent",
+        "move_type": "movable",
+        "properties": [
+          {
+            "uid": "has_exited",
+            "name": "Has exited",
+            "type": "boolean",
+            "description": "True if the visitor has exited through the door.",
+            "default_value": false,
+            "immutable": false
+          },
+          {
+            "uid": "color",
+            "name": "color",
+            "type": "color",
+            "default_value": "#8B5CF6",
+            "immutable": false
+          }
+        ],
+        "initialization": {
+          "population_count": 300,
+          "count_mode": "fixed",
+          "placement": {
+            "type": "at_shape",
+            "shape_uid": "spawn_zone"
+          }
+        },
+        "footprint": {
+          "kind": "circle",
+          "radius": 0.5
+        }
+      }
+    ],
+    "environment": {
+      "uid": "environment",
+      "width": 48,
+      "height": 32,
+      "torus": false,
+      "collision_mode": "block",
+      "global_properties": [
+        {
+          "uid": "evacuated_count",
+          "name": "Evacuated Count",
+          "type": "number",
+          "description": "Total number of visitors who have exited.",
+          "default_value": 0,
+          "immutable": false
+        }
+      ],
+      "shapes": [
+        {
+          "uid": "wall_north",
+          "name": "North wall",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "width": {
+              "value": 48
+            },
+            "height": {
+              "value": 1
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "wall_south",
+          "name": "South wall",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 0,
+              "y": 31
+            },
+            "width": {
+              "value": 48
+            },
+            "height": {
+              "value": 1
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "wall_west",
+          "name": "West wall",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 0,
+              "y": 1
+            },
+            "width": {
+              "value": 1
+            },
+            "height": {
+              "value": 30
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "wall_east_upper",
+          "name": "Opening wall upper",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 41,
+              "y": 1
+            },
+            "width": {
+              "value": 1
+            },
+            "height": {
+              "value": 10
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "wall_east_lower",
+          "name": "Opening wall lower",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#555555",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 41,
+              "y": 21
+            },
+            "width": {
+              "value": 1
+            },
+            "height": {
+              "value": 10
+            },
+            "fill": true,
+            "stroke": false
+          }
+        },
+        {
+          "uid": "opening_zone",
+          "name": "Opening (4 m)",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#33cc33",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 41,
+              "y": 11
+            },
+            "width": {
+              "value": 1
+            },
+            "height": {
+              "value": 10
+            },
+            "fill": false,
+            "stroke": true
+          }
+        },
+        {
+          "uid": "removal_zone",
+          "name": "Removal zone",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": true,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#3366cc",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 44,
+              "y": 1
+            },
+            "width": {
+              "value": 4
+            },
+            "height": {
+              "value": 30
+            },
+            "fill": false,
+            "stroke": true
+          }
+        },
+        {
+          "uid": "room_zone",
+          "name": "Holding room region",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": false,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#eeeeee",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 1,
+              "y": 1
+            },
+            "width": {
+              "value": 41
+            },
+            "height": {
+              "value": 30
+            },
+            "fill": false,
+            "stroke": true
+          }
+        },
+        {
+          "uid": "spawn_zone",
+          "name": "Spawn region",
+          "type": "rectangle",
+          "layer": 1,
+          "visible": false,
+          "properties": [
+            {
+              "uid": "color",
+              "name": "Color",
+              "type": "color",
+              "default_value": "#eeeeee",
+              "immutable": false
+            }
+          ],
+          "initialization": {
+            "population_count": 1
+          },
+          "geometry": {
+            "position": {
+              "x": 1,
+              "y": 1
+            },
+            "width": {
+              "value": 40
+            },
+            "height": {
+              "value": 30
+            },
+            "fill": false,
+            "stroke": true
+          }
+        }
+      ]
+    }
+  },
+  "validation": {
+    "errors": null,
+    "warnings": null,
+    "start_ready": true
+  }
+}

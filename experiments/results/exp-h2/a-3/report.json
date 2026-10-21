@@ -1,0 +1,83 @@
+{
+  "arm": "A",
+  "generator": "harness-replica (harness/exph2_ablate.py)",
+  "evidence_mode": "model_only",
+  "report_no": 3,
+  "simulation_id": "6a5bc249c44d001ef3af684d",
+  "name": "EXP-H2 A report 3",
+  "context_message": "Analyze this simulation's results. Context: 150 people move out of a building section consisting of two rooms connected by a corridor. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini",
+    "max_completion_tokens": 16000
+  },
+  "status": "completed",
+  "report": {
+    "sections": [
+      {
+        "key": "dynamics",
+        "title": "Population & Property Dynamics",
+        "narrative": "The model begins with 150 Person agents concentrated in Room 1, connected via a 1.2 m doorway to a corridor and then to Room 2 and an exit. The specification notes this narrow door functions as a bottleneck, intended to localize congestion upstream (zone‐1) relative to downstream (zone‐2).\n\nNo aggregated time‐series of agent counts, per‐step evacuated_count, or zone occupancies were provided in the evidence. Consequently, it is not possible to quantify evacuation phases, identify oscillations or tipping points, or measure the rate at which agents transition between zones or exit the environment.",
+        "key_findings": [
+          "Initial population of 150 agents located entirely in Room 1 at simulation start (step 0).",
+          "1.2 m door between Room 1 and corridor serves as the primary flow‐limiting bottleneck, expected to produce zone‐1 congestion ≫ zone‐2.",
+          "Absence of provided time series (evacuated_count, zone occupancies) precludes quantitative analysis of evacuation dynamics."
+        ],
+        "causal_links": [],
+        "emergent_phenomena": []
+      },
+      {
+        "key": "spatial",
+        "title": "Spatial & Interaction Patterns",
+        "narrative": "The provided evidence includes model structure and run configuration but lacks any recorded spatial metrics or occupancy time‐series by zone or agent positions. Without per‐step spatial distributions or aggregated zone occupancies, we cannot characterize clustering, bottleneck congestion profiles, or formation of queues in front of the door or corridor. Consequently, no quantitative patterns of aggregation or dispersion can be reliably inferred.\n\nKey spatial features of the two‐room plus corridor layout (Room 1 → door → corridor → Room 2 → exit) are described in the model, but the run output does not include occupancy counts by area, density heatmaps, proximity interactions, or path trajectories for the 150 agents. Thus, the typical local congestion upstream of the 1.2 m door and in the 2 m corridor cannot be confirmed from the provided data. Any statement about queue formation, territory effects, or segregation would be speculative.\n\nIn the absence of spatial and interaction data, no causal relationships between layout geometry and evacuation flow can be established, nor can we identify emergent system‐level behaviors such as self‐organized lane formation or clogging dynamics. Future data collection should include zone‐based occupancy time series or distance‐based proximity counts to enable spatial pattern analysis.",
+        "key_findings": [],
+        "causal_links": [],
+        "emergent_phenomena": []
+      },
+      {
+        "key": "emergence",
+        "title": "exp-B12-bottleneck: Emergent Behavior & Causal Relationships",
+        "narrative": "The provided evidence includes only the model specification and run metadata; no aggregated time series or occupancy statistics are available to analyze the dynamics quantitatively. Without snapshots or time‐series data on zone occupancies, flow rates through the 1.2 m door and corridor, or evacuated counts over time, we cannot confirm where and when congestion emerged or how the evacuation unfolded step by step. Consequently, emergent patterns such as queuing at the bottleneck, oscillatory release through the door, or phase transitions from free flow to jammed conditions cannot be substantiated from the given information.",
+        "key_findings": [],
+        "causal_links": [],
+        "emergent_phenomena": []
+      }
+    ],
+    "executive_summary": "This simulation modeled the evacuation of 150 agents initially concentrated in Room 1, funneling through a 1.2 m doorway into a corridor, then into Room 2 and out an exit. The narrow door was intended as the primary flow‐limiting bottleneck to induce upstream congestion. However, the run output lacked any time‐series or spatial occupancy data—no evacuated counts per step, zone occupancies, density measures, or agent trajectories—so quantitative characterization of evacuation phases, flow rates, or emergent queuing patterns is not possible.",
+    "conclusions": [
+      "150 agents began in Room 1 and all must pass through a single 1.2 m bottleneck door to exit.",
+      "The model’s spatial layout (Room 1 → door → corridor → Room 2 → exit) is appropriate for generating bottleneck effects, but no empirical flow data were recorded.",
+      "Absence of per‐step evacuated_count and zone‐based occupancy time series prevents measurement of evacuation rate, phase transitions, or tipping points.",
+      "Without spatial or interaction metrics, clustering, queue formation, and corridor congestion remain unverified and any emergent behaviors (e.g. oscillations or lane formation) cannot be substantiated.",
+      "The current output supports only structural and configurational verification, not dynamic outcome analysis."
+    ],
+    "recommendations": [
+      "Instrument the model to record per‐step evacuated_count and occupancy counts for each zone to quantify evacuation dynamics.",
+      "Log agent positions or aggregate density heatmaps at regular intervals to characterize spatial congestion and queue formation.",
+      "Compute and export flow‐rate metrics through the 1.2 m door (agents per time step) to identify bottleneck capacity and phase transitions.",
+      "Perform parameter sweeps on door width and corridor length to evaluate sensitivity of congestion and evacuation time to geometry.",
+      "Run multiple replicates and aggregate results to reduce stochastic variability and enable statistical analysis of emergent behaviors."
+    ]
+  },
+  "warnings": [],
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 3242,
+      "completion_tokens": 3380,
+      "reasoning_tokens": 2240,
+      "total_tokens": 6622,
+      "calls": 4
+    },
+    "by_model": [
+      "o4-mini-2025-04-16"
+    ]
+  },
+  "requests": 4,
+  "http_attempts": 4,
+  "failed_attempts": 0,
+  "created_at": "2026-09-23T18:56:10.683Z",
+  "finished_at": "2026-09-23T18:56:56.797Z",
+  "wall_clock_ms": 46113,
+  "cost_usd_engine_equivalent": 0.018438
+}

@@ -1,0 +1,91 @@
+{
+  "arm": "A",
+  "generator": "harness-replica (harness/exph2_ablate.py)",
+  "evidence_mode": "model_only",
+  "report_no": 8,
+  "simulation_id": "6a634dbf4ccaa6983a640151",
+  "name": "EXP-H2 A report 8",
+  "context_message": "Analyze this simulation's results. Context: Fire spreads through a forest of trees. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini",
+    "max_completion_tokens": 16000
+  },
+  "status": "completed",
+  "report": {
+    "sections": [
+      {
+        "key": "dynamics",
+        "title": "Population & Property Dynamics",
+        "narrative": "The provided evidence contains model configuration and run metadata but does not include any aggregated time‐series data on agent counts or property values. As such, key metrics like the number of burning, unburned, or burned‐out trees over time are not available for analysis. Without this data, dynamics such as spread phases, peak fire intensity, or equilibrium states cannot be quantified or described.",
+        "key_findings": [],
+        "causal_links": [],
+        "emergent_phenomena": []
+      },
+      {
+        "key": "spatial",
+        "title": "Spatial & Interaction Patterns",
+        "narrative": "The simulation unfolds on a 61×61 non-toroidal grid where fire initiates along the leftmost column of unburned trees and propagates orthogonally. As each burning tree transitions to ash, it leaves behind a contiguous burned region. The synchronous update mode yields a sharply defined fire front advancing step by step across the forest.\n\nBecause burned trees cannot reignite, the ash boundary permanently demarcates the burned area from the remaining unburned trees. Fire ceases when no burning agents remain, resulting in a clear spatial separation: a broad region of ash on the left and unburned trees on the right, with the wave-like front marking the final extent of spread.",
+        "key_findings": [
+          "Fire spreads as an orthogonal wave from the left edge across the 61×61 grid.",
+          "Burned trees transition to ash permanently, creating a contiguous burned region.",
+          "No torus wrapping restricts fire cessation at the grid’s boundaries.",
+          "Synchronous updates produce a distinct, uniform front of burning trees.",
+          "Simulation ends once the orthogonal propagation can no longer reach unburned trees."
+        ],
+        "causal_links": [
+          "Orthogonal spread rule → wave-like propagation front advancing one cell per synchronous step.",
+          "Non-toroidal boundary → fire halts upon reaching the grid’s right edge.",
+          "Burned-out state prohibits reignition → permanent ash boundary formation."
+        ],
+        "emergent_phenomena": [
+          "A self-organized, planar burn front separating unburned forest and ash emerges from simple local spread rules.",
+          "Complete conversion of the left-side forest to ash with no isolated pockets of unburned trees behind the front."
+        ]
+      },
+      {
+        "key": "emergence",
+        "title": "Emergent Behavior & Causal Relationships: exp-F-fire-reference-61",
+        "narrative": "The simulation implements a synchronous forest-fire model on a 61×61 grid with a global tree_density parameter and three archetypes: unburned trees, burning trees, and burned-out ash. Fire is seeded along the left edge and propagates orthogonally until no burning trees remain. No aggregated time-series or summary statistics were provided, so quantitative dynamics such as fire front speed, peak burning fraction, or total burn area cannot be derived from the available evidence.\n\nIn the absence of temporal data, we cannot confirm specific phase transitions or threshold effects. However, the model structure suggests that at sufficient tree density the system would exhibit a spanning fire event (percolation), whereas at lower densities fires would self-extinguish after limited spread. Without measured outputs, causal chains linking local ignition, neighbor infection, and eventual burnout remain conceptual rather than empirical.",
+        "key_findings": [],
+        "causal_links": [],
+        "emergent_phenomena": []
+      }
+    ],
+    "executive_summary": "In this exp-F-p0.70-rep1 simulation, a synchronous forest-fire model on a 61×61 non-toroidal grid with 70% tree density exhibits a clear, planar burn front that advances orthogonally from the left edge until the fire reaches the grid’s right boundary. As each burning tree turns to irreversible ash, a contiguous burned region emerges, and no reignition events occur behind the front. Without time-series outputs, quantitative metrics such as front-propagation speed, peak burning fraction, and total burned area cannot be directly measured, but the spatial patterning and final state are unambiguous.\n\nThe behavior demonstrates classic percolation dynamics at high density: a spanning fire event under simple local spread rules. The synchronous update ensures uniform wave-like spread, and the non-toroidal boundary stops the fire cleanly at the far edge without wrapping. While emergent phenomena such as a self-organized planar front and complete left-to-right conversion are evident, lack of aggregated data limits deeper dynamic analysis.",
+    "conclusions": [
+      "The fire spreads as a uniform orthogonal wave advancing one grid cell per synchronous time step, creating a planar burn front.",
+      "At 70% tree density the fire percolates across the entire 61×61 grid, yielding complete left-to-right burn without isolated unburned pockets behind the front.",
+      "Burned trees transition permanently to ash, forming a contiguous burned region that demarcates once-burned areas from surviving trees.",
+      "Non-toroidal boundaries halt the fire at the grid’s right edge, preventing wrap-around spread and simplifying final spatial patterns."
+    ],
+    "recommendations": [
+      "Instrument the model to record time-series counts of unburned, burning, and burned-out trees at each step to quantify front speed and peak fire intensity.",
+      "Compute and log spatial metrics (e.g., burn-area fraction, front curvature) to enable quantitative comparison across density settings.",
+      "Perform density sweeps around the 70% threshold (e.g., 60%–80%) to empirically identify the percolation transition and critical behavior.",
+      "Test asynchronous update modes or introduce stochastic update ordering to assess sensitivity of the burn front’s shape and speed.",
+      "Incorporate tree regrowth or probabilistic reignition rules to explore resilience and post-fire recovery dynamics."
+    ]
+  },
+  "warnings": [],
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 3207,
+      "completion_tokens": 3068,
+      "reasoning_tokens": 1856,
+      "total_tokens": 6275,
+      "calls": 4
+    },
+    "by_model": [
+      "o4-mini-2025-04-16"
+    ]
+  },
+  "requests": 4,
+  "http_attempts": 4,
+  "failed_attempts": 0,
+  "created_at": "2026-09-23T19:06:43.818Z",
+  "finished_at": "2026-09-23T19:07:16.740Z",
+  "wall_clock_ms": 32921,
+  "cost_usd_engine_equivalent": 0.017027
+}

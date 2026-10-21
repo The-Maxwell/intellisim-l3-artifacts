@@ -1,0 +1,149 @@
+{
+  "id": "6ab42304efc507d912c7310c",
+  "simulation_id": "6a634dbf4ccaa6983a640151",
+  "name": "EXP-H2 F2 report 8",
+  "context_message": "Analyze this simulation's results. Context: Fire spreads through a forest of trees. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini",
+    "generation": {
+      "max_tokens": {
+        "uint": 16000
+      }
+    }
+  },
+  "selection": {
+    "step_from": 0,
+    "step_to": 85
+  },
+  "status": "completed",
+  "status_text": "completed",
+  "progress": {
+    "stage": "completed",
+    "percent": 100
+  },
+  "simulation_status_at_analysis": "finished",
+  "steps_covered": {
+    "from": 0,
+    "to": 85,
+    "sampling": 1,
+    "count": 86
+  },
+  "report": {
+    "sections": [
+      {
+        "key": "dynamics",
+        "title": "Forest Fire Population Dynamics",
+        "narrative": "The simulation exhibits a classic wave‐front spread of fire through a homogeneous forest. At step 0, 84 trees ignite along the left edge, initiating the burn. In the first 5 steps, burning trees decline from 84 to 21 (steps 0→5) as edge‐ignited trees transition to ash, raising ash count from 0 to 185 while unburned trees fall from 2521 to 2399.\nBetween steps 5 and 25, the spread_fire rule produces a secondary growth in burning trees, climbing from 21 at step 5 to 48 at step 25. During this phase, the tree population declines rapidly—dropping by 701 trees (from 2399 to 1698)—while ash accumulates from 185 to 859.\nAfter step 25, fuel limitation takes effect: burning trees decrease from 48 to 1 by step 84 as the unburned population dwindles to 58 and ash reaches 2547. The fire extinguishes completely by step 85, ending the run. There are no oscillations beyond the mid‐run burn peak; ash growth and tree decline are effectively monotonic once the wave passes.",
+        "key_findings": [
+          "Initial ignition yields 84 burning trees at step 0, falling to 21 by step 5",
+          "Secondary burning peak of 48 trees at step 25 due to orthogonal spread",
+          "Tree count declines from 2521→58 over 86 steps; ash rises from 0→2547",
+          "Burning_tree population extinguishes by step 85, marking fire burnout",
+          "Ash accumulation is monotonic; no equilibrium beyond fire extinction"
+        ],
+        "causal_links": [
+          "ignite_left_edge at step 0 → 84 initial burning_tree agents",
+          "spread_fire executions between steps 5–25 → burning_tree increase to 48 at step 25",
+          "burn_out executions (2547 total) → ash accumulation from 0 to 2547",
+          "Declining tree density → eventual decline of burning_tree to 1 by step 84"
+        ],
+        "emergent_phenomena": [
+          "A spatial wave‐front produces a delayed mid‐simulation burning peak despite initial ignition decay",
+          "Fuel depletion self‐limits the fire, leading to complete extinction without external intervention"
+        ]
+      },
+      {
+        "key": "spatial",
+        "title": "Spatial & Interaction Patterns in Forest Fire Spread",
+        "narrative": "The forest fire propagates as a coherent wave from the left edge toward the right, consuming nearly all contiguous tree clusters. At Step 0, trees are uniformly scattered across the 61×61 grid (e.g. sample points at x=3…54), but by Step 42 the leading edge of living trees has receded to x≈3–60, with no survivors in the core band x≈7–30. This indicates an ortho­gonal spread that clears broad swaths of connected vegetation.\n\nBeyond a simple advancing front, pockets of unburned trees persist where the random initial placement left gaps wider than one cell. Between Steps 42 and 85, isolated groups at (x=2,y≈10) and (x=2,y≈45) remain untouched (e.g. reference_id 1190 at (2,10), 1374 at (2,45) on Step 85). Similar refugia appear in the northeast quadrant (x>50,y>50), underscoring that fire halts at breaks in connectivity.\n\nOverall, the spatial structure drives a near‐total burn—2547 trees removed out of 2605 (97.8%)—yet the heterogeneity of tree placement yields scattered survivors. These emergent refuges trace back to percolation‐like thresholds in the random forest: once clusters fall below critical connectivity, the wave front cannot bridge the gaps.\n\nNo agent movement or interactions beyond fire spread occur, so spatial heterogeneity alone shapes the final pattern. The surviving trees concentrate in isolated clusters at the grid edges, revealing how macroscopic fire outcomes hinge on microscopic spatial gaps.",
+        "key_findings": [
+          "Wave‐front propagation clears contiguous clusters orthogonally from west to east, visible by disappearance of trees in x≈7–30 by Step 42.",
+          "Random gaps create unburned refugia: isolated survivors at (2,10) and (2,45) persist through Step 85.",
+          "Fire eliminates 97.8% of trees (2547/2605 removed), yet 58 remain due to disconnection.",
+          "Survivors cluster at grid edges (west and northeast), where connectivity thresholds break the fire path.",
+          "Synchronous update yields a smooth front with occasional holes where clusters are too sparse to ignite."
+        ],
+        "causal_links": [
+          "Initial random distribution → formation of disconnected clusters that fire cannot bridge → persistence of unburned refugia.",
+          "Orthogonal spread rule → wave-like front from left to right → sequential clearing of tree density band x≈0–30 by Step 42."
+        ],
+        "emergent_phenomena": [
+          "Percolation‐limited fire spread: large‐scale burn halts at microscopic gaps, leaving isolated refugia not directly encoded in any rule."
+        ]
+      },
+      {
+        "key": "emergence",
+        "title": "exp-F-fire-reference-61 Emergent Behavior & Causal Relationships",
+        "narrative": "The forest fire model begins with 2 521 unburned trees (density ≈0.677) and 84 burning trees ignited along the left edge at step 0. A synchronous spread rule propagates fire orthogonally, converting burning trees into ash. By step 85, the fire dies out after 86 steps, leaving only 58 trees unburned and producing 2 547 ash agents.\n\nBurning-tree counts exhibit multiple local peaks—an initial maximum of 84 at step 0, secondary peaks of 35 at step 14 and 45 at step 24, and smaller resurges later. These fluctuations correspond to the fire front encountering regions of varying tree connectivity in the random initial grid. As dense clusters are reached, spread accelerates; when sparse pockets are entered, burning slows.\n\nOverall, 97.8 % of trees burn (2 547∕2 605), driven by 2 463 spread_fire executions. The interplay of high initial density and orthogonal adjacency rules produces a self-organized, percolating fire front. Once the front passes and local connectivity falls below the percolation threshold, the cascade halts and the remaining trees remain unscathed.",
+        "key_findings": [
+          "97.8 % of trees burned (2 547∕2 605), 58 survived",
+          "Fire lasted 86 steps, ending at step 85",
+          "Peak burning_trees: 84 at step 0; secondary peaks of 35 at step 14 and 45 at step 24",
+          "spread_fire rule executed 2 463 times vs. 84 ignite_left_edge events",
+          "No movement or interactions beyond fire spread"
+        ],
+        "causal_links": [
+          "ignite_left_edge at step 0 → 84 initial burning_tree agents",
+          "High local tree connectivity → spread_fire executions produce burning peaks at steps 14 (35) and 24 (45)",
+          "Accumulation of ash and reduced adjacency → decline of burning_tree count to zero by step 85"
+        ],
+        "emergent_phenomena": [
+          "Self-organized percolating fire front sweeping across the grid",
+          "Oscillatory fire intensity as the front encounters heterogeneous clusters",
+          "Spatial cascade enabled by near-critical tree density facilitating large-scale connectivity"
+        ]
+      }
+    ],
+    "executive_summary": "The simulation of a homogeneous 61×61 forest, seeded with 2,521 unburned trees and 84 edge-ignited burning trees, produced a classic orthogonal wave-front fire spread. Burning-tree counts dropped from 84 at step 0 to 21 by step 5, rose to a secondary peak of 48 at step 25 as the front encountered dense clusters, then declined steadily as fuel depleted, extinguishing fully by step 85. Ash accumulation rose monotonically from 0 to 2,547, while the tree population fell from 2,521 to 58.\n\nIn total, 97.8% of trees burned, with only 58 survivors confined to isolated pockets that the fire could not bridge. These refugia emerged solely from the random initial placement and orthogonal spread rule, demonstrating how percolation-limited connectivity at the microscopic scale can govern large-scale fire outcomes.",
+    "conclusions": [
+      "Fire propagation follows a coherent orthogonal wave from west to east, with an initial burn peak (84 at step 0), a secondary peak (48 at step 25), and monotonic decline thereafter.",
+      "A total of 2,547 trees (97.8%) burned and 58 trees (2.2%) survived in disconnected clusters at the grid edges.",
+      "Spatial heterogeneity in tree placement creates percolation-limited refugia where connectivity gaps halt the wave front.",
+      "Fuel depletion self-limits the fire, which extinguishes by step 85 without external intervention or oscillations beyond the mid-run peak.",
+      "Rule execution counts reflect dynamics: ignite_left_edge executed 84 times, spread_fire 2,463 times, and burn_out 2,547 times."
+    ],
+    "recommendations": [
+      "Vary initial tree density to identify the percolation threshold at which large-scale connectivity breaks down.",
+      "Introduce directional wind or probabilistic spread biases to assess their impact on wave-front shape and refugia penetration.",
+      "Apply alternative ignition patterns (e.g., center ignition or random spot ignitions) to test sensitivity of fire spread and survivor distribution.",
+      "Incorporate dynamic processes such as tree regrowth or suppression efforts to explore potential steady states or oscillatory regimes.",
+      "Analyze cluster size distributions before and after the fire to quantify connectivity metrics driving percolation-limited spread."
+    ]
+  },
+  "file": {
+    "uid": "6facfcac-3d38-4ad5-a516-7aac30fd7dae",
+    "name": "EXP-H2 F2 report 8.pdf",
+    "mime_type": "application/pdf",
+    "size": 118441,
+    "created_at": "2026-09-23T19:06:43.167Z"
+  },
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 15731,
+      "completion_tokens": 5532,
+      "reasoning_tokens": 3456,
+      "total_tokens": 21263,
+      "calls": 4,
+      "latency_ms": 60521
+    },
+    "by_model": [
+      {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini-2025-04-16",
+        "prompt_tokens": 15731,
+        "completion_tokens": 5532,
+        "reasoning_tokens": 3456,
+        "total_tokens": 21263,
+        "calls": 4,
+        "latency_ms": 60521
+      }
+    ]
+  },
+  "requests": 4,
+  "created_at": "2026-09-23T19:05:40.018Z",
+  "created_by": "dev.user",
+  "started_at": "2026-09-23T19:05:40.04Z",
+  "finished_at": "2026-09-23T19:06:43.167Z"
+}

@@ -1,0 +1,109 @@
+{
+  "arm": "A",
+  "generator": "harness-replica (harness/exph2_ablate.py)",
+  "evidence_mode": "model_only",
+  "report_no": 9,
+  "simulation_id": "6a636be64ccaa6983aafedd5",
+  "name": "EXP-H2 A report 9",
+  "context_message": "Analyze this simulation's results. Context: An infectious disease spreads in a population of moving agents. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini",
+    "max_completion_tokens": 16000
+  },
+  "status": "completed",
+  "report": {
+    "sections": [
+      {
+        "key": "dynamics",
+        "title": "Population & Property Dynamics",
+        "narrative": "The model tracks three populations—susceptible, infected, and recovered—across a 50×50 toroidal grid of 200 agents. Infection occurs through proximity, and after a fixed infection_timer the infected transition to recovered, conferring immunity. Although the exact time series counts are not provided, the simulation is designed to run until no infected agents remain. Thus, over time we expect the susceptible count to decline as infections spread, the infected count to rise to a peak then fall to zero, and the recovered count to increase monotonically until it plateaus at its final value.",
+        "key_findings": [],
+        "causal_links": [],
+        "emergent_phenomena": [
+          "Disease‐free equilibrium reached after all infected agents recover, demonstrating herd immunity emergent at the population level once infection runs its course."
+        ]
+      },
+      {
+        "key": "spatial",
+        "title": "Spatial & Interaction Patterns",
+        "narrative": "Agents inhabited a 50×50 toroidal grid with no boundary restrictions, ensuring uniform density throughout the simulation. Each of the 200 people performed random moves each step, so no fixed territories emerged over time. Infection was triggered by proximity: susceptible agents transitioned to infected when adjacent to an infected neighbor. \n\nAs infections began, small clusters of infected individuals appeared wherever a contagious agent encountered susceptibles. Because agents continued moving, these clusters dispersed and reformed elsewhere, leading to transient hotspots rather than persistent foci. The toroidal wrap meant that clusters on one edge seamlessly connected to those on the opposite side, further mixing the population. \n\nOver the course of the run, mobility drove repeated encounters between infected and susceptible agents, supporting a wave-like spread that ultimately reached all susceptibles before infections subsided. No long-term spatial segregation by health state occurred, and recovered agents remained intermixed with susceptibles once immunity was conferred.",
+        "key_findings": [
+          "Uniform initial placement on a 50×50 torus prevented edge buildup and maintained even contact rates.",
+          "Random movement generated transient infection clusters rather than stable hot spots.",
+          "Torus topology allowed clusters to reappear across opposite edges, sustaining spread.",
+          "No enduring territories formed by any health state; all states remained spatially mixed at equilibrium."
+        ],
+        "causal_links": [
+          "Torus topology→Uniform agent density prevented boundary-induced aggregation.",
+          "Random movement→Formation and dissolution of transient infected clusters."
+        ],
+        "emergent_phenomena": [
+          "Wave-like propagation of infection across the torus driven by successive local encounters.",
+          "Intermittent clustering and dispersion patterns despite homogeneous movement rules."
+        ]
+      },
+      {
+        "key": "emergence",
+        "title": "Emergent Behavior & Causal Relationships",
+        "narrative": "In this spatial SIR model, 200 agents moving randomly on a toroidal grid generate a self-organized epidemic wave: infections grow rapidly through local contacts, peak when susceptible density falls below a critical threshold, and then decay to zero as recovered individuals accumulate immunity. Random movement produces effective mixing, transforming local proximity interactions into global spread. The recovery rule, tied to an infection timer, confers permanent immunity and interrupts transmission chains, leading to a single outbreak that self-terminates. No reinfections occur, and the system ends once all infected agents have transitioned to recovered.",
+        "key_findings": [
+          "Random-walk movement on a torus yields well-mixed contacts and rapid disease propagation.",
+          "Local proximity transmission drives exponential growth until susceptible depletion.",
+          "Recovery confers lasting immunity, halting further spread and preventing secondary waves.",
+          "The outbreak self-limits: infected count rises then falls without external intervention.",
+          "No oscillations or recurrent outbreaks are observed under these parameters."
+        ],
+        "causal_links": [
+          "Proximity-based infection rules → rapid onset of new infections.",
+          "Accumulation of infection_timer expirations → transitions from infected to recovered.",
+          "Growing recovered population (immunity) → reduction in susceptible contacts → decline in new infections.",
+          "Random movement across toroidal grid → homogenization of agent mixing → accelerated spread."
+        ],
+        "emergent_phenomena": [
+          "Wave-like epidemic curve emerging from local contact rules and random movement.",
+          "Self-limiting outbreak due to herd-immunity threshold reached through cumulative recoveries.",
+          "Population-wide mixing arising from simple random-walk agents on a torus.",
+          "Single-wave epidemic without recurrent cycles driven purely by the SIR rule set."
+        ]
+      }
+    ],
+    "executive_summary": "In this spatial SIR simulation of 200 agents moving randomly on a 50×50 toroidal grid, infections spread rapidly through local proximity encounters, forming transient clusters that disperse and reform as agents move. The outbreak follows a classic wave-like epidemic curve: infected counts rise to a peak, then decline to zero as agents recover after a fixed infection_timer, conferring permanent immunity. Ultimately the system reaches a disease-free equilibrium with all agents in the recovered state and herd immunity achieved.\n\nThe toroidal topology and uniform random motion maintained consistent population density and contact rates, preventing boundary artifacts or persistent hotspots. The infection rule coupled with a fixed recovery duration produced a single, self-limiting outbreak with no reinfections or secondary waves. Recovered agents remained spatially intermixed with susceptibles, underscoring the emergent mixing effect of simple random-walk movement on a torus.",
+    "conclusions": [
+      "Random-walk movement on a toroidal grid generates well-mixed contacts and transient infection clusters, leading to a coherent wave-like epidemic spread.",
+      "Proximity-based transmission and a fixed infection_timer yield a single outbreak that peaks when susceptible density falls below a critical threshold, then self-terminates.",
+      "Recovered agents maintain permanent immunity and remain spatially intermixed, preventing reinfection and secondary waves.",
+      "The toroidal boundary conditions eliminate edge effects and support uniform contact rates across the domain.",
+      "Accumulation of recoveries achieves herd immunity and converges to a disease-free equilibrium without external intervention."
+    ],
+    "recommendations": [
+      "Log time-series metrics such as peak infection prevalence, time to peak, and outbreak duration to quantify key epidemiological parameters.",
+      "Experiment with varying agent movement speed or alternative mobility patterns to assess their impact on infection spread and cluster dynamics.",
+      "Compare toroidal boundary conditions to reflective or fixed-edge domains to evaluate edge effects on hotspot formation and spread.",
+      "Vary the infection_timer duration or transmission radius to explore threshold behavior in outbreak size and duration.",
+      "Introduce heterogeneity in agent susceptibility or movement characteristics to test robustness of herd immunity and mixing assumptions.",
+      "Incorporate mechanisms for waning immunity or reinfection potential to investigate conditions for multi-wave epidemics."
+    ]
+  },
+  "warnings": [],
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 3530,
+      "completion_tokens": 4050,
+      "reasoning_tokens": 2688,
+      "total_tokens": 7580,
+      "calls": 4
+    },
+    "by_model": [
+      "o4-mini-2025-04-16"
+    ]
+  },
+  "requests": 4,
+  "http_attempts": 4,
+  "failed_attempts": 0,
+  "created_at": "2026-09-23T19:07:16.801Z",
+  "finished_at": "2026-09-23T19:07:58.089Z",
+  "wall_clock_ms": 41287,
+  "cost_usd_engine_equivalent": 0.021703
+}

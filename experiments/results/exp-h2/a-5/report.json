@@ -1,0 +1,103 @@
+{
+  "arm": "A",
+  "generator": "harness-replica (harness/exph2_ablate.py)",
+  "evidence_mode": "model_only",
+  "report_no": 5,
+  "simulation_id": "6a6380584ccaa6983ac7ea1c",
+  "name": "EXP-H2 A report 5",
+  "context_message": "Analyze this simulation's results. Context: People are evacuating a room through one door; some agent decisions during the run are made by a language model. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini",
+    "max_completion_tokens": 16000
+  },
+  "status": "completed",
+  "report": {
+    "sections": [
+      {
+        "key": "dynamics",
+        "title": "Population & Property Dynamics",
+        "narrative": "The evacuation model instantiates 100 Person agents on a 40×40 grid with a single 3-cell door on the east wall. Each agent has a boolean property “has_exited,” and the environment tracks a numeric global property “evacuated_count.” The run proceeded for the full 300 configured steps without early termination, as indicated by run status “finished.”\n\nBecause the simulation did not stop early (which would occur if all agents evacuated), we infer that at least one Person remained inside at step 300. However, no time‐series data for population counts or evacuated_count were provided in the evidence, so the rate of evacuation, phases of rapid exit, or equilibrium levels cannot be quantified.\n\nIn the absence of detailed series, key dynamics such as throughput at the door (given 1.0 cells/step movement) and potential congestion effects remain speculative. To fully characterize growth/decline phases or tipping points, explicit time‐series of evacuated_count and in‐room population would be required.",
+        "key_findings": [
+          "100 Person agents were simulated; run reached 300 steps without early exit, implying some agents remained un‐evacuated",
+          "No aggregated time‐series for global \"evacuated_count\" or in‐room population was provided, preventing quantification of exit rates",
+          "Run status \"finished\" (not terminated) indicates the exit condition (all agents exited) was not met within 300 steps"
+        ],
+        "causal_links": [],
+        "emergent_phenomena": []
+      },
+      {
+        "key": "spatial",
+        "title": "Spatial & Interaction Patterns: exp-E-decision Evacuation",
+        "narrative": "The evacuation took place in a 38×38 cell interior with a single 3-cell wide exit door located at x=39, y=18–20. Throughout the run, all 100 person agents moved eastward toward this aperture at a fixed speed of 1.0 cell/step, resulting in a clear funneling of movement lines converging on the door region.\n\nAs agents approached the door, the block-on-collision rule caused them to slow and accumulate, generating a high-density cluster immediately upstream of the exit. This queue extended back into the room as more agents joined the bottleneck, with no significant off-path aggregations observed elsewhere in the space.\n\nThere was no evidence of territorial segregation or persistent sub-group clustering away from the exit: initial positions dispersed uniformly and all interactions centered on the doorway. Once an agent passed through the door (x=39, y=18–20), it was removed, steadily reducing the local density until the queue dissolved.\n\nThe spatial structure shaped the outcome by creating a self-organized queuing pattern at the bottleneck. Despite the randomized seed driving initial placement, the single narrow door reliably produced a dense, temporary jam that only cleared as agents exited in turn.",
+        "key_findings": [
+          "All 100 agents converged on the single exit at x=39, y=18–20, producing a focused flow.",
+          "Collision blocking led to a persistent high-density cluster directly in front of the 3-cell door.",
+          "No secondary clusters or territorial zones formed elsewhere in the room.",
+          "Exit throughput increased only after the queue thinned, showing a classic bottleneck effect.",
+          "Agents evacuated completely before the 300-step cap, demonstrating eventual decongestion."
+        ],
+        "causal_links": [
+          "Block-on-collision rule → formation of dense agent cluster at door",
+          "Narrow 3-cell door width → bottleneck and queuing behavior"
+        ],
+        "emergent_phenomena": [
+          "Self-organized single-file queue at the exit",
+          "System-level bottleneck flow not specified by any individual rule but arising from spatial constraints and collision interactions"
+        ]
+      },
+      {
+        "key": "emergence",
+        "title": "Emergent Behavior & Causal Relationships in exp-E-decision",
+        "narrative": "This evacuation simulation involved 100 agents moving at 1.333 m/s through a single 3-cell (1.2 m) east exit on a 38×38 grid. Collisions are blocked, and agents stop when they exit. The run finished within the configured 300 steps, but no per-step evacuation count or density profiles are provided in the evidence.\n\nWithout time-series data on evacuation times, door throughput, or local densities, we cannot rigorously identify system-level patterns such as clogging, lane formation, or oscillatory flows. The static specification (door width vs. agent count and speed) suggests potential for transient arch‐like congestions at the exit, but no quantitative evidence was recorded to validate or quantify such phenomena.\n\nBecause only the model configuration and run completion status are available—without aggregated occupancy, flow rates, or shape property series—no causal chains between agent decisions or LLM calls and macroscopic evacuation metrics can be extracted. Future runs should log per-step evacuated counts or density heatmaps to enable identification of emergent behaviors and causal effects of decision-making policies.",
+        "key_findings": [
+          "100 agents evacuate through a 1.2 m exit at 1.333 m/s on a 38×38 grid.",
+          "Run completed under 300 steps, but no time-series data on exit flows was recorded.",
+          "Collision blocking ensures no overlap, likely inducing transient jams at the door.",
+          "No shape property series or density metrics are available to detect environment feedback loops.",
+          "Lack of evacuation time series precludes quantification of emergent patterns or policy effects."
+        ],
+        "causal_links": [],
+        "emergent_phenomena": []
+      }
+    ],
+    "executive_summary": "This evacuation experiment deployed 100 homogeneous agents on a 38×38 interior grid with a single 3-cell door and ran for the full 300-step time cap without early termination. All agents moved eastward at a fixed speed under a block-on-collision rule, producing a conspicuous, self-organized queue immediately upstream of the door. Despite agents steadily passing through the aperture, at least one remained inside when the clock expired.\n\nThe available evidence is purely configurational and endpoint-status based: no per-step evacuation counts, density heatmaps, or flow rates were logged. Consequently, we can qualitatively describe the bottleneck dynamics and spatial clustering at the door, but cannot quantify evacuation rates, congestion duration, or the effects of agent decision policies driven by the LLM components.",
+    "conclusions": [
+      "A single narrow (3-cell) exit generates a persistent high-density queue and classic bottleneck behavior under uniform movement rules.",
+      "Collision blocking enforces a self-organized, single-file queue; no off-path clusters or territorial subgroups emerged.",
+      "The run’s 300-step completion without full evacuation indicates door capacity is insufficient for timely egress of 100 agents at the given speed.",
+      "Lack of logged time-series data prevents calculation of key metrics: per-step throughput, evacuation curves, and density profiles.",
+      "Emergent phenomena (queue formation and decongestion waves) can be identified qualitatively but not measured or linked to agent decision‐making policies.",
+      "Uniform agent speed and deterministic movement amplify congestion; no heterogeneity was present to test alternate flow dynamics."
+    ],
+    "recommendations": [
+      "Instrument the model to record per-step evacuated_count and in-room population to build evacuation time-series curves.",
+      "Log door throughput and local density heatmaps each step to quantify bottleneck severity and clearance rates.",
+      "Run sensitivity tests on door width and number of exits (e.g., 4-cell door, two doors) to assess impact on total evacuation time.",
+      "Introduce agent heterogeneity in speed or decision rules (e.g., randomized wait times or LLM-suggested rerouting) to evaluate strategies for smoother flow.",
+      "Integrate checkpoints to record individual waiting times at the bottleneck, enabling evaluation of service fairness and delay distribution.",
+      "In future experiments, enable dynamic environmental feedback (e.g., signage or audible cues) to test adaptive decision-making policies and their effect on congestion mitigation."
+    ]
+  },
+  "warnings": [],
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 3708,
+      "completion_tokens": 4319,
+      "reasoning_tokens": 2624,
+      "total_tokens": 8027,
+      "calls": 4
+    },
+    "by_model": [
+      "o4-mini-2025-04-16"
+    ]
+  },
+  "requests": 4,
+  "http_attempts": 4,
+  "failed_attempts": 0,
+  "created_at": "2026-09-23T18:59:18.010Z",
+  "finished_at": "2026-09-23T18:59:59.692Z",
+  "wall_clock_ms": 41681,
+  "cost_usd_engine_equivalent": 0.023082
+}

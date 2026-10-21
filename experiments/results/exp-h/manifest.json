@@ -1,0 +1,532 @@
+{
+  "experiment": "EXP-H",
+  "protocol": "experiments/30-evacuation/36-analysis-eval-protocol.md",
+  "date": "2026-07-24",
+  "engine_commit": "6bb5bd9 (core, feature/experiment-enablers)",
+  "harness_commit": "fd2fb3d (intellisim.experiments)",
+  "llm_target_primary": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini"
+  },
+  "llm_target_stretch": {
+    "provider_uid": "openai",
+    "model_uid": "o3"
+  },
+  "pricing_per_1M_usd_TODO_VERIFY": {
+    "o4-mini": {
+      "in": 1.1,
+      "out": 4.4
+    },
+    "o3": {
+      "in": 2.0,
+      "out": 8.0
+    }
+  },
+  "notes": "Source sims from EXP-B/C/E/F/G; per D20 never deleted. All sims verified queryable + status=finished + 1 execution run at manifest time. EXP-G med reps chosen = the two largest med-point outbreaks (rep1 fs=0.37, rep8 fs=0.33) so single-epidemic-peak + final-size phenomena are present in the analyzed run (the med point is bimodal; many reps fizzle). EXP-C egress ground truth is the MEASURED value (~13.5 s), not the SFPE band, per protocol §2.1 (documented EXP-C ×6.6 fast-drain deviation, D29).",
+  "reports": [
+    {
+      "report": 1,
+      "sim_id": "6a5bbcaac44d001ef3ac207c",
+      "source_run": "EXP-C room evacuation, median-T_drain rep (rep3, seed 103)",
+      "language": "en",
+      "llm_target": "o4-mini",
+      "request_body": {
+        "context_message": "Analyze this simulation's results. Context: People are evacuating a single room through one door. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+        "language": "en",
+        "llm_target": {
+          "provider_uid": "openai",
+          "model_uid": "o4-mini"
+        },
+        "selection": {}
+      },
+      "ground_truth_sheet": "results/exp-h/ground-truth/sheet-1.md",
+      "analysis_id": "6a63a2404ccaa6983ac98313",
+      "generated": "2026-07-24T17:34:56.228Z",
+      "status": "completed",
+      "token_usage": {
+        "total": {
+          "prompt_tokens": 10213,
+          "completion_tokens": 5391,
+          "reasoning_tokens": 3264,
+          "total_tokens": 15604,
+          "calls": 4,
+          "latency_ms": 40305
+        },
+        "by_model": [
+          {
+            "provider_uid": "openai",
+            "model_uid": "o4-mini-2025-04-16",
+            "prompt_tokens": 10213,
+            "completion_tokens": 5391,
+            "reasoning_tokens": 3264,
+            "total_tokens": 15604,
+            "calls": 4,
+            "latency_ms": 40305
+          }
+        ]
+      }
+    },
+    {
+      "report": 2,
+      "sim_id": "6a5bbcc1c44d001ef3acc10e",
+      "source_run": "EXP-C room evacuation, fastest-T_drain rep (rep18, seed 118)",
+      "language": "uk",
+      "llm_target": "o4-mini",
+      "request_body": {
+        "context_message": "Проаналізуйте результати цієї симуляції. Контекст: Люди евакуюються з одного приміщення через одні двері. Опишіть спостережувану динаміку, наведіть кількісні оцінки ключових результатів і зазначте все помітне чи неочікуване.",
+        "language": "uk",
+        "llm_target": {
+          "provider_uid": "openai",
+          "model_uid": "o4-mini"
+        },
+        "selection": {}
+      },
+      "ground_truth_sheet": "results/exp-h/ground-truth/sheet-2.md",
+      "analysis_id": "6a63a2a44ccaa6983ac98316",
+      "generated": "2026-07-24T17:36:36.53Z",
+      "status": "completed",
+      "token_usage": {
+        "total": {
+          "prompt_tokens": 10807,
+          "completion_tokens": 6779,
+          "reasoning_tokens": 4096,
+          "total_tokens": 17586,
+          "calls": 4,
+          "latency_ms": 44075
+        },
+        "by_model": [
+          {
+            "provider_uid": "openai",
+            "model_uid": "o4-mini-2025-04-16",
+            "prompt_tokens": 10807,
+            "completion_tokens": 6779,
+            "reasoning_tokens": 4096,
+            "total_tokens": 17586,
+            "calls": 4,
+            "latency_ms": 44075
+          }
+        ]
+      }
+    },
+    {
+      "report": 3,
+      "sim_id": "6a5bc249c44d001ef3af684d",
+      "source_run": "EXP-B Test 12 bottleneck, 150 agents (rep1, seed 1201)",
+      "language": "en",
+      "llm_target": "o4-mini",
+      "request_body": {
+        "context_message": "Analyze this simulation's results. Context: 150 people move out of a building section consisting of two rooms connected by a corridor. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+        "language": "en",
+        "llm_target": {
+          "provider_uid": "openai",
+          "model_uid": "o4-mini"
+        },
+        "selection": {}
+      },
+      "ground_truth_sheet": "results/exp-h/ground-truth/sheet-3.md",
+      "analysis_id": "6a63a3254ccaa6983ac98319",
+      "generated": "2026-07-24T17:38:45.776Z",
+      "status": "completed",
+      "token_usage": {
+        "total": {
+          "prompt_tokens": 9008,
+          "completion_tokens": 3984,
+          "reasoning_tokens": 1792,
+          "total_tokens": 12992,
+          "calls": 4,
+          "latency_ms": 28780
+        },
+        "by_model": [
+          {
+            "provider_uid": "openai",
+            "model_uid": "o4-mini-2025-04-16",
+            "prompt_tokens": 9008,
+            "completion_tokens": 3984,
+            "reasoning_tokens": 1792,
+            "total_tokens": 12992,
+            "calls": 4,
+            "latency_ms": 28780
+          }
+        ]
+      }
+    },
+    {
+      "report": 4,
+      "sim_id": "6a5bc463c44d001ef3b8f824",
+      "source_run": "EXP-B Test 4 wide-opening flow, N=300 (rep1, seed 401)",
+      "language": "uk",
+      "llm_target": "o4-mini",
+      "request_body": {
+        "context_message": "Проаналізуйте результати цієї симуляції. Контекст: Люди проходять крізь широкий отвір за різної щільності натовпу. Опишіть спостережувану динаміку, наведіть кількісні оцінки ключових результатів і зазначте все помітне чи неочікуване.",
+        "language": "uk",
+        "llm_target": {
+          "provider_uid": "openai",
+          "model_uid": "o4-mini"
+        },
+        "selection": {}
+      },
+      "ground_truth_sheet": "results/exp-h/ground-truth/sheet-4.md",
+      "analysis_id": "6a63a3444ccaa6983ac9831c",
+      "generated": "2026-07-24T17:39:16.482Z",
+      "status": "completed",
+      "token_usage": {
+        "total": {
+          "prompt_tokens": 9794,
+          "completion_tokens": 6338,
+          "reasoning_tokens": 3328,
+          "total_tokens": 16132,
+          "calls": 4,
+          "latency_ms": 43985
+        },
+        "by_model": [
+          {
+            "provider_uid": "openai",
+            "model_uid": "o4-mini-2025-04-16",
+            "prompt_tokens": 9794,
+            "completion_tokens": 6338,
+            "reasoning_tokens": 3328,
+            "total_tokens": 16132,
+            "calls": 4,
+            "latency_ms": 43985
+          }
+        ]
+      }
+    },
+    {
+      "report": 5,
+      "sim_id": "6a6380584ccaa6983ac7ea1c",
+      "source_run": "EXP-E archetype_decision run (rep301, seed 301)",
+      "language": "en",
+      "llm_target": "o4-mini",
+      "request_body": {
+        "context_message": "Analyze this simulation's results. Context: People are evacuating a room through one door; some agent decisions during the run are made by a language model. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+        "language": "en",
+        "llm_target": {
+          "provider_uid": "openai",
+          "model_uid": "o4-mini"
+        },
+        "selection": {}
+      },
+      "ground_truth_sheet": "results/exp-h/ground-truth/sheet-5.md",
+      "analysis_id": "6a63a3744ccaa6983ac9831f",
+      "generated": "2026-07-24T17:40:04.948Z",
+      "status": "completed",
+      "token_usage": {
+        "total": {
+          "prompt_tokens": 11338,
+          "completion_tokens": 5743,
+          "reasoning_tokens": 3264,
+          "total_tokens": 17081,
+          "calls": 4,
+          "latency_ms": 41956
+        },
+        "by_model": [
+          {
+            "provider_uid": "openai",
+            "model_uid": "o4-mini-2025-04-16",
+            "prompt_tokens": 11338,
+            "completion_tokens": 5743,
+            "reasoning_tokens": 3264,
+            "total_tokens": 17081,
+            "calls": 4,
+            "latency_ms": 41956
+          }
+        ]
+      }
+    },
+    {
+      "report": 6,
+      "sim_id": "6a63810f4ccaa6983ac81367",
+      "source_run": "EXP-E individual_decision run (rep301, seed 301)",
+      "language": "uk",
+      "llm_target": "o4-mini",
+      "request_body": {
+        "context_message": "Проаналізуйте результати цієї симуляції. Контекст: Люди евакуюються з приміщення через одні двері; частину рішень агентів під час виконання ухвалює мовна модель. Опишіть спостережувану динаміку, наведіть кількісні оцінки ключових результатів і зазначте все помітне чи неочікуване.",
+        "language": "uk",
+        "llm_target": {
+          "provider_uid": "openai",
+          "model_uid": "o4-mini"
+        },
+        "selection": {}
+      },
+      "ground_truth_sheet": "results/exp-h/ground-truth/sheet-6.md",
+      "analysis_id": "6a63a39f4ccaa6983ac98322",
+      "generated": "2026-07-24T17:40:47.515Z",
+      "status": "completed",
+      "token_usage": {
+        "total": {
+          "prompt_tokens": 11096,
+          "completion_tokens": 7113,
+          "reasoning_tokens": 3968,
+          "total_tokens": 18209,
+          "calls": 4,
+          "latency_ms": 47733
+        },
+        "by_model": [
+          {
+            "provider_uid": "openai",
+            "model_uid": "o4-mini-2025-04-16",
+            "prompt_tokens": 11096,
+            "completion_tokens": 7113,
+            "reasoning_tokens": 3968,
+            "total_tokens": 18209,
+            "calls": 4,
+            "latency_ms": 47733
+          }
+        ]
+      }
+    },
+    {
+      "report": 7,
+      "sim_id": "6a610ff2ff82d466bf2db995",
+      "source_run": "EXP-F wildfire, sub-critical density p=0.50 (rep1)",
+      "language": "uk",
+      "llm_target": "o4-mini",
+      "request_body": {
+        "context_message": "Проаналізуйте результати цієї симуляції. Контекст: Вогонь поширюється лісом. Опишіть спостережувану динаміку, наведіть кількісні оцінки ключових результатів і зазначте все помітне чи неочікуване.",
+        "language": "uk",
+        "llm_target": {
+          "provider_uid": "openai",
+          "model_uid": "o4-mini"
+        },
+        "selection": {}
+      },
+      "ground_truth_sheet": "results/exp-h/ground-truth/sheet-7.md",
+      "analysis_id": "6a63a3d14ccaa6983ac98325",
+      "generated": "2026-07-24T17:41:37.046Z",
+      "status": "completed",
+      "token_usage": {
+        "total": {
+          "prompt_tokens": 11309,
+          "completion_tokens": 6851,
+          "reasoning_tokens": 4096,
+          "total_tokens": 18160,
+          "calls": 4,
+          "latency_ms": 49196
+        },
+        "by_model": [
+          {
+            "provider_uid": "openai",
+            "model_uid": "o4-mini-2025-04-16",
+            "prompt_tokens": 11309,
+            "completion_tokens": 6851,
+            "reasoning_tokens": 4096,
+            "total_tokens": 18160,
+            "calls": 4,
+            "latency_ms": 49196
+          }
+        ]
+      }
+    },
+    {
+      "report": 8,
+      "sim_id": "6a634dbf4ccaa6983a640151",
+      "source_run": "EXP-F wildfire, super-critical density p=0.70 (rep1)",
+      "language": "en",
+      "llm_target": "o4-mini",
+      "request_body": {
+        "context_message": "Analyze this simulation's results. Context: Fire spreads through a forest of trees. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+        "language": "en",
+        "llm_target": {
+          "provider_uid": "openai",
+          "model_uid": "o4-mini"
+        },
+        "selection": {}
+      },
+      "ground_truth_sheet": "results/exp-h/ground-truth/sheet-8.md",
+      "analysis_id": "6a63a4084ccaa6983ac98328",
+      "generated": "2026-07-24T17:42:32.071Z",
+      "status": "completed",
+      "token_usage": {
+        "total": {
+          "prompt_tokens": 15800,
+          "completion_tokens": 6429,
+          "reasoning_tokens": 4224,
+          "total_tokens": 22229,
+          "calls": 4,
+          "latency_ms": 45658
+        },
+        "by_model": [
+          {
+            "provider_uid": "openai",
+            "model_uid": "o4-mini-2025-04-16",
+            "prompt_tokens": 15800,
+            "completion_tokens": 6429,
+            "reasoning_tokens": 4224,
+            "total_tokens": 22229,
+            "calls": 4,
+            "latency_ms": 45658
+          }
+        ]
+      }
+    },
+    {
+      "report": 9,
+      "sim_id": "6a636be64ccaa6983aafedd5",
+      "source_run": "EXP-G epidemic, medium-transmissibility (med, rep1 seed 8501)",
+      "language": "en",
+      "llm_target": "o4-mini",
+      "request_body": {
+        "context_message": "Analyze this simulation's results. Context: An infectious disease spreads in a population of moving agents. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+        "language": "en",
+        "llm_target": {
+          "provider_uid": "openai",
+          "model_uid": "o4-mini"
+        },
+        "selection": {}
+      },
+      "ground_truth_sheet": "results/exp-h/ground-truth/sheet-9.md",
+      "analysis_id": "6a63a43f4ccaa6983ac9832b",
+      "generated": "2026-07-24T17:43:27.088Z",
+      "status": "completed",
+      "token_usage": {
+        "total": {
+          "prompt_tokens": 19830,
+          "completion_tokens": 5844,
+          "reasoning_tokens": 3584,
+          "total_tokens": 25674,
+          "calls": 4,
+          "latency_ms": 41479
+        },
+        "by_model": [
+          {
+            "provider_uid": "openai",
+            "model_uid": "o4-mini-2025-04-16",
+            "prompt_tokens": 19830,
+            "completion_tokens": 5844,
+            "reasoning_tokens": 3584,
+            "total_tokens": 25674,
+            "calls": 4,
+            "latency_ms": 41479
+          }
+        ]
+      }
+    },
+    {
+      "report": 10,
+      "sim_id": "6a636c0c4ccaa6983ab1976a",
+      "source_run": "EXP-G epidemic, medium-transmissibility 2nd rep (med, rep8 seed 8508)",
+      "language": "uk",
+      "llm_target": "o4-mini",
+      "request_body": {
+        "context_message": "Проаналізуйте результати цієї симуляції. Контекст: Інфекційне захворювання поширюється в популяції рухомих агентів. Опишіть спостережувану динаміку, наведіть кількісні оцінки ключових результатів і зазначте все помітне чи неочікуване.",
+        "language": "uk",
+        "llm_target": {
+          "provider_uid": "openai",
+          "model_uid": "o4-mini"
+        },
+        "selection": {}
+      },
+      "ground_truth_sheet": "results/exp-h/ground-truth/sheet-10.md",
+      "analysis_id": "6a63a46f4ccaa6983ac9832e",
+      "generated": "2026-07-24T17:44:15.641Z",
+      "status": "completed",
+      "token_usage": {
+        "total": {
+          "prompt_tokens": 21560,
+          "completion_tokens": 6445,
+          "reasoning_tokens": 3456,
+          "total_tokens": 28005,
+          "calls": 4,
+          "latency_ms": 48717
+        },
+        "by_model": [
+          {
+            "provider_uid": "openai",
+            "model_uid": "o4-mini-2025-04-16",
+            "prompt_tokens": 21560,
+            "completion_tokens": 6445,
+            "reasoning_tokens": 3456,
+            "total_tokens": 28005,
+            "calls": 4,
+            "latency_ms": 48717
+          }
+        ]
+      }
+    },
+    {
+      "report": 11,
+      "sim_id": "6a5bbcaac44d001ef3ac207c",
+      "source_run": "EXP-C room evacuation, median-T_drain rep (rep3, seed 103) [STRETCH o3 re-run of #1]",
+      "language": "en",
+      "llm_target": "o3",
+      "request_body": {
+        "context_message": "Analyze this simulation's results. Context: People are evacuating a single room through one door. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+        "language": "en",
+        "llm_target": {
+          "provider_uid": "openai",
+          "model_uid": "o3"
+        },
+        "selection": {}
+      },
+      "ground_truth_sheet": "results/exp-h/ground-truth/sheet-1.md",
+      "analysis_id": "6a63a4cd4ccaa6983ac98331",
+      "generated": "2026-07-24T17:45:49.583Z",
+      "status": "completed",
+      "token_usage": {
+        "total": {
+          "prompt_tokens": 10532,
+          "completion_tokens": 7220,
+          "reasoning_tokens": 4608,
+          "total_tokens": 17752,
+          "calls": 4,
+          "latency_ms": 45144
+        },
+        "by_model": [
+          {
+            "provider_uid": "openai",
+            "model_uid": "o3-2025-04-16",
+            "prompt_tokens": 10532,
+            "completion_tokens": 7220,
+            "reasoning_tokens": 4608,
+            "total_tokens": 17752,
+            "calls": 4,
+            "latency_ms": 45144
+          }
+        ]
+      }
+    },
+    {
+      "report": 12,
+      "sim_id": "6a5bbcc1c44d001ef3acc10e",
+      "source_run": "EXP-C room evacuation, fastest-T_drain rep (rep18, seed 118) [STRETCH o3 re-run of #2]",
+      "language": "uk",
+      "llm_target": "o3",
+      "request_body": {
+        "context_message": "Проаналізуйте результати цієї симуляції. Контекст: Люди евакуюються з одного приміщення через одні двері. Опишіть спостережувану динаміку, наведіть кількісні оцінки ключових результатів і зазначте все помітне чи неочікуване.",
+        "language": "uk",
+        "llm_target": {
+          "provider_uid": "openai",
+          "model_uid": "o3"
+        },
+        "selection": {}
+      },
+      "ground_truth_sheet": "results/exp-h/ground-truth/sheet-2.md",
+      "analysis_id": "6a63a4fe4ccaa6983ac98334",
+      "generated": "2026-07-24T17:46:38.068Z",
+      "status": "completed",
+      "token_usage": {
+        "total": {
+          "prompt_tokens": 11469,
+          "completion_tokens": 8956,
+          "reasoning_tokens": 5184,
+          "total_tokens": 20425,
+          "calls": 4,
+          "latency_ms": 60059
+        },
+        "by_model": [
+          {
+            "provider_uid": "openai",
+            "model_uid": "o3-2025-04-16",
+            "prompt_tokens": 11469,
+            "completion_tokens": 8956,
+            "reasoning_tokens": 5184,
+            "total_tokens": 20425,
+            "calls": 4,
+            "latency_ms": 60059
+          }
+        ]
+      }
+    }
+  ]
+}

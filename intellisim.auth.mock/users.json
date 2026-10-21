@@ -1,0 +1,16 @@
+{
+  "dev-user": {
+    "sub": "dev-user-1",
+    "preferred_username": "dev.user",
+    "name": "Dev User",
+    "email": "dev@intellisim.local",
+    "permissions": []
+  },
+  "dev-admin": {
+    "sub": "dev-admin-1",
+    "preferred_username": "dev.admin",
+    "name": "Dev Admin",
+    "email": "admin@intellisim.local",
+    "permissions": ["intellisim:admin"]
+  }
+}

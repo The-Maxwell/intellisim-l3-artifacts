@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ERManQ0UmWcaaWbZox2LcAJS0Myx7",
+  "object": "chat.completion",
+  "created": 1790190409,
+  "model": "o4-mini-2025-04-16",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"title\":\"Spatial & Interaction Patterns\",\"narrative\":\"The simulation unfolds on a 61×61 non-toroidal grid where fire initiates along the leftmost column of unburned trees and propagates orthogonally. As each burning tree transitions to ash, it leaves behind a contiguous burned region. The synchronous update mode yields a sharply defined fire front advancing step by step across the forest.\\n\\nBecause burned trees cannot reignite, the ash boundary permanently demarcates the burned area from the remaining unburned trees. Fire ceases when no burning agents remain, resulting in a clear spatial separation: a broad region of ash on the left and unburned trees on the right, with the wave-like front marking the final extent of spread.\",\"key_findings\":[\"Fire spreads as an orthogonal wave from the left edge across the 61×61 grid.\",\"Burned trees transition to ash permanently, creating a contiguous burned region.\",\"No torus wrapping restricts fire cessation at the grid’s boundaries.\",\"Synchronous updates produce a distinct, uniform front of burning trees.\",\"Simulation ends once the orthogonal propagation can no longer reach unburned trees.\"],\"causal_links\":[\"Orthogonal spread rule → wave-like propagation front advancing one cell per synchronous step.\",\"Non-toroidal boundary → fire halts upon reaching the grid’s right edge.\",\"Burned-out state prohibits reignition → permanent ash boundary formation.\"],\"emergent_phenomena\":[\"A self-organized, planar burn front separating unburned forest and ash emerges from simple local spread rules.\",\"Complete conversion of the left-side forest to ash with no isolated pockets of unburned trees behind the front.\"]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 749,
+    "completion_tokens": 1124,
+    "total_tokens": 1873,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 768,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

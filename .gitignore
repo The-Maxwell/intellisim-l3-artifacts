@@ -1,0 +1,13 @@
+node_modules/
+dist/
+bin/
+*.exe
+.env
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+.DS_Store
+Thumbs.db
+.idea/
+experiments/article/

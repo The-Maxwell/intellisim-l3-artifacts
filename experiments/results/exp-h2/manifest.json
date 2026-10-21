@@ -1,0 +1,438 @@
+{
+  "experiment": "EXP-H2",
+  "protocol": "experiments/37-exph2-regeneration-ablation-protocol.md",
+  "engine": "intellisim.core dev 5072b5f (unchanged; analysis code = EXP-H engine 6bb5bd9)",
+  "provider": "intellisim.openai.llm.provider dev 777aeca (unchanged)",
+  "rows": [
+    {
+      "arm": "A",
+      "report_no": 1,
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "http_attempts": 4,
+      "failed_attempts": 0,
+      "wall_clock_s": 32.0,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "warnings": 0,
+      "cost_usd": 0.014289,
+      "created_at": "2026-09-23T18:52:00.813Z",
+      "finished_at": "2026-09-23T18:52:32.856Z"
+    },
+    {
+      "arm": "F2",
+      "report_no": 1,
+      "analysis_id": "6ab41ff0efc507d912c730f7",
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "latency_ms": 62941,
+      "wall_clock_s": 63.7,
+      "warnings": 0,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "llm_target_echo": {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini",
+        "generation": {
+          "max_tokens": {
+            "uint": 16000
+          }
+        }
+      },
+      "cost_usd": 0.038801,
+      "suspected_hidden_failed_attempts": 0,
+      "wall_minus_latency_s": 0.8
+    },
+    {
+      "arm": "F2",
+      "report_no": 2,
+      "analysis_id": "6ab42049efc507d912c730fa",
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "latency_ms": 69871,
+      "wall_clock_s": 70.0,
+      "warnings": 0,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "llm_target_echo": {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini",
+        "generation": {
+          "max_tokens": {
+            "uint": 16000
+          }
+        }
+      },
+      "cost_usd": 0.042868,
+      "suspected_hidden_failed_attempts": 0,
+      "wall_minus_latency_s": 0.1
+    },
+    {
+      "arm": "A",
+      "report_no": 2,
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "http_attempts": 4,
+      "failed_attempts": 0,
+      "wall_clock_s": 57.1,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "warnings": 0,
+      "cost_usd": 0.02817,
+      "created_at": "2026-09-23T18:55:13.578Z",
+      "finished_at": "2026-09-23T18:56:10.656Z"
+    },
+    {
+      "arm": "A",
+      "report_no": 3,
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "http_attempts": 4,
+      "failed_attempts": 0,
+      "wall_clock_s": 46.1,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "warnings": 0,
+      "cost_usd": 0.018438,
+      "created_at": "2026-09-23T18:56:10.683Z",
+      "finished_at": "2026-09-23T18:56:56.797Z"
+    },
+    {
+      "arm": "F2",
+      "report_no": 3,
+      "analysis_id": "6ab420f9efc507d912c730fd",
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "latency_ms": 46883,
+      "wall_clock_s": 47.2,
+      "warnings": 0,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "llm_target_echo": {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini",
+        "generation": {
+          "max_tokens": {
+            "uint": 16000
+          }
+        }
+      },
+      "cost_usd": 0.028991,
+      "suspected_hidden_failed_attempts": 0,
+      "wall_minus_latency_s": 0.3
+    },
+    {
+      "arm": "F2",
+      "report_no": 4,
+      "analysis_id": "6ab42129efc507d912c73100",
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "latency_ms": 53600,
+      "wall_clock_s": 54.3,
+      "warnings": 0,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "llm_target_echo": {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini",
+        "generation": {
+          "max_tokens": {
+            "uint": 16000
+          }
+        }
+      },
+      "cost_usd": 0.036665,
+      "suspected_hidden_failed_attempts": 0,
+      "wall_minus_latency_s": 0.7
+    },
+    {
+      "arm": "A",
+      "report_no": 4,
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "http_attempts": 4,
+      "failed_attempts": 0,
+      "wall_clock_s": 35.1,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "warnings": 0,
+      "cost_usd": 0.020419,
+      "created_at": "2026-09-23T18:58:42.829Z",
+      "finished_at": "2026-09-23T18:59:17.968Z"
+    },
+    {
+      "arm": "A",
+      "report_no": 5,
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "http_attempts": 4,
+      "failed_attempts": 0,
+      "wall_clock_s": 41.7,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "warnings": 0,
+      "cost_usd": 0.023082,
+      "created_at": "2026-09-23T18:59:18.010Z",
+      "finished_at": "2026-09-23T18:59:59.692Z"
+    },
+    {
+      "arm": "F2",
+      "report_no": 5,
+      "analysis_id": "6ab421b0efc507d912c73103",
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "latency_ms": 60146,
+      "wall_clock_s": 60.3,
+      "warnings": 0,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "llm_target_echo": {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini",
+        "generation": {
+          "max_tokens": {
+            "uint": 16000
+          }
+        }
+      },
+      "cost_usd": 0.039133,
+      "suspected_hidden_failed_attempts": 0,
+      "wall_minus_latency_s": 0.2
+    },
+    {
+      "arm": "F2",
+      "report_no": 6,
+      "analysis_id": "6ab421efefc507d912c73106",
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "latency_ms": 70454,
+      "wall_clock_s": 70.6,
+      "warnings": 0,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "llm_target_echo": {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini",
+        "generation": {
+          "max_tokens": {
+            "uint": 16000
+          }
+        }
+      },
+      "cost_usd": 0.042562,
+      "suspected_hidden_failed_attempts": 0,
+      "wall_minus_latency_s": 0.1
+    },
+    {
+      "arm": "A",
+      "report_no": 6,
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "http_attempts": 4,
+      "failed_attempts": 0,
+      "wall_clock_s": 50.3,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "warnings": 0,
+      "cost_usd": 0.025249,
+      "created_at": "2026-09-23T19:02:15.459Z",
+      "finished_at": "2026-09-23T19:03:05.802Z"
+    },
+    {
+      "arm": "A",
+      "report_no": 7,
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "http_attempts": 4,
+      "failed_attempts": 0,
+      "wall_clock_s": 74.9,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "warnings": 0,
+      "cost_usd": 0.034382,
+      "created_at": "2026-09-23T19:03:05.857Z",
+      "finished_at": "2026-09-23T19:04:20.755Z"
+    },
+    {
+      "arm": "F2",
+      "report_no": 7,
+      "analysis_id": "6ab422b5efc507d912c73109",
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "latency_ms": 77332,
+      "wall_clock_s": 77.7,
+      "warnings": 0,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "llm_target_echo": {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini",
+        "generation": {
+          "max_tokens": {
+            "uint": 16000
+          }
+        }
+      },
+      "cost_usd": 0.044048,
+      "suspected_hidden_failed_attempts": 0,
+      "wall_minus_latency_s": 0.4
+    },
+    {
+      "arm": "F2",
+      "report_no": 8,
+      "analysis_id": "6ab42304efc507d912c7310c",
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "latency_ms": 60521,
+      "wall_clock_s": 63.1,
+      "warnings": 0,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "llm_target_echo": {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini",
+        "generation": {
+          "max_tokens": {
+            "uint": 16000
+          }
+        }
+      },
+      "cost_usd": 0.041645,
+      "suspected_hidden_failed_attempts": 0,
+      "wall_minus_latency_s": 2.6
+    },
+    {
+      "arm": "A",
+      "report_no": 8,
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "http_attempts": 4,
+      "failed_attempts": 0,
+      "wall_clock_s": 32.9,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "warnings": 0,
+      "cost_usd": 0.017027,
+      "created_at": "2026-09-23T19:06:43.818Z",
+      "finished_at": "2026-09-23T19:07:16.740Z"
+    },
+    {
+      "arm": "A",
+      "report_no": 9,
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "http_attempts": 4,
+      "failed_attempts": 0,
+      "wall_clock_s": 41.3,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "warnings": 0,
+      "cost_usd": 0.021703,
+      "created_at": "2026-09-23T19:07:16.801Z",
+      "finished_at": "2026-09-23T19:07:58.089Z"
+    },
+    {
+      "arm": "F2",
+      "report_no": 9,
+      "analysis_id": "6ab4238eefc507d912c7310f",
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "latency_ms": 53606,
+      "wall_clock_s": 54.8,
+      "warnings": 0,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "llm_target_echo": {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini",
+        "generation": {
+          "max_tokens": {
+            "uint": 16000
+          }
+        }
+      },
+      "cost_usd": 0.04547,
+      "suspected_hidden_failed_attempts": 0,
+      "wall_minus_latency_s": 1.2
+    },
+    {
+      "arm": "F2",
+      "report_no": 10,
+      "analysis_id": "6ab423c8efc507d912c73112",
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "latency_ms": 78430,
+      "wall_clock_s": 140.7,
+      "warnings": 0,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "llm_target_echo": {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini",
+        "generation": {
+          "max_tokens": {
+            "uint": 16000
+          }
+        }
+      },
+      "cost_usd": 0.056957,
+      "suspected_hidden_failed_attempts": 1,
+      "wall_minus_latency_s": 62.3
+    },
+    {
+      "arm": "A",
+      "report_no": 10,
+      "status": "completed",
+      "calls": 4,
+      "requests": 4,
+      "http_attempts": 4,
+      "failed_attempts": 0,
+      "wall_clock_s": 54.3,
+      "resolved_models": [
+        "o4-mini-2025-04-16"
+      ],
+      "warnings": 0,
+      "cost_usd": 0.02609,
+      "created_at": "2026-09-23T19:11:18.074Z",
+      "finished_at": "2026-09-23T19:12:12.392Z"
+    }
+  ]
+}

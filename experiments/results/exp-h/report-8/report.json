@@ -1,0 +1,151 @@
+{
+  "id": "6a63a4084ccaa6983ac98328",
+  "simulation_id": "6a634dbf4ccaa6983a640151",
+  "name": "EXP-H report 8",
+  "context_message": "Analyze this simulation's results. Context: Fire spreads through a forest of trees. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini"
+  },
+  "selection": {
+    "step_from": 0,
+    "step_to": 85
+  },
+  "status": "completed",
+  "status_text": "completed",
+  "progress": {
+    "stage": "completed",
+    "percent": 100
+  },
+  "simulation_status_at_analysis": "finished",
+  "steps_covered": {
+    "from": 0,
+    "to": 85,
+    "sampling": 1,
+    "count": 86
+  },
+  "report": {
+    "sections": [
+      {
+        "key": "dynamics",
+        "title": "Forest Fire Population Dynamics",
+        "narrative": "The simulation begins with 84 burning trees at step 0 along the left edge against 2 521 unburned trees. In the first four steps, burning trees decline to 21 (step 4) as the fire front initially encounters limited adjacency. Meanwhile, ash counts rise from 0 to 164 by step 4, marking the first conversions.\n\nBetween steps 5 and 25, the fire front accelerates into denser forest. Burning trees climb from 21 (step 5) to a secondary peak of 48 at step 25. Concurrently, ash accumulation increases rapidly—from 185 (step 5) to 859 (step 25)—while the tree population falls from 2 399 to 1 698.\n\nAfter step 25, fuel depletion slows the spread. Burning trees steadily drop from 48 to 1 by step 84, and ash continues to grow until it reaches 2 546 at step 84. By the end (step 85), only 58 trees remain unburned (2.2% of initial), indicating pockets of isolated survivors.\n\nThroughout the run, ash increases monotonically and tree counts decline without oscillation, reflecting a single propagating wave of fire. The dynamics illustrate a classic wavefront propagation: a rise–peak–decline in burning activity driven by local spread and eventual exhaustion of adjacent fuel.",
+        "key_findings": [
+          "Initial ignition of 84 trees triggers fire spread but burning count dips to 21 by step 4 before accelerating.",
+          "Secondary burning peak of 48 at step 25 corresponds to maximal spread into dense forest.",
+          "Ash count rises monotonically from 0 to 2 546 by step 84, converting 97.8% of trees to ash.",
+          "Tree population falls from 2 521 to 58; final survivors (2.2%) are isolated clusters.",
+          "No oscillations or reignitions occur—spread is a single wavefront.",
+          "Spread dynamics driven by synchronous updates yield a bell-shaped burning curve."
+        ],
+        "causal_links": [
+          "ignite_left_edge → initial 84 burning trees at step 0",
+          "spread_fire rule executions → rising burning population to a peak of 48 by step 25",
+          "burn_out rule executions → steady conversion of burning trees to ash (2 547 total)",
+          "declining tree population → reduced burning after step 25"
+        ],
+        "emergent_phenomena": [
+          "Wavefront propagation of fire yields a single bell-shaped burning population curve",
+          "Formation of isolated survivor clusters results from heterogeneous adjacency creating firebreaks"
+        ]
+      },
+      {
+        "key": "spatial",
+        "title": "Spatial Progression and Clustering in the Forest Fire Model",
+        "narrative": "The fire ignitions at the leftmost column (ignite_left_edge executed 84 times) created a coherent, rightward‐propagating front, consuming dense clusters of trees through orthogonal neighbor spread (spread_fire executed 2463 times). Initial tree agents spanned approximately x=3 to x=54 with no significant voids, resulting in almost uniform wave‐like advance. By step 42, nearly all trees west of x≈20 were converted to ash, leaving only isolated survivors at x=3 (reference_id 47), x=6 (11) and clusters beyond x=30.\n\nAs the front encountered naturally occurring low‐density patches, pockets of unburned trees persisted, particularly in the upper‐right quadrant (x>50, y>50). This produced a fragmented pattern of survivors (58 remaining at step 86) against a largely burned grid (2547 ash agents). No agent movement or direct interactions other than spread rule enforcement shaped this mosaic: the spatial heterogeneity emerged from the random initial placement and the deterministic orthogonal spread.",
+        "key_findings": [
+          "Fire front advanced in a planar wave from left to right, eliminating all trees west of x≈20 by step 42.",
+          "Dense clusters of trees (average initial density p₀≈0.70) facilitated rapid contiguous spread—spread_fire triggered 2463 times.",
+          "Sparse gaps acted as de facto firebreaks, preserving isolated unburned pockets, especially near grid edges where adjacency was limited.",
+          "By termination (step 86), 2547 of 2605 trees burned, leaving 58 survivors (2.2% of peak 2521) concentrated in low‐density or edge regions.",
+          "No agent movement occurred; spatial dynamics solely resulted from static placement and local ignition rules."
+        ],
+        "causal_links": [
+          "High initial local density → rapid orthogonal spread → large contiguous burned region",
+          "Low‐density gaps → inadequate neighbor contacts → persistence of unburned trees",
+          "Continued left‐edge ignitions (84 executions) → sustained front pressure → complete penetration through dense zones"
+        ],
+        "emergent_phenomena": [
+          "Planar fire‐front wave propagating across heterogeneous medium",
+          "Formation of isolated survivor clusters (‘islands’) in sparse patches acting as emergent firebreaks"
+        ]
+      },
+      {
+        "key": "emergence",
+        "title": "Emergent Behavior & Causal Relationships in Forest Fire Spread",
+        "narrative": "The simulation exhibits a propagating fire front across a uniform forest grid. Initially, 84 trees along the left edge ignite simultaneously (step 0), but by step 1 the burning count drops sharply to 29 as those edge trees burn out and only their orthogonal neighbors ignite. Over the next 25 steps, the number of burning trees climbs to a mid‐phase peak of 48 (step 25), reflecting the expanding length of the fire front invading the forest interior. \n\nAs the fire front advances, ash accumulates monotonically—rising from 84 at step 1 to 2547 by step 85—while the unburned tree count declines from 2521 to just 58. This sigmoidal burn pattern arises from the balance of spread_fire and burn_out rules under synchronous updating: spread accelerates when the front is longest (mid‐simulation) and decelerates as available fuel depletes at the grid edges and remaining pockets. \n\nThe burning counts exhibit damped oscillations beyond step 25, with minor secondary peaks (e.g., ~39 at step 53) as the fire navigates variations in local cluster boundaries. Ultimately, the fire consumes ~98% of trees, demonstrating near‐complete percolation through the forest with only isolated refugia remaining at the end.",
+        "key_findings": [
+          "Initial edge‐ignition of 84 trees yields a sharp drop to 29 burning by step 1",
+          "Burning trees increase to a maximum of 48 at step 25 as the fire front expands",
+          "Ash accumulates steadily to 2547 by termination, indicating near‐total fuel consumption",
+          "Only 58 trees (<2% of initial 2521) remain unburned at step 85",
+          "Burning counts oscillate in mid‐ and late phases, reflecting front shape and grid boundaries"
+        ],
+        "causal_links": [
+          "ignite_left_edge at step 0 → 84 burning_tree agents at step 0",
+          "burn_out rule (84 executions) from step 0→1 → ash count rises to 84 and burning_tree drops to 29 at step 1",
+          "spread_fire rule executions grow from 29 at step 1 to 48 at step 25 → burning_tree peak as front lengthens",
+          "Monotonic ash increase to 2547 by step 85 ← cumulative burn_out executions (2547)",
+          "Depletion of adjacent tree neighbors after step 25 → declining burning_tree counts and damped oscillations"
+        ],
+        "emergent_phenomena": [
+          "Wave‐like propagation of the fire front",
+          "Mid‐phase peak in active fires due to expanding front length",
+          "Damped oscillations in burning count from finite‐size and boundary effects",
+          "Sigmoidal accumulation of burned area (ash)",
+          "Near‐complete percolation leading to ~98% fuel consumption"
+        ]
+      }
+    ],
+    "executive_summary": "The simulation of a forest fire with an initial tree density of approximately 0.70 and 84 simultaneous edge ignitions produced a clear wave‐front propagation across the grid. Burning trees declined initially from 84 to 21 by step 4 as isolated edge fires burned out, then accelerated into dense forest to peak at 48 burning trees by step 25. Thereafter, fuel exhaustion drove a steady decline in active fires, with burning counts falling to zero around step 85 while ash accumulated monotonically to 2,547 (97.8% of initial trees). \nSpatially, the fire advanced in a near‐planar front consuming almost all trees west of x≈20 by step 42. Natural low‐density gaps and edge effects created emergent firebreaks, leaving only 58 unburned trees (2.2% of the original 2,521) in isolated clusters, primarily in the upper‐right quadrant. No reignitions or large oscillations occurred, reflecting the deterministic orthogonal spread and synchronous update rules.",
+    "conclusions": [
+      "The fire spread as a single bell‐shaped wavefront: initial dip to 21 burning trees by step 4, mid‐simulation peak of 48 at step 25, and decline to zero by step 85.",
+      "Ash accumulation was monotonic, converting 2,547 trees to ash (97.8% burn rate) with no reversals or reignitions.",
+      "Only 58 trees (2.2%) survived in isolated low‐density or edge clusters, demonstrating emergent firebreak effects from heterogeneous initial placement.",
+      "Rule‐execution counts (ignite_left_edge: 84, spread_fire: 2,463, burn_out: 2,547) quantify the interplay of ignition, spread, and burnout dynamics under synchronous updating.",
+      "Minor damped fluctuations in burning counts after the peak reflect boundary and finite‐size effects rather than sustained oscillatory behavior."
+    ],
+    "recommendations": [
+      "Vary initial tree density around the percolation threshold to identify critical densities for sustained wave propagation and natural firebreak formation.",
+      "Introduce diagonal neighbor spread or wind‐bias parameters to assess their impact on front shape, peak burning intensity, and residual survivor patterns.",
+      "Implement asynchronous updating or stochastic reignition events to explore the potential for multi‐wave dynamics and oscillatory fire behavior.",
+      "Test alternative ignition schemes (e.g., central spot ignitions or random distributed ignitions) to evaluate how source patterns influence spatial fragmentation and cluster survival.",
+      "Scale grid size and impose nonuniform fuel distributions to study how heterogeneity and system size affect percolation, front speed, and survivor isolation."
+    ]
+  },
+  "file": {
+    "uid": "8cd9fa90-4e6a-4895-98bb-af0338a0b94b",
+    "name": "EXP-H report 8.pdf",
+    "mime_type": "application/pdf",
+    "size": 119027,
+    "created_at": "2026-07-24T17:43:21.976Z"
+  },
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 15800,
+      "completion_tokens": 6429,
+      "reasoning_tokens": 4224,
+      "total_tokens": 22229,
+      "calls": 4,
+      "latency_ms": 45658
+    },
+    "by_model": [
+      {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini-2025-04-16",
+        "prompt_tokens": 15800,
+        "completion_tokens": 6429,
+        "reasoning_tokens": 4224,
+        "total_tokens": 22229,
+        "calls": 4,
+        "latency_ms": 45658
+      }
+    ]
+  },
+  "requests": 4,
+  "created_at": "2026-07-24T17:42:32.071Z",
+  "created_by": "dev.user",
+  "started_at": "2026-07-24T17:42:32.088Z",
+  "finished_at": "2026-07-24T17:43:21.976Z"
+}

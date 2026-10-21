@@ -1,0 +1,89 @@
+{
+  "arm": "A",
+  "generator": "harness-replica (harness/exph2_ablate.py)",
+  "evidence_mode": "model_only",
+  "report_no": 1,
+  "simulation_id": "6a5bbcaac44d001ef3ac207c",
+  "name": "EXP-H2 A report 1",
+  "context_message": "Analyze this simulation's results. Context: People are evacuating a single room through one door. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini",
+    "max_completion_tokens": 16000
+  },
+  "status": "completed",
+  "report": {
+    "sections": [
+      {
+        "key": "dynamics",
+        "title": "Population & Property Dynamics",
+        "narrative": "The provided evidence does not include time series data for agent populations or property values. The model description specifies 100 Person agents and a global property \"evacuated_count\", but no recorded data on how evacuated_count or agent population within the room evolved over the 900 configured steps. Without per-step or summary statistics, we cannot quantify growth/decline phases, oscillations, equilibria, tipping points, or correlations.\n\nThe run completed with status \"finished\" and a seed of 103, but no stop step or evacuation times are reported. Key dynamic insights such as rates of exit or changes in room occupancy over time remain unobserved in the evidence.\n\nIn the absence of recorded series for agent counts or evacuated_count, no causal links or emergent phenomena can be substantiated.",
+        "key_findings": [
+          "No time series data provided for evacuated_count or in-room population.",
+          "Model defines 100 Person agents and a global evacuated_count but lacks recorded dynamics.",
+          "Run finished at step count 900 configured, but no exit-time summary is given."
+        ],
+        "causal_links": [],
+        "emergent_phenomena": []
+      },
+      {
+        "key": "spatial",
+        "title": "Spatial & Interaction Patterns",
+        "narrative": "The provided evidence contains only the model specification and run configuration without any aggregated spatial or interaction statistics (e.g., density heatmaps, proximity counts, clustering metrics). As such, no explicit spatial distribution data, movement trajectories, or interaction events are available from which to infer room occupancy gradients, lane formation, or group-level behaviors near the exit. Without time‐series counts of local densities or collision frequencies, it is not possible to quantify aggregation or segregation patterns, door‐blocking phenomena, or the timing of congestion peaks.",
+        "key_findings": [],
+        "causal_links": [],
+        "emergent_phenomena": []
+      },
+      {
+        "key": "emergence",
+        "title": "Emergent Behavior & Causal Relationships",
+        "narrative": "The simulation config describes 100 agents evacuating a 15.2×15.2 m room through a 3-cell (1.2 m) east door at 1 cell/step. In the absence of detailed time-series or evacuated_count data, we observe only the structural setup and parameterization. With blockage collisions enforced and agents moving at uniform speed, the system is predisposed to local clogging at the narrow exit. Without aggregated outcomes, we cannot quantify throughput or clearance time, nor discern secondary feedback loops between agent density and flow rate.",
+        "key_findings": [
+          "Room interior: 38×38 cells (15.2×15.2 m) with a single 3-cell wide exit",
+          "100 agents move at 1 cell/step (1.333 m/s) under block-collision rules",
+          "Single-exit geometry likely induces bottlenecking and queuing",
+          "No time-series or evacuated_count data provided for flow quantification"
+        ],
+        "causal_links": [],
+        "emergent_phenomena": []
+      }
+    ],
+    "executive_summary": "This evacuation simulation configured 100 agents moving at 1 cell/step in a 15.2×15.2 m room with a single 3-cell (1.2 m) east exit was executed over 900 steps under block-collision rules. Although the model setup inherently predisposes the system to queuing and local clogging at the narrow door, no time-series or summary statistics for evacuated_count or in‐room population were recorded, precluding quantitative analysis of flow rates, clearance time, or emergent spatial patterns.\n\nIn the absence of dynamic data outputs—such as per-step evacuation counts, occupancy over time, or spatial density metrics—we cannot substantiate any trends, tipping points, or congestion peaks. Nonetheless, the geometry and agent rules suggest bottleneck behavior at the exit, highlighting the need for enhanced data logging to validate and refine the model’s evacuation dynamics.",
+    "conclusions": [
+      "No dynamic records (e.g., evacuated_count time series or per-step occupancy) were captured, preventing quantitative analysis of evacuation performance.",
+      "Model parameters (100 agents, uniform speed, block collisions) and single 1.2 m exit create conditions favorable to local clogging and queuing at the doorway.",
+      "Without throughput or clearance‐time metrics, key performance indicators remain unknown and emergent spatial or temporal patterns cannot be identified.",
+      "Structural setup implies bottleneck-induced delays, but the extent and duration of congestion are unmeasured.",
+      "Data logging omissions limit any causal inference or validation against empirical evacuation benchmarks."
+    ],
+    "recommendations": [
+      "Enable recording of evacuated_count and in‐room population at each time step to quantify evacuation progress.",
+      "Log key performance metrics such as total clearance time, throughput (agents/step), and peak congestion duration.",
+      "Implement spatial density and collision frequency outputs (e.g., heatmaps or local density histograms) to capture emergent patterns near the exit.",
+      "Conduct parameter sweeps varying door width, agent speed, and collision rules to assess sensitivity and bottleneck mitigation strategies.",
+      "Incorporate step-by-step trajectory logging or sampling to analyze movement paths, lane formation, and clogging events.",
+      "Compare simulation outputs against empirical evacuation data or analytical benchmarks to validate model fidelity and inform adjustments."
+    ]
+  },
+  "warnings": [],
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 3126,
+      "completion_tokens": 2466,
+      "reasoning_tokens": 1344,
+      "total_tokens": 5592,
+      "calls": 4
+    },
+    "by_model": [
+      "o4-mini-2025-04-16"
+    ]
+  },
+  "requests": 4,
+  "http_attempts": 4,
+  "failed_attempts": 0,
+  "created_at": "2026-09-23T18:52:00.813Z",
+  "finished_at": "2026-09-23T18:52:32.856Z",
+  "wall_clock_ms": 32042,
+  "cost_usd_engine_equivalent": 0.014289
+}

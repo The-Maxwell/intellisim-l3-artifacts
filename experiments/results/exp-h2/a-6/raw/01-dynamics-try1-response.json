@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ERMWOYle4mVzIUL4mGVXYJEgG7VEr",
+  "object": "chat.completion",
+  "created": 1790190136,
+  "model": "o4-mini-2025-04-16",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"title\":\"Динаміка популяції та властивостей\",\"narrative\":\"У моделі ініціально присутні 100 агентів типу Person та глобальна числова властивість evacuated_count, що фіксує кількість евакуйованих. Оскільки у наданих даних відсутні часові серії зміни чисельності агентів чи значень evacuated_count, неможливо провести детальний аналіз фаз росту, занепаду, коливань чи досягнення рівноваги. Відсутні дані також не дозволяють виявити причинно-наслідкові зв’язки чи емергентні явища в динаміці евакуації.\",\"key_findings\":[],\"causal_links\":[],\"emergent_phenomena\":[]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 842,
+    "completion_tokens": 1025,
+    "total_tokens": 1867,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 832,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,276 @@
+{
+  "pricing_per_1M": {
+    "gpt-4.1-mini": {
+      "in": 0.4,
+      "out": 1.6
+    },
+    "gpt-4o-mini": {
+      "in": 0.15,
+      "out": 0.6
+    },
+    "gpt-4o": {
+      "in": 2.5,
+      "out": 10.0
+    }
+  },
+  "model": "gpt-4.1-mini",
+  "conditions": {
+    "none": {
+      "condition": "none",
+      "runs": 5,
+      "A": 1,
+      "individual": false,
+      "T_mean": 46.0,
+      "T_all": [
+        46,
+        46,
+        46,
+        46,
+        46
+      ],
+      "api_calls_mean": 0.0,
+      "api_calls_all": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "consult_expected_attrition_mean": 10.0,
+      "consult_naive_meanNxD": 9.0,
+      "consult_ratio_measured_over_expected": 0.0,
+      "total_tokens_mean": 0.0,
+      "cost_mean_usd": 0.0,
+      "cost_total_usd": 0.0,
+      "active_s_mean": 2.2158,
+      "egress_mean_s": 6.729,
+      "egress_sd_s": 3.275961362057157,
+      "label_distribution": {}
+    },
+    "archetype_decision": {
+      "condition": "archetype_decision",
+      "runs": 5,
+      "A": 1,
+      "individual": false,
+      "T_mean": 92.0,
+      "T_all": [
+        98,
+        90,
+        93,
+        92,
+        87
+      ],
+      "api_calls_mean": 18.8,
+      "api_calls_all": [
+        20,
+        18,
+        19,
+        19,
+        18
+      ],
+      "consult_expected_attrition_mean": 19.0,
+      "consult_naive_meanNxD": 18.0,
+      "consult_ratio_measured_over_expected": 0.9894736842105264,
+      "total_tokens_mean": 138149.0,
+      "cost_mean_usd": 0.056898800000000006,
+      "cost_total_usd": 0.284494,
+      "active_s_mean": 47.441,
+      "egress_mean_s": 10.782,
+      "egress_sd_s": 6.351907544896873,
+      "label_distribution": {
+        "proceed_to_exit": 2230,
+        "wait_briefly": 292,
+        "follow_crowd": 1103,
+        "seek_alternate_route": 169
+      }
+    },
+    "archetype_decision-A2": {
+      "condition": "archetype_decision-A2",
+      "runs": 5,
+      "A": 2,
+      "individual": false,
+      "T_mean": 95.0,
+      "T_all": [
+        79,
+        91,
+        92,
+        91,
+        122
+      ],
+      "api_calls_mean": 36.0,
+      "api_calls_all": [
+        30,
+        34,
+        34,
+        37,
+        45
+      ],
+      "consult_expected_attrition_mean": 39.2,
+      "consult_naive_meanNxD": 37.2,
+      "consult_ratio_measured_over_expected": 0.9183673469387754,
+      "total_tokens_mean": 143029.8,
+      "cost_mean_usd": 0.0603912,
+      "cost_total_usd": 0.301956,
+      "active_s_mean": 48.693799999999996,
+      "egress_mean_s": 10.3566,
+      "egress_sd_s": 6.214445680044234,
+      "label_distribution": {
+        "proceed_to_exit": 2108,
+        "wait_briefly": 373,
+        "follow_crowd": 943,
+        "seek_alternate_route": 229
+      }
+    },
+    "individual_decision": {
+      "condition": "individual_decision",
+      "runs": 5,
+      "A": 100,
+      "individual": true,
+      "T_mean": 46.0,
+      "T_all": [
+        46,
+        46,
+        46,
+        46,
+        46
+      ],
+      "api_calls_mean": 512.4,
+      "api_calls_all": [
+        514,
+        514,
+        514,
+        510,
+        510
+      ],
+      "consult_expected_attrition_mean": 491.6,
+      "consult_naive_meanNxD": 900.0,
+      "consult_ratio_measured_over_expected": 1.0423108218063466,
+      "total_tokens_mean": 305722.0,
+      "cost_mean_usd": 0.13521088,
+      "cost_total_usd": 0.6760544,
+      "active_s_mean": 579.2067999999999,
+      "egress_mean_s": 6.7614,
+      "egress_sd_s": 3.2510843019332105,
+      "label_distribution": {
+        "proceed_to_exit": 2456,
+        "seek_alternate_route": 2
+      }
+    },
+    "hybrid": {
+      "condition": "hybrid",
+      "runs": 5,
+      "A": 11,
+      "individual": false,
+      "T_mean": 90.0,
+      "T_all": [
+        90,
+        107,
+        72,
+        111,
+        70
+      ],
+      "api_calls_mean": 66.8,
+      "api_calls_all": [
+        67,
+        69,
+        61,
+        70,
+        67
+      ],
+      "consult_expected_attrition_mean": 64.0,
+      "consult_naive_meanNxD": 195.8,
+      "consult_ratio_measured_over_expected": 1.04375,
+      "total_tokens_mean": 147285.6,
+      "cost_mean_usd": 0.06168696,
+      "cost_total_usd": 0.3084348,
+      "active_s_mean": 73.67960000000001,
+      "egress_mean_s": 9.865800000000002,
+      "egress_sd_s": 5.750773265074236,
+      "label_distribution": {
+        "proceed_to_exit": 2272,
+        "seek_alternate_route": 157,
+        "follow_crowd": 870,
+        "wait_briefly": 185
+      }
+    },
+    "archetype_full": {
+      "condition": "archetype_full",
+      "runs": 2,
+      "A": 1,
+      "individual": false,
+      "T_mean": 46.0,
+      "T_all": [
+        46,
+        46
+      ],
+      "api_calls_mean": 14.5,
+      "api_calls_all": [
+        15,
+        14
+      ],
+      "consult_expected_attrition_mean": 10.0,
+      "consult_naive_meanNxD": 9.0,
+      "consult_ratio_measured_over_expected": 1.45,
+      "total_tokens_mean": 88894.5,
+      "cost_mean_usd": 0.22684875000000002,
+      "cost_total_usd": 0.45369750000000003,
+      "active_s_mean": 149.978,
+      "egress_mean_s": 6.820499999999999,
+      "egress_sd_s": 3.2406695985916523,
+      "label_distribution": {
+        "actions: move_toward": 418,
+        "actions: move_away": 48,
+        "actions: set_property": 25
+      }
+    }
+  },
+  "verdicts": {
+    "C1_consultations_vs_prediction": {
+      "archetype_decision": {
+        "measured_mean": 18.8,
+        "expected_attrition_mean": 19.0,
+        "ratio": 0.9894736842105264,
+        "within_10pct": true
+      },
+      "archetype_decision-A2": {
+        "measured_mean": 36.0,
+        "expected_attrition_mean": 39.2,
+        "ratio": 0.9183673469387754,
+        "within_10pct": true
+      },
+      "individual_decision": {
+        "measured_mean": 512.4,
+        "expected_attrition_mean": 491.6,
+        "ratio": 1.0423108218063466,
+        "within_10pct": true
+      },
+      "hybrid": {
+        "measured_mean": 66.8,
+        "expected_attrition_mean": 64.0,
+        "ratio": 1.04375,
+        "within_10pct": true
+      },
+      "archetype_full": {
+        "measured_mean": 14.5,
+        "expected_attrition_mean": 10.0,
+        "ratio": 1.45,
+        "within_10pct": false
+      }
+    },
+    "C2_archetype_over_individual_perdue": {
+      "a1_calls_per_due": 1.0444444444444445,
+      "individual_calls_per_due": 56.93333333333333,
+      "ratio": 0.018345042935206873,
+      "target": "~1/mean_pop",
+      "note": "individual per-due = live population, not fixed N"
+    },
+    "C3_A2_over_A1_perdue": {
+      "a1_per_due": 1.0444444444444445,
+      "a2_per_due": 1.894736842105263,
+      "ratio": 1.8141097424412091,
+      "target": 2.0,
+      "pass": true
+    }
+  },
+  "total_study_cost_usd": 2.0246
+}

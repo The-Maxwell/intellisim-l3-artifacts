@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ERMTES0vhX1ZP9CASCzjjpWaEGq2Q",
+  "object": "chat.completion",
+  "created": 1790189940,
+  "model": "o4-mini-2025-04-16",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"title\":\"Emergent Behavior & Causal Relationships для exp-B4-N300-rep1\",\"narrative\":\"Модель exp-B4-flow із N=300 агентами завершилася успішно за 900 кроків. Стійкої затримки при вході через отвір шириною 10 клітин не спостерігалося через відсутність наданих часових рядів витрат потоку чи щільності. Без фактичних даних про евакуйований натовп (evacuated_count) чи часових серій неможливо підтвердити класичні переходи від ламінарного до турбулентного руху у вузькому отворі.\\n\\nЧерез відсутність виміряних показників потоку проти щільності неможливо виокремити характерні феномени самоорганізації чи зясовні каскади заторів. Відомо лише, що рух агентів відбувається зі швидкістю 0.825 клітин/крок послідовним оновленням, що в нормальних умовах відповідає лінійному потоку без турбулентних вібрацій.\",\"key_findings\":[\"Конфігурація: кімната 48×32 із 10-клітинним виходом, N=300 агентів.\",\"Швидкість руху: 1.10 м/с (0.825 клітин/крок) із послідовним оновленням.\",\"Симуляція зайняла 900 кроків, статус: finished.\",\"Відсутні часові ряди evacuated_count або shape_property_series для подальшого аналізу.\",\"Не подано даних про витрати потоку або локальні щільності.\"],\"causal_links\":[],\"emergent_phenomena\":[]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 851,
+    "completion_tokens": 868,
+    "total_tokens": 1719,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 448,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

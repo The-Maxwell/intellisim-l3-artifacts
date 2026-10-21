@@ -1,0 +1,106 @@
+[
+  {
+    "tag": "dynamics-try1",
+    "http_attempt": 1,
+    "sent_at": "2026-09-23T19:03:05.859Z",
+    "status": 200,
+    "elapsed_ms": 14463,
+    "outcome": "ok",
+    "model": "o4-mini-2025-04-16",
+    "usage": {
+      "prompt_tokens": 822,
+      "completion_tokens": 1419,
+      "total_tokens": 2241,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 896,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "finish_reason": "stop",
+    "index": 1
+  },
+  {
+    "tag": "spatial-try1",
+    "http_attempt": 1,
+    "sent_at": "2026-09-23T19:03:20.329Z",
+    "status": 200,
+    "elapsed_ms": 21352,
+    "outcome": "ok",
+    "model": "o4-mini-2025-04-16",
+    "usage": {
+      "prompt_tokens": 782,
+      "completion_tokens": 1931,
+      "total_tokens": 2713,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1152,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "finish_reason": "stop",
+    "index": 2
+  },
+  {
+    "tag": "emergence-try1",
+    "http_attempt": 1,
+    "sent_at": "2026-09-23T19:03:41.687Z",
+    "status": 200,
+    "elapsed_ms": 25567,
+    "outcome": "ok",
+    "model": "o4-mini-2025-04-16",
+    "usage": {
+      "prompt_tokens": 871,
+      "completion_tokens": 2178,
+      "total_tokens": 3049,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1536,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "finish_reason": "stop",
+    "index": 3
+  },
+  {
+    "tag": "synthesis-try1",
+    "http_attempt": 1,
+    "sent_at": "2026-09-23T19:04:07.261Z",
+    "status": 200,
+    "elapsed_ms": 13490,
+    "outcome": "ok",
+    "model": "o4-mini-2025-04-16",
+    "usage": {
+      "prompt_tokens": 2105,
+      "completion_tokens": 1141,
+      "total_tokens": 3246,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 320,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "finish_reason": "stop",
+    "index": 4
+  }
+]

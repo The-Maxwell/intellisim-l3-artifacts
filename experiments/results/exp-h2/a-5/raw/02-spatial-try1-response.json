@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ERMTiLuzxlLtrfmnrpkcjL3OqaI4z",
+  "object": "chat.completion",
+  "created": 1790189970,
+  "model": "o4-mini-2025-04-16",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"title\":\"Spatial & Interaction Patterns: exp-E-decision Evacuation\",\"narrative\":\"The evacuation took place in a 38×38 cell interior with a single 3-cell wide exit door located at x=39, y=18–20. Throughout the run, all 100 person agents moved eastward toward this aperture at a fixed speed of 1.0 cell/step, resulting in a clear funneling of movement lines converging on the door region.\\n\\nAs agents approached the door, the block-on-collision rule caused them to slow and accumulate, generating a high-density cluster immediately upstream of the exit. This queue extended back into the room as more agents joined the bottleneck, with no significant off-path aggregations observed elsewhere in the space.\\n\\nThere was no evidence of territorial segregation or persistent sub-group clustering away from the exit: initial positions dispersed uniformly and all interactions centered on the doorway. Once an agent passed through the door (x=39, y=18–20), it was removed, steadily reducing the local density until the queue dissolved.\\n\\nThe spatial structure shaped the outcome by creating a self-organized queuing pattern at the bottleneck. Despite the randomized seed driving initial placement, the single narrow door reliably produced a dense, temporary jam that only cleared as agents exited in turn.\",\"key_findings\":[\"All 100 agents converged on the single exit at x=39, y=18–20, producing a focused flow.\",\"Collision blocking led to a persistent high-density cluster directly in front of the 3-cell door.\",\"No secondary clusters or territorial zones formed elsewhere in the room.\",\"Exit throughput increased only after the queue thinned, showing a classic bottleneck effect.\",\"Agents evacuated completely before the 300-step cap, demonstrating eventual decongestion.\"],\"causal_links\":[\"Block-on-collision rule → formation of dense agent cluster at door\",\"Narrow 3-cell door width → bottleneck and queuing behavior\"],\"emergent_phenomena\":[\"Self-organized single-file queue at the exit\",\"System-level bottleneck flow not specified by any individual rule but arising from spatial constraints and collision interactions\"]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 762,
+    "completion_tokens": 1237,
+    "total_tokens": 1999,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 768,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

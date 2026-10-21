@@ -1,0 +1,127 @@
+{
+  "checked_at_utc": "2026-09-23T18:43:30+00:00",
+  "rows": [
+    {
+      "report": 1,
+      "sim_id": "6a5bbcaac44d001ef3ac207c",
+      "sim_name": "exp-C-rep3",
+      "status": "finished",
+      "has_results": true,
+      "step_range_max": 45,
+      "expected_max": 45,
+      "orig_analysis_present": true,
+      "language": "en",
+      "pass": true
+    },
+    {
+      "report": 2,
+      "sim_id": "6a5bbcc1c44d001ef3acc10e",
+      "sim_name": "exp-C-rep18",
+      "status": "finished",
+      "has_results": true,
+      "step_range_max": 44,
+      "expected_max": 44,
+      "orig_analysis_present": true,
+      "language": "uk",
+      "pass": true
+    },
+    {
+      "report": 3,
+      "sim_id": "6a5bc249c44d001ef3af684d",
+      "sim_name": "exp-B12-rep1",
+      "status": "finished",
+      "has_results": true,
+      "step_range_max": 599,
+      "expected_max": 599,
+      "orig_analysis_present": true,
+      "language": "en",
+      "pass": true
+    },
+    {
+      "report": 4,
+      "sim_id": "6a5bc463c44d001ef3b8f824",
+      "sim_name": "exp-B4-N300-rep1",
+      "status": "finished",
+      "has_results": true,
+      "step_range_max": 899,
+      "expected_max": 899,
+      "orig_analysis_present": true,
+      "language": "uk",
+      "pass": true
+    },
+    {
+      "report": 5,
+      "sim_id": "6a6380584ccaa6983ac7ea1c",
+      "sim_name": "exp-E-archetype_decision-rep301",
+      "status": "finished",
+      "has_results": true,
+      "step_range_max": 97,
+      "expected_max": 97,
+      "orig_analysis_present": true,
+      "language": "en",
+      "pass": true
+    },
+    {
+      "report": 6,
+      "sim_id": "6a63810f4ccaa6983ac81367",
+      "sim_name": "exp-E-individual_decision-rep301",
+      "status": "finished",
+      "has_results": true,
+      "step_range_max": 45,
+      "expected_max": 45,
+      "orig_analysis_present": true,
+      "language": "uk",
+      "pass": true
+    },
+    {
+      "report": 7,
+      "sim_id": "6a610ff2ff82d466bf2db995",
+      "sim_name": "exp-F-p0.50-rep1",
+      "status": "finished",
+      "has_results": true,
+      "step_range_max": 10,
+      "expected_max": 10,
+      "orig_analysis_present": true,
+      "language": "uk",
+      "pass": true
+    },
+    {
+      "report": 8,
+      "sim_id": "6a634dbf4ccaa6983a640151",
+      "sim_name": "exp-F-p0.70-rep1",
+      "status": "finished",
+      "has_results": true,
+      "step_range_max": 85,
+      "expected_max": 85,
+      "orig_analysis_present": true,
+      "language": "en",
+      "pass": true
+    },
+    {
+      "report": 9,
+      "sim_id": "6a636be64ccaa6983aafedd5",
+      "sim_name": "exp-G-med-rep1",
+      "status": "finished",
+      "has_results": true,
+      "step_range_max": 227,
+      "expected_max": 227,
+      "orig_analysis_present": true,
+      "language": "en",
+      "pass": true
+    },
+    {
+      "report": 10,
+      "sim_id": "6a636c0c4ccaa6983ab1976a",
+      "sim_name": "exp-G-med-rep8",
+      "status": "finished",
+      "has_results": true,
+      "step_range_max": 173,
+      "expected_max": 173,
+      "orig_analysis_present": true,
+      "language": "uk",
+      "pass": true
+    }
+  ],
+  "o4mini_results_analysis": true,
+  "gate_G0": "PASS"
+}

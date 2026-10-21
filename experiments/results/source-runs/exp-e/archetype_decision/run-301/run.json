@@ -1,0 +1,2045 @@
+{
+ "id": "6a6380584ccaa6983ac7ea1c",
+ "name": "exp-E-archetype_decision-rep301",
+ "model_id": "6a637f334ccaa6983ac7ea09",
+ "seed": 301,
+ "steps": 300,
+ "termination": {
+  "type": "population",
+  "operator": "eq",
+  "value": 0,
+  "target_uid": "person"
+ },
+ "agents": [
+  {
+   "id": 1,
+   "agent_uid": "person",
+   "name": "Person #1",
+   "position": {
+    "x": 11,
+    "y": 25
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 2,
+   "agent_uid": "person",
+   "name": "Person #2",
+   "position": {
+    "x": 34,
+    "y": 17
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 3,
+   "agent_uid": "person",
+   "name": "Person #3",
+   "position": {
+    "x": 37,
+    "y": 24
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 4,
+   "agent_uid": "person",
+   "name": "Person #4",
+   "position": {
+    "x": 2,
+    "y": 9
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 5,
+   "agent_uid": "person",
+   "name": "Person #5",
+   "position": {
+    "x": 24,
+    "y": 23
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 6,
+   "agent_uid": "person",
+   "name": "Person #6",
+   "position": {
+    "x": 13,
+    "y": 18
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 7,
+   "agent_uid": "person",
+   "name": "Person #7",
+   "position": {
+    "x": 6,
+    "y": 6
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 8,
+   "agent_uid": "person",
+   "name": "Person #8",
+   "position": {
+    "x": 23,
+    "y": 10
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 9,
+   "agent_uid": "person",
+   "name": "Person #9",
+   "position": {
+    "x": 16,
+    "y": 18
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 10,
+   "agent_uid": "person",
+   "name": "Person #10",
+   "position": {
+    "x": 10,
+    "y": 32
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 11,
+   "agent_uid": "person",
+   "name": "Person #11",
+   "position": {
+    "x": 22,
+    "y": 11
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 12,
+   "agent_uid": "person",
+   "name": "Person #12",
+   "position": {
+    "x": 19,
+    "y": 23
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 13,
+   "agent_uid": "person",
+   "name": "Person #13",
+   "position": {
+    "x": 19,
+    "y": 3
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 14,
+   "agent_uid": "person",
+   "name": "Person #14",
+   "position": {
+    "x": 32,
+    "y": 6
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 15,
+   "agent_uid": "person",
+   "name": "Person #15",
+   "position": {
+    "x": 27,
+    "y": 13
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 16,
+   "agent_uid": "person",
+   "name": "Person #16",
+   "position": {
+    "x": 2,
+    "y": 3
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 17,
+   "agent_uid": "person",
+   "name": "Person #17",
+   "position": {
+    "x": 26,
+    "y": 9
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 18,
+   "agent_uid": "person",
+   "name": "Person #18",
+   "position": {
+    "x": 4,
+    "y": 22
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 19,
+   "agent_uid": "person",
+   "name": "Person #19",
+   "position": {
+    "x": 35,
+    "y": 9
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 20,
+   "agent_uid": "person",
+   "name": "Person #20",
+   "position": {
+    "x": 3,
+    "y": 8
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 21,
+   "agent_uid": "person",
+   "name": "Person #21",
+   "position": {
+    "x": 29,
+    "y": 20
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 22,
+   "agent_uid": "person",
+   "name": "Person #22",
+   "position": {
+    "x": 30,
+    "y": 8
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 23,
+   "agent_uid": "person",
+   "name": "Person #23",
+   "position": {
+    "x": 16,
+    "y": 36
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 24,
+   "agent_uid": "person",
+   "name": "Person #24",
+   "position": {
+    "x": 38,
+    "y": 19
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 25,
+   "agent_uid": "person",
+   "name": "Person #25",
+   "position": {
+    "x": 23,
+    "y": 12
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 26,
+   "agent_uid": "person",
+   "name": "Person #26",
+   "position": {
+    "x": 25,
+    "y": 4
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 27,
+   "agent_uid": "person",
+   "name": "Person #27",
+   "position": {
+    "x": 19,
+    "y": 4
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 28,
+   "agent_uid": "person",
+   "name": "Person #28",
+   "position": {
+    "x": 5,
+    "y": 34
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 29,
+   "agent_uid": "person",
+   "name": "Person #29",
+   "position": {
+    "x": 26,
+    "y": 20
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 30,
+   "agent_uid": "person",
+   "name": "Person #30",
+   "position": {
+    "x": 33,
+    "y": 22
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 31,
+   "agent_uid": "person",
+   "name": "Person #31",
+   "position": {
+    "x": 8,
+    "y": 5
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 32,
+   "agent_uid": "person",
+   "name": "Person #32",
+   "position": {
+    "x": 4,
+    "y": 32
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 33,
+   "agent_uid": "person",
+   "name": "Person #33",
+   "position": {
+    "x": 20,
+    "y": 23
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 34,
+   "agent_uid": "person",
+   "name": "Person #34",
+   "position": {
+    "x": 15,
+    "y": 21
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 35,
+   "agent_uid": "person",
+   "name": "Person #35",
+   "position": {
+    "x": 22,
+    "y": 36
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 36,
+   "agent_uid": "person",
+   "name": "Person #36",
+   "position": {
+    "x": 8,
+    "y": 3
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 37,
+   "agent_uid": "person",
+   "name": "Person #37",
+   "position": {
+    "x": 20,
+    "y": 17
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 38,
+   "agent_uid": "person",
+   "name": "Person #38",
+   "position": {
+    "x": 6,
+    "y": 16
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 39,
+   "agent_uid": "person",
+   "name": "Person #39",
+   "position": {
+    "x": 38,
+    "y": 24
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 40,
+   "agent_uid": "person",
+   "name": "Person #40",
+   "position": {
+    "x": 30,
+    "y": 4
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 41,
+   "agent_uid": "person",
+   "name": "Person #41",
+   "position": {
+    "x": 37,
+    "y": 15
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 42,
+   "agent_uid": "person",
+   "name": "Person #42",
+   "position": {
+    "x": 33,
+    "y": 19
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 43,
+   "agent_uid": "person",
+   "name": "Person #43",
+   "position": {
+    "x": 24,
+    "y": 21
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 44,
+   "agent_uid": "person",
+   "name": "Person #44",
+   "position": {
+    "x": 7,
+    "y": 15
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 45,
+   "agent_uid": "person",
+   "name": "Person #45",
+   "position": {
+    "x": 29,
+    "y": 26
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 46,
+   "agent_uid": "person",
+   "name": "Person #46",
+   "position": {
+    "x": 28,
+    "y": 3
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 47,
+   "agent_uid": "person",
+   "name": "Person #47",
+   "position": {
+    "x": 33,
+    "y": 7
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 48,
+   "agent_uid": "person",
+   "name": "Person #48",
+   "position": {
+    "x": 21,
+    "y": 30
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 49,
+   "agent_uid": "person",
+   "name": "Person #49",
+   "position": {
+    "x": 30,
+    "y": 23
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 50,
+   "agent_uid": "person",
+   "name": "Person #50",
+   "position": {
+    "x": 11,
+    "y": 37
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 51,
+   "agent_uid": "person",
+   "name": "Person #51",
+   "position": {
+    "x": 27,
+    "y": 34
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 52,
+   "agent_uid": "person",
+   "name": "Person #52",
+   "position": {
+    "x": 29,
+    "y": 3
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 53,
+   "agent_uid": "person",
+   "name": "Person #53",
+   "position": {
+    "x": 28,
+    "y": 29
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 54,
+   "agent_uid": "person",
+   "name": "Person #54",
+   "position": {
+    "x": 32,
+    "y": 7
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 55,
+   "agent_uid": "person",
+   "name": "Person #55",
+   "position": {
+    "x": 17,
+    "y": 12
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 56,
+   "agent_uid": "person",
+   "name": "Person #56",
+   "position": {
+    "x": 1,
+    "y": 38
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 57,
+   "agent_uid": "person",
+   "name": "Person #57",
+   "position": {
+    "x": 35,
+    "y": 14
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 58,
+   "agent_uid": "person",
+   "name": "Person #58",
+   "position": {
+    "x": 19,
+    "y": 26
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 59,
+   "agent_uid": "person",
+   "name": "Person #59",
+   "position": {
+    "x": 38,
+    "y": 20
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 60,
+   "agent_uid": "person",
+   "name": "Person #60",
+   "position": {
+    "x": 18,
+    "y": 20
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 61,
+   "agent_uid": "person",
+   "name": "Person #61",
+   "position": {
+    "x": 37,
+    "y": 24
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 62,
+   "agent_uid": "person",
+   "name": "Person #62",
+   "position": {
+    "x": 3,
+    "y": 30
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 63,
+   "agent_uid": "person",
+   "name": "Person #63",
+   "position": {
+    "x": 13,
+    "y": 32
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 64,
+   "agent_uid": "person",
+   "name": "Person #64",
+   "position": {
+    "x": 4,
+    "y": 6
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 65,
+   "agent_uid": "person",
+   "name": "Person #65",
+   "position": {
+    "x": 22,
+    "y": 15
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 66,
+   "agent_uid": "person",
+   "name": "Person #66",
+   "position": {
+    "x": 5,
+    "y": 22
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 67,
+   "agent_uid": "person",
+   "name": "Person #67",
+   "position": {
+    "x": 2,
+    "y": 2
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 68,
+   "agent_uid": "person",
+   "name": "Person #68",
+   "position": {
+    "x": 34,
+    "y": 35
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 69,
+   "agent_uid": "person",
+   "name": "Person #69",
+   "position": {
+    "x": 17,
+    "y": 5
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 70,
+   "agent_uid": "person",
+   "name": "Person #70",
+   "position": {
+    "x": 21,
+    "y": 33
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 71,
+   "agent_uid": "person",
+   "name": "Person #71",
+   "position": {
+    "x": 34,
+    "y": 33
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 72,
+   "agent_uid": "person",
+   "name": "Person #72",
+   "position": {
+    "x": 27,
+    "y": 26
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 73,
+   "agent_uid": "person",
+   "name": "Person #73",
+   "position": {
+    "x": 21,
+    "y": 20
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 74,
+   "agent_uid": "person",
+   "name": "Person #74",
+   "position": {
+    "x": 18,
+    "y": 30
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 75,
+   "agent_uid": "person",
+   "name": "Person #75",
+   "position": {
+    "x": 9,
+    "y": 29
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 76,
+   "agent_uid": "person",
+   "name": "Person #76",
+   "position": {
+    "x": 7,
+    "y": 38
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 77,
+   "agent_uid": "person",
+   "name": "Person #77",
+   "position": {
+    "x": 25,
+    "y": 32
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 78,
+   "agent_uid": "person",
+   "name": "Person #78",
+   "position": {
+    "x": 32,
+    "y": 5
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 79,
+   "agent_uid": "person",
+   "name": "Person #79",
+   "position": {
+    "x": 21,
+    "y": 15
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 80,
+   "agent_uid": "person",
+   "name": "Person #80",
+   "position": {
+    "x": 15,
+    "y": 33
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 81,
+   "agent_uid": "person",
+   "name": "Person #81",
+   "position": {
+    "x": 2,
+    "y": 30
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 82,
+   "agent_uid": "person",
+   "name": "Person #82",
+   "position": {
+    "x": 17,
+    "y": 27
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 83,
+   "agent_uid": "person",
+   "name": "Person #83",
+   "position": {
+    "x": 35,
+    "y": 18
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 84,
+   "agent_uid": "person",
+   "name": "Person #84",
+   "position": {
+    "x": 12,
+    "y": 25
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 85,
+   "agent_uid": "person",
+   "name": "Person #85",
+   "position": {
+    "x": 25,
+    "y": 11
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 86,
+   "agent_uid": "person",
+   "name": "Person #86",
+   "position": {
+    "x": 9,
+    "y": 13
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 87,
+   "agent_uid": "person",
+   "name": "Person #87",
+   "position": {
+    "x": 27,
+    "y": 20
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 88,
+   "agent_uid": "person",
+   "name": "Person #88",
+   "position": {
+    "x": 37,
+    "y": 25
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 89,
+   "agent_uid": "person",
+   "name": "Person #89",
+   "position": {
+    "x": 9,
+    "y": 3
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 90,
+   "agent_uid": "person",
+   "name": "Person #90",
+   "position": {
+    "x": 7,
+    "y": 6
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 91,
+   "agent_uid": "person",
+   "name": "Person #91",
+   "position": {
+    "x": 19,
+    "y": 19
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 92,
+   "agent_uid": "person",
+   "name": "Person #92",
+   "position": {
+    "x": 34,
+    "y": 37
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 93,
+   "agent_uid": "person",
+   "name": "Person #93",
+   "position": {
+    "x": 28,
+    "y": 6
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 94,
+   "agent_uid": "person",
+   "name": "Person #94",
+   "position": {
+    "x": 19,
+    "y": 16
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 95,
+   "agent_uid": "person",
+   "name": "Person #95",
+   "position": {
+    "x": 23,
+    "y": 35
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 96,
+   "agent_uid": "person",
+   "name": "Person #96",
+   "position": {
+    "x": 34,
+    "y": 5
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 97,
+   "agent_uid": "person",
+   "name": "Person #97",
+   "position": {
+    "x": 32,
+    "y": 12
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 98,
+   "agent_uid": "person",
+   "name": "Person #98",
+   "position": {
+    "x": 10,
+    "y": 34
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 99,
+   "agent_uid": "person",
+   "name": "Person #99",
+   "position": {
+    "x": 38,
+    "y": 3
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  },
+  {
+   "id": 100,
+   "agent_uid": "person",
+   "name": "Person #100",
+   "position": {
+    "x": 28,
+    "y": 14
+   },
+   "properties": {
+    "color": "#8B5CF6",
+    "has_exited": false
+   },
+   "state": ""
+  }
+ ],
+ "environment": {
+  "width": 40,
+  "height": 40,
+  "torus": false,
+  "collision_mode": "block",
+  "global_properties": {
+   "evacuated_count": 0
+  },
+  "shapes": [
+   {
+    "id": 1,
+    "shape_uid": "wall_north",
+    "name": "North wall",
+    "type": "rectangle",
+    "layer": 1,
+    "visible": true,
+    "properties": {
+     "color": "#555555"
+    },
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "width": 40,
+    "height": 1,
+    "fill": true,
+    "stroke": false
+   },
+   {
+    "id": 2,
+    "shape_uid": "wall_south",
+    "name": "South wall",
+    "type": "rectangle",
+    "layer": 1,
+    "visible": true,
+    "properties": {
+     "color": "#555555"
+    },
+    "position": {
+     "x": 0,
+     "y": 39
+    },
+    "width": 40,
+    "height": 1,
+    "fill": true,
+    "stroke": false
+   },
+   {
+    "id": 3,
+    "shape_uid": "wall_west",
+    "name": "West wall",
+    "type": "rectangle",
+    "layer": 1,
+    "visible": true,
+    "properties": {
+     "color": "#555555"
+    },
+    "position": {
+     "x": 0,
+     "y": 1
+    },
+    "width": 1,
+    "height": 38,
+    "fill": true,
+    "stroke": false
+   },
+   {
+    "id": 4,
+    "shape_uid": "wall_east_upper",
+    "name": "East wall upper",
+    "type": "rectangle",
+    "layer": 1,
+    "visible": true,
+    "properties": {
+     "color": "#555555"
+    },
+    "position": {
+     "x": 39,
+     "y": 1
+    },
+    "width": 1,
+    "height": 17,
+    "fill": true,
+    "stroke": false
+   },
+   {
+    "id": 5,
+    "shape_uid": "wall_east_lower",
+    "name": "East wall lower",
+    "type": "rectangle",
+    "layer": 1,
+    "visible": true,
+    "properties": {
+     "color": "#555555"
+    },
+    "position": {
+     "x": 39,
+     "y": 21
+    },
+    "width": 1,
+    "height": 18,
+    "fill": true,
+    "stroke": false
+   },
+   {
+    "id": 6,
+    "shape_uid": "exit_door",
+    "name": "Exit door",
+    "type": "rectangle",
+    "layer": 1,
+    "visible": true,
+    "properties": {
+     "color": "#33cc33"
+    },
+    "position": {
+     "x": 39,
+     "y": 18
+    },
+    "width": 1,
+    "height": 3,
+    "fill": false,
+    "stroke": true
+   },
+   {
+    "id": 7,
+    "shape_uid": "interior",
+    "name": "Interior region",
+    "type": "rectangle",
+    "layer": 1,
+    "visible": false,
+    "properties": {
+     "color": "#eeeeee"
+    },
+    "position": {
+     "x": 1,
+     "y": 1
+    },
+    "width": 38,
+    "height": 38,
+    "fill": false,
+    "stroke": true
+   }
+  ]
+ },
+ "widgets": [
+  {
+   "id": "people_remaining_monitor",
+   "type": "monitor",
+   "title": "People Remaining in Hall",
+   "source": {
+    "type": "population",
+    "agent_uids": [
+     "person"
+    ]
+   },
+   "position": {
+    "x": 0,
+    "y": 0,
+    "w": 6,
+    "h": 2
+   }
+  },
+  {
+   "id": "people_evacuated_monitor",
+   "type": "monitor",
+   "title": "People Evacuated",
+   "source": {
+    "type": "global_property",
+    "property_uid": "evacuated_count"
+   },
+   "position": {
+    "x": 0,
+    "y": 2,
+    "w": 6,
+    "h": 2
+   }
+  },
+  {
+   "id": "evacuation_time_series",
+   "type": "line_chart",
+   "title": "Evacuation Progress Over Time",
+   "series": [
+    {
+     "label": "People Remaining",
+     "color": "#3366cc",
+     "source": {
+      "type": "population",
+      "agent_uids": [
+       "person"
+      ]
+     }
+    },
+    {
+     "label": "People Evacuated",
+     "color": "#dc3912",
+     "source": {
+      "type": "global_property",
+      "property_uid": "evacuated_count"
+     }
+    }
+   ],
+   "position": {
+    "x": 6,
+    "y": 0,
+    "w": 10,
+    "h": 5
+   }
+  }
+ ],
+ "status": "finished",
+ "status_text": "finished",
+ "status_history": [
+  {
+   "status": "ready",
+   "at": "2026-07-24T15:10:16.673Z",
+   "by": "dev.user"
+  },
+  {
+   "status": "running",
+   "at": "2026-07-24T15:10:16.733Z",
+   "by": "system"
+  },
+  {
+   "status": "finished",
+   "at": "2026-07-24T15:11:10.358Z",
+   "by": "system"
+  }
+ ],
+ "token_usage": {
+  "total": {
+   "prompt_tokens": 128236,
+   "completion_tokens": 1405,
+   "reasoning_tokens": 0,
+   "total_tokens": 129641,
+   "calls": 20,
+   "latency_ms": 49518
+  },
+  "by_model": [
+   {
+    "provider_uid": "openai",
+    "model_uid": "gpt-4.1-mini-2025-04-14",
+    "prompt_tokens": 128236,
+    "completion_tokens": 1405,
+    "reasoning_tokens": 0,
+    "total_tokens": 129641,
+    "calls": 20,
+    "latency_ms": 49518
+   }
+  ],
+  "by_purpose": [
+   {
+    "purpose": "simulation_decision",
+    "prompt_tokens": 128236,
+    "completion_tokens": 1405,
+    "reasoning_tokens": 0,
+    "total_tokens": 129641,
+    "calls": 20,
+    "latency_ms": 49518
+   }
+  ],
+  "by_run": [
+   {
+    "provider_uid": "openai",
+    "model_uid": "gpt-4.1-mini-2025-04-14",
+    "prompt_tokens": 128236,
+    "completion_tokens": 1405,
+    "reasoning_tokens": 0,
+    "total_tokens": 129641,
+    "calls": 20,
+    "latency_ms": 49518
+   }
+  ]
+ },
+ "execution_runs": [
+  {
+   "seq": 1,
+   "started_at": "2026-07-24T15:10:16.733Z",
+   "finished_at": "2026-07-24T15:11:10.358Z",
+   "steps_completed": 98,
+   "status": "finished",
+   "active_duration_ms": 53625,
+   "termination_reason": "condition_met"
+  }
+ ],
+ "statistics": {
+  "steps_completed": 98,
+  "total_agents": 0,
+  "population": [
+   {
+    "agent_uid": "person",
+    "current": 0,
+    "peak": 100,
+    "min": 1,
+    "spawned": 0,
+    "removed": 100
+   }
+  ],
+  "agents_spawned": 0,
+  "agents_removed": 100,
+  "interactions": 0,
+  "events": 0,
+  "rule_executions": 814,
+  "movement_distance": 3636.8953620458865,
+  "by_rule": [
+   {
+    "rule_id": "decide_follow_crowd",
+    "executions": 178
+   },
+   {
+    "rule_id": "decide_proceed_to_exit",
+    "executions": 441
+   },
+   {
+    "rule_id": "decide_seek_alternate_route",
+    "executions": 40
+   },
+   {
+    "rule_id": "decide_wait_briefly",
+    "executions": 55
+   },
+   {
+    "rule_id": "exit_when_at_door",
+    "executions": 100
+   }
+  ]
+ },
+ "current_step": 98,
+ "created_at": "2026-07-24T15:10:16.673Z",
+ "created_by": "dev.user",
+ "updated_at": "2026-07-24T15:11:10.358Z",
+ "updated_by": "dev.user",
+ "started_at": "2026-07-24T15:10:16.733Z",
+ "finished_at": "2026-07-24T15:11:10.358Z",
+ "model_snapshot": {
+  "name": "exp-E-decision",
+  "description": "Frozen reference evacuation model V2 (SFPE room, 30-model-spec.md): 40x40 grid @ 0.4 m/cell, interior 38x38 = 15.2x15.2 m, 3-cell (1.2 m) east door at x=39 y=18..20, 100 persons @ 1.0 cell/step (1.333 m/s), block collision, stop when everyone has left. As-built from EXP-A attempt 7 + manual edits (D27).",
+  "is_spatial": true,
+  "agents": [
+   {
+    "uid": "person",
+    "name": "Person",
+    "type": "archetype",
+    "move_type": "movable",
+    "properties": [
+     {
+      "uid": "has_exited",
+      "name": "Has exited",
+      "type": "boolean",
+      "description": "True if the visitor has exited through the door.",
+      "default_value": false,
+      "immutable": false
+     },
+     {
+      "uid": "color",
+      "name": "color",
+      "type": "color",
+      "default_value": "#8B5CF6",
+      "immutable": false
+     }
+    ],
+    "initialization": {
+     "population_count": 100,
+     "count_mode": "fixed",
+     "placement": {
+      "type": "at_shape",
+      "shape_uid": "interior"
+     }
+    },
+    "footprint": {
+     "kind": "circle",
+     "radius": 0.5
+    }
+   }
+  ],
+  "environment": {
+   "uid": "environment",
+   "width": 40,
+   "height": 40,
+   "torus": false,
+   "collision_mode": "block",
+   "global_properties": [
+    {
+     "uid": "evacuated_count",
+     "name": "Evacuated Count",
+     "type": "number",
+     "description": "Total number of visitors who have exited.",
+     "default_value": 0,
+     "immutable": false
+    }
+   ],
+   "shapes": [
+    {
+     "uid": "wall_north",
+     "name": "North wall",
+     "type": "rectangle",
+     "layer": 1,
+     "visible": true,
+     "properties": [
+      {
+       "uid": "color",
+       "name": "Color",
+       "type": "color",
+       "default_value": "#555555",
+       "immutable": false
+      }
+     ],
+     "initialization": {
+      "population_count": 1
+     },
+     "geometry": {
+      "position": {
+       "x": 0,
+       "y": 0
+      },
+      "width": {
+       "value": 40
+      },
+      "height": {
+       "value": 1
+      },
+      "fill": true,
+      "stroke": false
+     }
+    },
+    {
+     "uid": "wall_south",
+     "name": "South wall",
+     "type": "rectangle",
+     "layer": 1,
+     "visible": true,
+     "properties": [
+      {
+       "uid": "color",
+       "name": "Color",
+       "type": "color",
+       "default_value": "#555555",
+       "immutable": false
+      }
+     ],
+     "initialization": {
+      "population_count": 1
+     },
+     "geometry": {
+      "position": {
+       "x": 0,
+       "y": 39
+      },
+      "width": {
+       "value": 40
+      },
+      "height": {
+       "value": 1
+      },
+      "fill": true,
+      "stroke": false
+     }
+    },
+    {
+     "uid": "wall_west",
+     "name": "West wall",
+     "type": "rectangle",
+     "layer": 1,
+     "visible": true,
+     "properties": [
+      {
+       "uid": "color",
+       "name": "Color",
+       "type": "color",
+       "default_value": "#555555",
+       "immutable": false
+      }
+     ],
+     "initialization": {
+      "population_count": 1
+     },
+     "geometry": {
+      "position": {
+       "x": 0,
+       "y": 1
+      },
+      "width": {
+       "value": 1
+      },
+      "height": {
+       "value": 38
+      },
+      "fill": true,
+      "stroke": false
+     }
+    },
+    {
+     "uid": "wall_east_upper",
+     "name": "East wall upper",
+     "type": "rectangle",
+     "layer": 1,
+     "visible": true,
+     "properties": [
+      {
+       "uid": "color",
+       "name": "Color",
+       "type": "color",
+       "default_value": "#555555",
+       "immutable": false
+      }
+     ],
+     "initialization": {
+      "population_count": 1
+     },
+     "geometry": {
+      "position": {
+       "x": 39,
+       "y": 1
+      },
+      "width": {
+       "value": 1
+      },
+      "height": {
+       "value": 17
+      },
+      "fill": true,
+      "stroke": false
+     }
+    },
+    {
+     "uid": "wall_east_lower",
+     "name": "East wall lower",
+     "type": "rectangle",
+     "layer": 1,
+     "visible": true,
+     "properties": [
+      {
+       "uid": "color",
+       "name": "Color",
+       "type": "color",
+       "default_value": "#555555",
+       "immutable": false
+      }
+     ],
+     "initialization": {
+      "population_count": 1
+     },
+     "geometry": {
+      "position": {
+       "x": 39,
+       "y": 21
+      },
+      "width": {
+       "value": 1
+      },
+      "height": {
+       "value": 18
+      },
+      "fill": true,
+      "stroke": false
+     }
+    },
+    {
+     "uid": "exit_door",
+     "name": "Exit door",
+     "type": "rectangle",
+     "layer": 1,
+     "visible": true,
+     "properties": [
+      {
+       "uid": "color",
+       "name": "Color",
+       "type": "color",
+       "default_value": "#33cc33",
+       "immutable": false
+      }
+     ],
+     "initialization": {
+      "population_count": 1
+     },
+     "geometry": {
+      "position": {
+       "x": 39,
+       "y": 18
+      },
+      "width": {
+       "value": 1
+      },
+      "height": {
+       "value": 3
+      },
+      "fill": false,
+      "stroke": true
+     }
+    },
+    {
+     "uid": "interior",
+     "name": "Interior region",
+     "type": "rectangle",
+     "layer": 1,
+     "visible": false,
+     "properties": [
+      {
+       "uid": "color",
+       "name": "Color",
+       "type": "color",
+       "default_value": "#eeeeee",
+       "immutable": false
+      }
+     ],
+     "initialization": {
+      "population_count": 1
+     },
+     "geometry": {
+      "position": {
+       "x": 1,
+       "y": 1
+      },
+      "width": {
+       "value": 38
+      },
+      "height": {
+       "value": 38
+      },
+      "fill": false,
+      "stroke": true
+     }
+    }
+   ]
+  }
+ },
+ "validation": {
+  "errors": null,
+  "warnings": null,
+  "start_ready": true
+ }
+}

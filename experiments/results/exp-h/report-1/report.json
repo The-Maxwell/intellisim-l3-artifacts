@@ -1,0 +1,147 @@
+{
+  "id": "6a63a2404ccaa6983ac98313",
+  "simulation_id": "6a5bbcaac44d001ef3ac207c",
+  "name": "EXP-H report 1",
+  "context_message": "Analyze this simulation's results. Context: People are evacuating a single room through one door. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini"
+  },
+  "selection": {
+    "step_from": 0,
+    "step_to": 45
+  },
+  "status": "completed",
+  "status_text": "completed",
+  "progress": {
+    "stage": "completed",
+    "percent": 100
+  },
+  "simulation_status_at_analysis": "finished",
+  "steps_covered": {
+    "from": 0,
+    "to": 45,
+    "sampling": 1,
+    "count": 45
+  },
+  "report": {
+    "sections": [
+      {
+        "key": "dynamics",
+        "title": "Room Evacuation Population Dynamics",
+        "narrative": "The evacuation begins with a brief start-up phase: the first person exits at step 2 (count drops to 99) and only four have exited by step 4 (count 96), reflecting initial dispersion time. Between steps 4 and 14 the outflow accelerates modestly, with 19 persons exiting over 10 steps (~1.9 persons/step). A pronounced throughput surge follows from steps 14 to 24, where 33 persons exit in 10 steps (~3.3 persons/step), marking the peak removal rate. After step 24 the evacuation rate settles into a slower decline, with 43 persons leaving over 20 steps (~2.15 persons/step), and the last three persons form a bottleneck, taking four steps (41–44) to evacuate. The simulation completes in 46 steps with all 100 persons removed.",
+        "key_findings": [
+          "First evacuation occurs at step 2, with count dropping from 100 to 99.",
+          "Half of the population (50 persons) have exited by step 21 (count 50).",
+          "Peak evacuation throughput (~3.3 persons/step) occurs between steps 14–24.",
+          "End-stage bottleneck: last three persons require four steps (41–44) to exit.",
+          "All 100 agents exit by step 46 as indicated by 100 executions of the exit rule."
+        ],
+        "causal_links": [
+          "High movement rule activity (2301 executions) enables agents to reach the door → triggers exit rule 100 times.",
+          "Door capacity and collision blocking → slowdown and queue formation in final steps."
+        ],
+        "emergent_phenomena": [
+          "Mid-run throughput surge emerges from synchronized agent arrivals at the door.",
+          "Queue bottleneck forms spontaneously as remaining agents compete for single exit cell."
+        ]
+      },
+      {
+        "key": "spatial",
+        "title": "Spatial & Interaction Patterns in Single-Door Evacuation",
+        "narrative": "At step 0 agents are initialized in an approximately uniform scatter across the 38×38 interior (e.g. x ranging from 2 to 38, y from 2 to 38), with no pre-existing clusters. Over the first 22 steps, movement driven by the move_towards_exit_door rule directs individuals radially toward the sole exit at (x=39, y=18–20). By step 22 the remaining agents form a tight congregation: over 80% of observed agents lie within x≥32 and y in [17,22], indicating strong spatial focusing driven by the single‐door geometry.\n\nThis funneling effect creates a high‐density queue immediately adjacent to the door: at step 22 multiple agents occupy the two‐cell front zone (x=38–40, y=17–20), yielding a dynamic bottleneck. Block collisions prevent overlap, so agents line up and await their turn to exit. The exit_when_at_door rule executes exactly 100 times by step 46, marking complete evacuation, while move_towards_exit_door executes 2 301 times, averaging ~23 moves per agent. \n\nNo lateral bypasses or alternative paths exist, so the spatial structure—a single‐cell chokepoint—dominates the evacuation dynamics. The emergent queueing at the door is not encoded explicitly but arises from local collision avoidance combined with uniform attraction to the same exit location.",
+        "key_findings": [
+          "Initial positions uniformly occupy the room interior (x in [2,38], y in [2,38]) at step 0 without clusters.",
+          "By step 22 >80% of agents are concentrated within 6 cells of the exit (x≥32, y∈[17,22]).",
+          "All 100 agents evacuated by step 46; exit rule triggered 100 times.",
+          "move_towards_exit_door executed 2 301 times → avg. ~23 steps per agent to reach exit.",
+          "Block collisions yield a single‐file queue at the door rather than overlapping movement."
+        ],
+        "causal_links": [
+          "move_towards_exit_door → directed flow toward the door region",
+          "block collision avoidance → formation of a linear queue at the exit"
+        ],
+        "emergent_phenomena": [
+          "High‐density queue/clogging at the single door",
+          "Spatial concentration peak adjacent to exit despite uniform initial dispersion",
+          "System‐level evacuation flow constrained by a geometric bottleneck"
+        ]
+      },
+      {
+        "key": "emergence",
+        "title": "Emergent Behavior & Causal Relationships in Single-Room Evacuation",
+        "narrative": "The evacuation unfolds over 46 steps, with all 100 agents exiting through a 3-cell-wide door. Between steps 0–23, evacuation proceeds near the door’s capacity, removing 2–3 agents per step and yielding a roughly linear decline from 100 to 49 persons. After step 23, as the crowd thins, per-step exits begin to fall below door capacity, and variability increases: by step 42, only 2 agents remain, no one exits at step 43, and the final agent leaves at step 44.\n\nEarly in the run, high density at the door generates sustained, near-maximum throughput. The rule exit_when_at_door fires 100 times in total, while move_towards_exit_door executes 2301 times, averaging ~23 movements per agent before exit. Peak instantaneous flow occurs at step 29 (4 exits), slightly exceeding the nominal capacity of three, due to sequential update ordering. \n\nAs soon as the pool of waiting agents falls below the door’s throughput threshold around step 23, the system transitions to a sparse regime. This triggers a phase transition from steady, capacity-limited flow to a fluctuation-dominated tail, where exit intervals exhibit gaps (e.g., zero exits at step 43) and single-agent departures.\n\nNo persistent clogging or complete jamming occurs; instead, a queuing line self-organizes upstream of the door until density drops, illustrating bottleneck-limited throughput and a long-tail in evacuation times. The last agent’s exit at step 44 highlights the diminishing marginal flow when fewer participants remain.",
+        "key_findings": [
+          "50% of agents evacuated by step 21 (population drops from 100 to 54).",
+          "Peak per-step outflow of 4 agents at step 29, exceeding nominal 3-cell capacity due to update ordering.",
+          "Average moves per agent ≈23 (2301 move rule executions ÷ 100 exits).",
+          "Final agent exits at step 44, producing a long evacuation tail.",
+          "One zero-flow step at step 43, indicating underutilized door when queue is nearly empty."
+        ],
+        "causal_links": [
+          "Door width of 3 cells → sustained removal of 2–3 agents per step under high density.",
+          "High initial crowd density at exit → queuing upstream and maximal throughput until step 23.",
+          "Sequential update ordering → occasional burst of 4 exits in a single step (step 29).",
+          "Declining queue size after step 23 → transition to sparse regime with variable per-step exits.",
+          "Only 2 agents remaining at step 42 → zero exits at step 43 due to underfilled door."
+        ],
+        "emergent_phenomena": [
+          "Bottleneck-limited throughput: self-organizing queue maintains near-capacity flow until depletion.",
+          "Phase transition from dense, capacity-limited flow to sparse, stochastic exit regime around 50% evacuation.",
+          "Long-tail evacuation: last agents exit significantly later, producing gaps in flow (e.g., step 43)."
+        ]
+      }
+    ],
+    "executive_summary": "In this single‐room evacuation simulation, 100 uniformly distributed agents exit through a three‐cell‐wide door over 46 time steps. After an initial dispersion phase with only four agents evacuated by step 4, throughput accelerates to a peak of ~3.3 agents/step between steps 14–24, driven by synchronized arrivals at the exit. A self-organizing, single‐file queue emerges from local collision avoidance and the single‐door geometry, sustaining near‐capacity flow until roughly half the population has left by step 21. \n\nOnce queue density falls below door capacity, the system transitions to a sparse regime, yielding fluctuating exit intervals and a long tail: a zero-exit step at 43 and the last agent departing at step 44. Occasional bursts of four exits in one step result from sequential update ordering, slightly exceeding nominal capacity.",
+    "conclusions": [
+      "All 100 agents evacuated by step 46, with 50% exit by step 21, reflecting an initially slow start followed by a sustained high‐throughput phase.",
+      "A self-organizing queue forms at the door due to move_towards_exit_door and collision avoidance, enabling near‐capacity flow (~2–3 exits/step) until the population drops below a critical threshold.",
+      "Peak instantaneous flow reached ~3.3 agents/step (and once 4 agents/step at step 29) due to update ordering, highlighting algorithmic effects on throughput.",
+      "A phase transition occurs around 50% evacuation: the system shifts from dense, capacity‐limited flow to a sparse, stochastic regime, producing gaps (zero-exit steps) and a long evacuation tail.",
+      "Agents averaged ~23 moves each (2,301 move rule executions), confirming consistent travel distances from uniform initial positions to the exit."
+    ],
+    "recommendations": [
+      "Increase door width (e.g. to 4+ cells) and re‐run to quantify reductions in queue length and evacuation tail time.",
+      "Introduce a second exit or alternative pathways to evaluate multi-door flow dynamics and spatial decongestion.",
+      "Implement randomized or parallel update ordering to assess its impact on peak flow bursts and overall evacuation time.",
+      "Conduct sensitivity analysis on movement speed or delay parameters to identify thresholds for the dense-to-sparse phase transition.",
+      "Add interior obstacles or partitions to explore emergent detour behaviors and their effects on throughput and congestion.",
+      "Extend the model to include agent heterogeneity (e.g. varying speeds or priorities) to study impacts on queue formation and evacuation equity."
+    ]
+  },
+  "file": {
+    "uid": "a5ced34f-2e12-4267-922e-73fbbfa110f4",
+    "name": "EXP-H report 1.pdf",
+    "mime_type": "application/pdf",
+    "size": 102076,
+    "created_at": "2026-07-24T17:35:36.879Z"
+  },
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 10213,
+      "completion_tokens": 5391,
+      "reasoning_tokens": 3264,
+      "total_tokens": 15604,
+      "calls": 4,
+      "latency_ms": 40305
+    },
+    "by_model": [
+      {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini-2025-04-16",
+        "prompt_tokens": 10213,
+        "completion_tokens": 5391,
+        "reasoning_tokens": 3264,
+        "total_tokens": 15604,
+        "calls": 4,
+        "latency_ms": 40305
+      }
+    ]
+  },
+  "requests": 4,
+  "created_at": "2026-07-24T17:34:56.228Z",
+  "created_by": "dev.user",
+  "started_at": "2026-07-24T17:34:56.263Z",
+  "finished_at": "2026-07-24T17:35:36.879Z"
+}

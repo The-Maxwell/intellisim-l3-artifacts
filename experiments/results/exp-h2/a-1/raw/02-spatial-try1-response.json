@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ERMMdTJPdDGyHCtdPbVMziSKl7HmN",
+  "object": "chat.completion",
+  "created": 1790189531,
+  "model": "o4-mini-2025-04-16",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"title\":\"Spatial & Interaction Patterns\",\"narrative\":\"The provided evidence contains only the model specification and run configuration without any aggregated spatial or interaction statistics (e.g., density heatmaps, proximity counts, clustering metrics). As such, no explicit spatial distribution data, movement trajectories, or interaction events are available from which to infer room occupancy gradients, lane formation, or group-level behaviors near the exit. Without time‐series counts of local densities or collision frequencies, it is not possible to quantify aggregation or segregation patterns, door‐blocking phenomena, or the timing of congestion peaks.\",\"key_findings\":[],\"causal_links\":[],\"emergent_phenomena\":[]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 746,
+    "completion_tokens": 407,
+    "total_tokens": 1153,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 256,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

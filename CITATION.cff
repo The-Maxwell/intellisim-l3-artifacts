@@ -1,0 +1,31 @@
+# Update the preferred-citation DOI, volume and pages once the article is published.
+cff-version: 1.2.0
+message: "If you use this software or the accompanying experiment data, please cite the article below."
+type: software
+title: "IntelliSim: an LLM-driven meta-system for agent-based modeling — Level-3 analysis artifacts"
+version: 0.1.2
+date-released: 2026-10-21
+license: PolyForm-Noncommercial-1.0.0
+authors:
+  - family-names: Pryshchepa
+    given-names: Vladyslav
+    orcid: "https://orcid.org/0009-0002-7627-0456"
+repository-code: "https://github.com/The-Maxwell/intellisim-l3-artifacts"
+preferred-citation:
+  type: article
+  title: "LLM-аналіз результатів агентно-орієнтованого моделювання: архітектура та оцінювання вірності за еталоном"
+  authors:
+    - family-names: Pryshchepa
+      given-names: Vladyslav
+      orcid: "https://orcid.org/0009-0002-7627-0456"
+    - family-names: Zadorozhnii
+      given-names: Artem
+      orcid: "https://orcid.org/0000-0002-3424-7293"
+  journal: "Управління розвитком складних систем (Management of Development of Complex Systems)"
+  publisher:
+    name: "Kyiv National University of Construction and Architecture"
+  issue: 68
+  year: 2026
+  languages:
+    - uk
+  notes: "To appear. English title: LLM-based analysis of agent-based modeling results: architecture and ground-truth faithfulness assessment. DOI, volume and pages to be added upon publication."

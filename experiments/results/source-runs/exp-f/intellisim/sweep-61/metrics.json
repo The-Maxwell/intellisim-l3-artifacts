@@ -1,0 +1,129 @@
+{
+  "points": [
+    {
+      "p": 0.4,
+      "n": 30,
+      "burned_mean": 0.0456,
+      "burned_sd": 0.0154,
+      "perc_prob": 0.0
+    },
+    {
+      "p": 0.45,
+      "n": 30,
+      "burned_mean": 0.0644,
+      "burned_sd": 0.0196,
+      "perc_prob": 0.0
+    },
+    {
+      "p": 0.5,
+      "n": 30,
+      "burned_mean": 0.0981,
+      "burned_sd": 0.0437,
+      "perc_prob": 0.0
+    },
+    {
+      "p": 0.55,
+      "n": 30,
+      "burned_mean": 0.1988,
+      "burned_sd": 0.1024,
+      "perc_prob": 0.0
+    },
+    {
+      "p": 0.56,
+      "n": 30,
+      "burned_mean": 0.2538,
+      "burned_sd": 0.1449,
+      "perc_prob": 0.1333
+    },
+    {
+      "p": 0.57,
+      "n": 30,
+      "burned_mean": 0.3434,
+      "burned_sd": 0.1371,
+      "perc_prob": 0.1667
+    },
+    {
+      "p": 0.58,
+      "n": 30,
+      "burned_mean": 0.3951,
+      "burned_sd": 0.1796,
+      "perc_prob": 0.3
+    },
+    {
+      "p": 0.59,
+      "n": 30,
+      "burned_mean": 0.5149,
+      "burned_sd": 0.215,
+      "perc_prob": 0.4667
+    },
+    {
+      "p": 0.6,
+      "n": 30,
+      "burned_mean": 0.5861,
+      "burned_sd": 0.2268,
+      "perc_prob": 0.6667
+    },
+    {
+      "p": 0.61,
+      "n": 30,
+      "burned_mean": 0.6806,
+      "burned_sd": 0.2067,
+      "perc_prob": 0.8
+    },
+    {
+      "p": 0.62,
+      "n": 30,
+      "burned_mean": 0.8022,
+      "burned_sd": 0.1319,
+      "perc_prob": 0.9333
+    },
+    {
+      "p": 0.63,
+      "n": 30,
+      "burned_mean": 0.8538,
+      "burned_sd": 0.0878,
+      "perc_prob": 1.0
+    },
+    {
+      "p": 0.64,
+      "n": 30,
+      "burned_mean": 0.872,
+      "burned_sd": 0.0956,
+      "perc_prob": 0.9667
+    },
+    {
+      "p": 0.65,
+      "n": 30,
+      "burned_mean": 0.8776,
+      "burned_sd": 0.1523,
+      "perc_prob": 0.9333
+    },
+    {
+      "p": 0.7,
+      "n": 30,
+      "burned_mean": 0.9758,
+      "burned_sd": 0.0078,
+      "perc_prob": 1.0
+    },
+    {
+      "p": 0.75,
+      "n": 30,
+      "burned_mean": 0.991,
+      "burned_sd": 0.003,
+      "perc_prob": 1.0
+    },
+    {
+      "p": 0.8,
+      "n": 30,
+      "burned_mean": 0.9966,
+      "burned_sd": 0.0016,
+      "perc_prob": 1.0
+    }
+  ],
+  "p_mid": 0.5909,
+  "p_mid_k": 77.58,
+  "p_mid_ci95": [
+    0.589,
+    0.592
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "6ab41ff0efc507d912c730f7",
+  "simulation_id": "6a5bbcaac44d001ef3ac207c",
+  "name": "EXP-H2 F2 report 1",
+  "context_message": "Analyze this simulation's results. Context: People are evacuating a single room through one door. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini",
+    "generation": {
+      "max_tokens": {
+        "uint": 16000
+      }
+    }
+  },
+  "selection": {
+    "step_from": 0,
+    "step_to": 45
+  },
+  "status": "completed",
+  "status_text": "completed",
+  "progress": {
+    "stage": "completed",
+    "percent": 100
+  },
+  "simulation_status_at_analysis": "finished",
+  "steps_covered": {
+    "from": 0,
+    "to": 45,
+    "sampling": 1,
+    "count": 45
+  },
+  "report": {
+    "sections": [
+      {
+        "key": "dynamics",
+        "title": "Population & Property Dynamics of Room Evacuation",
+        "narrative": "The evacuation begins with 100 agents in a 38×38 m room and proceeds through a single 3-cell door. Initial egress is slow: only 4 persons exit by step 4 (count drops from 100 at step 0 to 96 at step 4). Between steps 4 and 10 the evacuation rate accelerates moderately, with 8 people leaving (96→88).\n\nA peak throughput phase occurs roughly between steps 10 and 30, where the population falls from 88 to 26—a loss of 62 persons in 20 steps, averaging ~3.1 exits per step. This suggests that once the initial congestion at the door clears, agents move through the exit steadily under the move_towards_exit_door rule.\n\nAfter step 30, evacuation slows again: the last 25 agents exit over 14 steps (from 26 at step 30 to 1 at step 44), reflecting a tail effect where fewer agents approaching the exit reduce collision interactions and spacing increases, lowering throughput.\n\nThe run completes at step 46 with one final agent exiting at step 44. In total, 100 removals via exit_when_at_door confirm full evacuation. No shape or property series were present, indicating static environment geometry.",
+        "key_findings": [
+          "Evacuation phases: slow start (0–4), accelerated middle (10–30), slow tail (30–44).",
+          "By step 10 population fell by 12 (100→88), whereas between steps 10–30 it fell by 62 (88→26).",
+          "Peak throughput (~3.1 exits/step) occurs mid-evacuation, nearly triple the initial rate (~1 exit/step).",
+          "Tail slowdown evident: only 25 exits over 14 steps after step 30.",
+          "All 100 agents removed by step 44, run ends at step 46."
+        ],
+        "causal_links": [
+          "Initial high density at door → congestion → low exit rate in first 4 steps",
+          "Clearing of the door queue → increased throughput between steps 10 and 30",
+          "Reduced crowding in late phase → decreased interactions → slower per-step exit rate past step 30"
+        ],
+        "emergent_phenomena": [
+          "Queue formation and release at the single door leading to a throughput hump",
+          "Tail-end slowdown as sparse agents yield lower exit rates despite unobstructed door"
+        ]
+      },
+      {
+        "key": "spatial",
+        "title": "Single-Door Evacuation Spatial Dynamics",
+        "narrative": "At Step 0 agents are uniformly scattered across the 38×38 interior, with x ranging from 2 to 38 and y from 2 to 38 (e.g. reference_id 113 at (2,27), 115 at (38,3)). There is no initial clustering or side bias. By Step 22 exactly 50 of the original 100 remain inside, indicating that half have evacuated (100 total exits recorded by rule_exit_when_at_door). The remaining 50 concentrate in a roughly 8×6 cell region directly upstream of the 3-cell east door (x≈32–40, y≈16–22), forming a dense queue. Of these, 17 agents occupy the immediate doorway vicinity (36≤x≤40) by Step 22, demonstrating congestion at the bottleneck.\n\nNo distinct lanes or sector-based segregation appear; instead, agents funnel toward the door from all directions and line up behind it. The movement rule (move_towards_exit_door) combined with blocking collisions enforces a single-file or layered queue rather than overlapping paths. Over the full run 2,574.34 total cells were traversed, averaging about 25.74 cells (≈10.3 m) per agent, reflecting fairly direct routing with some delay from queuing. All 100 agents exit by Step 46, confirming that the door capacity (3 cells, 1.0 cell/step per agent) governs the overall evacuation time.",
+        "key_findings": [
+          "Initial positions at Step 0 are uniform across interior (2≤x≤38, 2≤y≤38).",
+          "By Step 22, 50% evacuated; remaining 50 form a cluster upstream of the door.",
+          "17 agents at Step 22 occupy x=36–40 near y=17–21, showing tight congestion.",
+          "Average agent movement ≈25.74 cells (≈10.3 m), indicating direct paths tempered by queue delays.",
+          "Full evacuation completes by Step 46, set by door capacity."
+        ],
+        "causal_links": [
+          "3-cell-wide exit door → bottleneck that concentrates agents and creates a queue upstream.",
+          "Agent collision-blocking rule → layered queue structure rather than path overlap."
+        ],
+        "emergent_phenomena": [
+          "Spontaneous queue formation at the door region due to combined movement and blocking rules.",
+          "Funneling of all agents into a narrow, elongated cluster upstream of the exit without explicit coordination."
+        ]
+      },
+      {
+        "key": "emergence",
+        "title": "Bottleneck Dynamics in Single-Door Evacuation",
+        "narrative": "This run of the reference evacuation model emptied a room of 100 agents through a 3-cell-wide door in 46 steps, with the final agent exiting at step 44. Total movement logged ~2574 grid cells, averaging ~25.7 moves per agent, driven by repeated executions of the move_towards_exit_door rule (2301 times).\n\nIn the initial high-density phase (steps 2–12), up to three agents exited per step—matching the door width—sustaining an average outflow of ~2.7 persons/step and peaking at 4 exits in a single interval (step 13: from 83 to 79). After step 13, as local density fell below door capacity, the per-step exit rate declined to an average of ~1.5 persons/step, evidenced by more frequent 1–2 agent drops (e.g., steps 29–33).\n\nThe last two agents exhibited a protracted tail: two remained at step 42 and persisted for two more steps before exiting at step 44. This slowdown reflects diminished upstream pressure and isolated movement, causing under-saturated throughput despite an unobstructed door.\n\nNo shape or resource feedback loops were present; dynamics emerge purely from agent–agent collisions at the bottleneck and spatial self-organisation around the exit.",
+        "key_findings": [
+          "Evacuation completed in 46 steps; last exit at step 44.",
+          "Initial throughput matched door width: up to 3 exits/step until step 12.",
+          "Peak drop of 4 agents in one step at step 13, indicating transient overshoot in local density.",
+          "Post-capacity phase saw exit rate fall to 1–2 agents/step as density declined.",
+          "Final two agents experienced a 2-step delay before exiting, showing isolation effects.",
+          "Agents executed move_towards_exit_door 2301 times versus 100 exit actions."
+        ],
+        "causal_links": [
+          "Door width = 3 cells → maximum of 3 concurrent exits per step (step 4: −3 persons).",
+          "High local density at door (steps 2–12) → sustained capacity-limited flow (~2.7 persons/step).",
+          "Density falling below door capacity (after step 13) → reduced exit rate (frequent 1–2 exits/step).",
+          "Isolation of last agents (steps 42–44) → upstream pressure loss → prolonged evacuation tail."
+        ],
+        "emergent_phenomena": [
+          "Bottleneck-induced throughput saturation matching door width",
+          "Phase transition from capacity-limited to density-limited flow around step 13",
+          "Queue formation and transient flow oscillations at the doorway",
+          "Protracted exit tail due to isolation effects at low density"
+        ]
+      }
+    ],
+    "executive_summary": "In this single-room evacuation simulation, 100 agents exited through a 3-cell‐wide door over 46 steps, displaying three distinct phases: a slow initial clearance with high door-area congestion (0–4 steps), a mid-phase peak throughput averaging ~3.1 exits per step (10–30 steps), and a tail slowdown as remaining agents sparsely approach the door (30–44 steps). Spatially, agents self-organized into a dense upstream queue directly in front of the door, with no lateral lanes, and traversed on average ~25.7 cells (≈10.3 m) each along direct paths tempered by queuing delays.",
+    "conclusions": [
+      "Evacuation flow is capacity-limited by the 3-cell door: initial congestion yields low exit rates (~1 person/step), mid-run density clears to sustain ~3 persons/step, then declines with reduced crowd pressure.",
+      "Agents uniformly distributed at start funnel into a narrow 8×6 cell queue upstream of the exit; 17 agents simultaneously occupy the immediate doorway region at peak congestion.",
+      "Phase transition around step 13 marks shift from door-capacity-limited to density-limited flow, evidenced by exit rates dropping from 2–3 to 1–2 agents per step.",
+      "The prolonged tail (last agents exiting at steps 43–44) highlights isolation effects: without upstream pressure, throughput under-saturates door capacity.",
+      "Overall evacuation completes by step 46 with 100 removals via exit_when_at_door and 2301 movement actions, confirming the door width and collision rules as dominant bottleneck drivers."
+    ],
+    "recommendations": [
+      "Experiment with increased door widths (e.g., 4–5 cells) to quantify improvements in initial and peak throughput.",
+      "Introduce secondary exits or alternative egress routes to evaluate multi-door interaction effects on queue formation and total evacuation time.",
+      "Incorporate agent heterogeneity (varying speeds or dynamic panic behaviors) to assess robustness of observed phases under more realistic conditions.",
+      "Test modified collision rules (e.g., limited overtaking or pushing) to determine their impact on queue structure and tail-phase slowdown.",
+      "Run sensitivity analyses on initial density distributions (clustered vs. uniform) to examine upstream congestion onset and phase transition timing."
+    ]
+  },
+  "file": {
+    "uid": "54c6fab1-54e5-4109-b39c-6f9940953f5e",
+    "name": "EXP-H2 F2 report 1.pdf",
+    "mime_type": "application/pdf",
+    "size": 100262,
+    "created_at": "2026-09-23T18:53:36.612Z"
+  },
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 10274,
+      "completion_tokens": 6250,
+      "reasoning_tokens": 4096,
+      "total_tokens": 16524,
+      "calls": 4,
+      "latency_ms": 62941
+    },
+    "by_model": [
+      {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini-2025-04-16",
+        "prompt_tokens": 10274,
+        "completion_tokens": 6250,
+        "reasoning_tokens": 4096,
+        "total_tokens": 16524,
+        "calls": 4,
+        "latency_ms": 62941
+      }
+    ]
+  },
+  "requests": 4,
+  "created_at": "2026-09-23T18:52:32.919Z",
+  "created_by": "dev.user",
+  "started_at": "2026-09-23T18:52:33.042Z",
+  "finished_at": "2026-09-23T18:53:36.612Z"
+}

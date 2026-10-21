@@ -1,0 +1,24 @@
+{
+ "sim_id": "6a6380584ccaa6983ac7ea1c",
+ "seed": 301,
+ "condition": "archetype_decision",
+ "status": "finished",
+ "termination_reason": "condition_met",
+ "steps": 98,
+ "D_T": 19,
+ "active_duration_ms": 53625,
+ "api_calls_total": 20,
+ "api_calls_decision": 20,
+ "prompt_tokens": 128236,
+ "completion_tokens": 1405,
+ "reasoning_tokens": 0,
+ "total_tokens": 129641,
+ "logical_consultations_pred": 19,
+ "decision_events_measured": 714,
+ "label_counts": {
+  "proceed_to_exit": 441,
+  "wait_briefly": 55,
+  "follow_crowd": 178,
+  "seek_alternate_route": 40
+ }
+}

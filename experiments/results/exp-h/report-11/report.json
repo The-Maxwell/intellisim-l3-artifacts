@@ -1,0 +1,147 @@
+{
+  "id": "6a63a4cd4ccaa6983ac98331",
+  "simulation_id": "6a5bbcaac44d001ef3ac207c",
+  "name": "EXP-H report 11",
+  "context_message": "Analyze this simulation's results. Context: People are evacuating a single room through one door. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o3"
+  },
+  "selection": {
+    "step_from": 0,
+    "step_to": 45
+  },
+  "status": "completed",
+  "status_text": "completed",
+  "progress": {
+    "stage": "completed",
+    "percent": 100
+  },
+  "simulation_status_at_analysis": "finished",
+  "steps_covered": {
+    "from": 0,
+    "to": 45,
+    "sampling": 1,
+    "count": 45
+  },
+  "report": {
+    "sections": [
+      {
+        "key": "dynamics",
+        "title": "Evacuation Population Trajectory",
+        "narrative": "The room started with 100 occupants and reached complete evacuation 46 steps later. Outflow was not uniform. During the first six steps only four people exited, revealing an initial congestion phase near the 1.2-m door opening. Between steps 10 and 34, evacuation stabilised at roughly three persons per step (74 people left in 24 steps), creating a quasi-steady discharge regime. The halfway mark—falling below 50 occupants—was crossed around step 22, indicating that the second half of the crowd cleared in roughly the same time as the first.\n\nShort plateaus (e.g., steps 1, 3, 5–6, 43) alternate with sharper drops (e.g., a 5-person burst at step 24), a classic stop-and-go pattern caused by agents blocking one another at the narrow exit. Peak instantaneous flow was 5 persons in a single step (step 24), while the tail end slowed markedly: the last ten people required 10 steps (36–46) to leave as density no longer sustained continuous pushing.\n\nRule-execution statistics corroborate this picture: the motion rule ran 2 301 times versus only 100 executions of the exit rule, mirroring repeated movement attempts before crossing the doorway. No agents spawned during the run; all 100 removals correspond to successful exits, aligning exactly with the population curve.\n\nOverall, the dynamics display an early bottleneck, a long steady-flow plateau, and a late-stage trickle—typical of single-door evacuations in medium-sized rooms.",
+        "key_findings": [
+          "Full clearance achieved in 46 steps; average throughput ≈2.2 persons/step (100 ÷ 46).",
+          "Initial six-step lag: only 4 exits by step 6 (population 96), indicating doorway congestion.",
+          "Steady high-flow phase between steps 10–34 evacuated 74 people at ≈3.1 persons/step.",
+          "Median evacuation (≤50 persons remaining) occurred near step 22 (population 49).",
+          "Peak one-step discharge was 5 persons at step 24 (49→44).",
+          "Final 10 occupants needed 10 steps (36–46), showing flow decay at low density."
+        ],
+        "causal_links": [
+          "Narrow 3-cell doorway → agent collisions → early plateaus (no exits at steps 1, 3, 5–6).",
+          "Crowd pressure during mid-run → sustained flow ≈3 agents/step.",
+          "Density drop below ~15 agents (step 34) → reduced pushing force → slower tail-end evacuation."
+        ],
+        "emergent_phenomena": [
+          "Stop-and-go waves: alternating zero-flow and burst-flow steps despite uniform agent rules.",
+          "Self-organised single-file queue forming at the exit, maintaining steady throughput without explicit coordination."
+        ]
+      },
+      {
+        "key": "spatial",
+        "title": "Door-side Queuing Dominates Evacuation Dynamics",
+        "narrative": "People began dispersed across the 38 × 38 interior (e.g., positions ranged from (2,27) to (38,3) at step 0), showing no pre-existing clusters. As movement started, agents streamed eastward toward the single 3-cell door at x = 39, rapidly thinning the interior and thickening the area around the exit.\n\nBy step 22 exactly half the crowd had already left (50 removed) and the survivors were strongly aggregated near the doorway: 36 of the 50 remaining agents (72 %) lay inside the tight rectangle x = 34–39, y = 16–21. Within this 6 × 5 (30-cell) patch, up to 20 agents were present, giving local densities near 0.67 person / cell and forming a visible queue. A few latecomers (e.g., ids 113, 116, 117 at x ≈ 23–25) still crossed the room but moved unobstructed once the interior cleared.\n\nThe 3-cell aperture acted as the sole bottleneck. Despite sequential updates and collision blocking, a steady outflow of ≈2.3 persons/step was sustained: 50 agents exited in the first 22 steps and the remaining 50 in the next 24, completing the evacuation in 46 steps. Each agent executed on average 23 “move_towards_exit_door” actions and travelled 25.7 cells (≈10.3 m), consistent with traversing half the room plus minor detours imposed by crowding near the door.\n\nNo explicit interaction rules fired, yet spatial exclusion alone was enough to cause orderly lane-like queuing and prevent overtaking, shaping both the clustering pattern and the overall clearance time.",
+        "key_findings": [
+          "Uniform initial scatter transitioned to a single east-side cluster by step 22, with 72 % of remaining agents packed into a 30-cell area near the door.",
+          "Local doorway density peaked around 0.67 person / cell (≈20 agents in 30 cells), evidencing a congestion zone.",
+          "Evacuation finished in 46 steps; flow rate ≈2.2–2.3 persons/step (50 exits in 22 steps, then 50 in 24 steps).",
+          "Agents averaged 23 movement actions and 25.7 cells (10.3 m) of travel before exit, matching room dimensions.",
+          "No interaction or event rules triggered; simple collision avoidance and doorway geometry fully explained spatial patterns."
+        ],
+        "causal_links": [
+          "3-cell doorway width → movement bottleneck → high-density queue near (x 34–39, y 16–21).",
+          "Collision blocking rule → prevents passing → self-organized single-file/queued flow.",
+          "Clearing interior space → reduced hindrance for late agents → maintained near-constant exit rate."
+        ],
+        "emergent_phenomena": [
+          "Self-organized queuing/funneling without explicit coordination rules, yielding a stable outflow rate through the bottleneck."
+        ]
+      },
+      {
+        "key": "emergence",
+        "title": "Evacuation Dynamics of 100-Person Single-Door Room (run exp-C-rep3)",
+        "narrative": "The simulation starts with 100 people scattered inside a 38 × 38-cell room and one 3-cell door on the east wall. No one can exit until they physically reach the doorway, so the headway travel time creates a two-step latency: the first person leaves only at step 2. \n\nOnce the leading agents reach the threshold, a dense queue forms in front of the door. From step 10 to step 30 the doorway discharges at a nearly constant rate of ≈3.1 persons per step (65 exits in 21 steps). This plateau indicates that the outflow is governed by door capacity rather than by how many agents still remain in the room. Occasional spikes, such as the five simultaneous exits at step 24, reflect small congestion waves propagating through the queue but do not break the overall steady throughput.\n\nWhen the remaining population drops below roughly twenty (after step 32) the queue can no longer be sustained. The system switches to a demand-limited regime where arrivals become sporadic, and throughput falls to 1–2 persons per step despite the doorway being unobstructed. The last agent leaves around step 45, giving a total clearing time of 45 steps.\n\nAcross the run, the model executed 2 301 move actions and 100 exit actions, yielding an average travel distance of 25.7 cells (≈10 m) per person—consistent with the room’s dimensions and the need to converge on a single exit.",
+        "key_findings": [
+          "Complete evacuation achieved in 45 steps; all 100 agents removed (population 100→0).",
+          "First exit occurs at step 2, evidencing a two-step travel latency across the room.",
+          "Capacity-limited plateau: 65 exits between steps 10–30, averaging 3.1 agents/step, with a peak of 5 at step 24.",
+          "Throughput collapses to ≈1.1 agents/step after the remaining population falls below 20 (steps 34–45).",
+          "Rule utilisation is dominated by movement (2 301 executions) versus exit events (100), producing 2 574 cell-moves in total."
+        ],
+        "causal_links": [
+          "Initial spatial separation → 2-step delay before first exit.",
+          "High local density at doorway (demand > capacity) → formation of queue → steady outflow ≈3 agents/step (steps 10–30).",
+          "Population < ~20 → queue dissipates → arrival rate < door capacity → reduced throughput to 1–2 agents/step (steps 34–45)."
+        ],
+        "emergent_phenomena": [
+          "Self-organized queue at the doorway sustaining a capacity-limited steady flow plateau (steps 10–30).",
+          "Phase transition from capacity-limited to demand-limited regime once occupancy drops below ~20, causing a sharp decline in exit rate.",
+          "Minor congestion wave yielding a burst of 5 simultaneous exits at step 24 (evacuation cascade)."
+        ]
+      }
+    ],
+    "executive_summary": "Run exp-C-rep3 evacuated all 100 occupants from a 38×38-cell room through a single 3-cell door in 46 simulation steps (≈2.2 persons / step on average). After a two-step travel latency, the system entered a capacity-limited phase (steps 10–34) where a self-organised queue at the doorway sustained ~3.1 exits per step despite stop-and-go micro-fluctuations. When the remaining crowd fell below ~20 agents, the queue collapsed and throughput dropped to 1–2 exits per step, stretching the tail to step 46. No interaction rules fired; simple collision avoidance and doorway geometry alone produced realistic congestion waves, lane formation, and the observed phase shift.\n\nOverall, the experiment confirms that door width is the dominant control on clearance time under the present rule set, while interior layout and initial dispersion have negligible impact once agents converge on the bottleneck. The results provide a clean baseline for assessing how additional behaviours (pushing, overtaking) or architectural changes (extra doors) might alter evacuation efficiency.",
+    "conclusions": [
+      "Total clearance achieved in 46 steps; first exit at step 2 implies a two-step travel latency across half the room.",
+      "Capacity-limited plateau evacuated 74 people between steps 10–34 at ≈3.1 persons/step; peak instantaneous flow was 5 people (step 24).",
+      "Median evacuation occurred near step 22 (49 occupants left), showing nearly symmetric first-/second-half clearance times.",
+      "Local doorway density peaked at ~0.67 person / cell (≈20 agents in 30 cells), forming a stable, single-file queue without explicit coordination rules.",
+      "Transition to demand-limited regime below ~20 occupants caused flow decay to 1–2 persons/step, so the last 10 agents required 10 steps (36–46).",
+      "Rule usage skewed heavily toward movement (2 301 executions) versus exits (100), underscoring that most computing effort is spent on agents negotiating position before crossing the door."
+    ],
+    "recommendations": [
+      "Run width-sensitivity experiments (e.g., 1- to 5-cell doors) to quantify how clearance time scales with bottleneck capacity.",
+      "Introduce behavioural heterogeneity (pushing force, overtaking propensity) to test whether throughput or queue stability changes under competitive conditions.",
+      "Record per-agent travel times and path lengths in future runs to enable distributional, not just aggregate, performance metrics.",
+      "Replicate the simulation with varied initial spatial distributions or obstacles to verify robustness of the two-step latency and capacity-limited plateau.",
+      "Implement density-triggered interaction rules (e.g., impatience or group cohesion) to explore whether emergent stop-and-go waves intensify or dissipate.",
+      "Extend the run horizon slightly or add post-evacuation logging to confirm that no agents remain trapped when population counts approach zero, ensuring strict model closure."
+    ]
+  },
+  "file": {
+    "uid": "c3e768d7-1c9b-44c9-a29e-bbdd89cdef2b",
+    "name": "EXP-H report 11.pdf",
+    "mime_type": "application/pdf",
+    "size": 108926,
+    "created_at": "2026-07-24T17:46:34.861Z"
+  },
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 10532,
+      "completion_tokens": 7220,
+      "reasoning_tokens": 4608,
+      "total_tokens": 17752,
+      "calls": 4,
+      "latency_ms": 45144
+    },
+    "by_model": [
+      {
+        "provider_uid": "openai",
+        "model_uid": "o3-2025-04-16",
+        "prompt_tokens": 10532,
+        "completion_tokens": 7220,
+        "reasoning_tokens": 4608,
+        "total_tokens": 17752,
+        "calls": 4,
+        "latency_ms": 45144
+      }
+    ]
+  },
+  "requests": 4,
+  "created_at": "2026-07-24T17:45:49.583Z",
+  "created_by": "dev.user",
+  "started_at": "2026-07-24T17:45:49.586Z",
+  "finished_at": "2026-07-24T17:46:34.861Z"
+}

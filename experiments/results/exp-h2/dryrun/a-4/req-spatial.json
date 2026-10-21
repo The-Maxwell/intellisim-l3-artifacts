@@ -1,0 +1,17 @@
+{
+  "model": "o4-mini",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an expert analyst of agent-based modeling (ABM) simulations working inside the IntelliSim meta-system.\n\nDOMAIN ONTOLOGY: A model defines agent ARCHETYPES (templates) with typed PROPERTIES (number/string/enum/boolean/color) and a state machine; a RULE ENGINE (condition types incl. property/position/proximity/state/count/decision; action types incl. set/modify property, move, transition, spawn/remove, emit_event, call_llm); INTERACTIONS (agent-agent/shape/global); EVENTS; and a spatial ENVIRONMENT (grid, optional torus, shapes, global properties). A simulation runs in discrete steps; per-step state was recorded to a time series.\n\nYOUR TASK — section \"Spatial & Interaction Patterns\": Analyze spatial distribution, clustering, movement and agent interactions. Identify aggregation/segregation, territory formation, and how spatial structure shaped outcomes.\n\nDATA: You are given AGGREGATED time series and statistics (not raw per-agent frames). Ground EVERY claim strictly in the provided evidence; never invent numbers or entities. Cite concrete numbers and step indices/ranges from the evidence when making claims. Prefer causal and emergent insight over restating values. Be concise, specific, and structured.\n\nOUTPUT: Respond with a SINGLE JSON object and nothing else, in this exact shape:\n{\"title\": string, \"narrative\": string, \"key_findings\": [string], \"causal_links\": [string], \"emergent_phenomena\": [string]}\n- narrative: 2–5 paragraphs of analysis.\n- key_findings: 3–7 short bullet insights.\n- causal_links: cause→effect statements (may be empty if none are evidenced).\n- emergent_phenomena: system-level behaviors not reducible to individual rules; may be empty.\nWrite all natural-language content in Ukrainian.\n"
+    },
+    {
+      "role": "user",
+      "content": "=== SIMULATION EVIDENCE (JSON) ===\n{\"model\":{\"Name\":\"exp-B4-flow\",\"Description\":\"EXP-B stretch Test 4 / V9 (30-model-spec.md §8): 16x12 m holding room feeding a 4.0 m (10-cell) opening; assigned speed 1.10 m/s = 0.825 cells/step; density measured in a 4x2 m rectangle upstream; specific flow vs density curve vs RiMEA reference points. N varied 50/150/300 between batteries.\",\"IsSpatial\":true,\"UpdateMode\":\"sequential\",\"Archetypes\":[{\"UID\":\"person\",\"Name\":\"Person\",\"Type\":\"agent\",\"States\":null,\"Properties\":[{\"UID\":\"has_exited\",\"Name\":\"Has exited\",\"Type\":\"boolean\"},{\"UID\":\"color\",\"Name\":\"color\",\"Type\":\"color\"}]}],\"RuleCount\":3,\"Interactions\":0,\"Events\":0,\"Environment\":{\"Width\":48,\"Height\":32,\"Torus\":false,\"GlobalProps\":[{\"UID\":\"evacuated_count\",\"Name\":\"Evacuated Count\",\"Type\":\"number\"}],\"ShapeCount\":9}},\"run\":{\"Name\":\"exp-B4-N300-rep1\",\"ConfiguredSteps\":900,\"Seed\":421,\"Status\":\"finished\"}}\n=== END EVIDENCE ===\n\nRESEARCHER CONTEXT / QUESTIONS:\nПроаналізуйте результати цієї симуляції. Контекст: Люди проходять крізь широкий отвір за різної щільності натовпу. Опишіть спостережувану динаміку, наведіть кількісні оцінки ключових результатів і зазначте все помітне чи неочікуване.\n\nProduce the \"Spatial & Interaction Patterns\" section now as the specified JSON.\n\nReturn ONLY the JSON object, with no markdown fences or commentary."
+    }
+  ],
+  "max_completion_tokens": 16000,
+  "response_format": {
+    "type": "json_object"
+  }
+}

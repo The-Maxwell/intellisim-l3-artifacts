@@ -1,0 +1,150 @@
+{
+  "id": "6ab421b0efc507d912c73103",
+  "simulation_id": "6a6380584ccaa6983ac7ea1c",
+  "name": "EXP-H2 F2 report 5",
+  "context_message": "Analyze this simulation's results. Context: People are evacuating a room through one door; some agent decisions during the run are made by a language model. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini",
+    "generation": {
+      "max_tokens": {
+        "uint": 16000
+      }
+    }
+  },
+  "selection": {
+    "step_from": 0,
+    "step_to": 97
+  },
+  "status": "completed",
+  "status_text": "completed",
+  "progress": {
+    "stage": "completed",
+    "percent": 100
+  },
+  "simulation_status_at_analysis": "finished",
+  "steps_covered": {
+    "from": 0,
+    "to": 97,
+    "sampling": 1,
+    "count": 97
+  },
+  "report": {
+    "sections": [
+      {
+        "key": "dynamics",
+        "title": "Evacuation Population Dynamics",
+        "narrative": "The simulation begins with 100 agents inside a 38×38 cell room and records a strictly monotonic decline in population as individuals exit through a single 3-cell door. In the first 40 steps, evacuation accelerates, removing 68 agents (from 100 to 32), peaking at an average rate of ~1.7 agents per step (steps 0–40). After step 40, throughput declines: only 23 more agents exit by step 60, and the rate slows further as the crowd thins.\nBetween steps 60 and 80, only 7 agents exit (~0.35 per step), and by step 96 just one person remains. The final evacuee exits by the end of the run (100 agents removed). This strongly decelerating “long tail” is characteristic of evacuation flows where initial crowd density facilitates throughput up to a point, then individuated decisions and reduced pressure slow the process.\nNo oscillations or rebounds are observed, nor any stable nonzero equilibrium—evacuation completes. The data suggest a phase of accelerated throughput under moderate-to-high density (steps 10–40), followed by diminishing returns as density drops. There is no sign of gridlock or blocked egress; the slow-down arises from low-density dynamics rather than congestion at the door.",
+        "key_findings": [
+          "Strictly monotonic evacuation from 100 to 0 agents by step 96",
+          "High-throughput phase between steps 10–40 (~1.7 agents/step)",
+          "Post–step 40 deceleration to ~0.35 agents/step (steps 60–80)",
+          "Long-tail effect: last 20% of agents take 56 steps (steps 40–96)",
+          "No oscillations or equilibrium—evacuation completes without reversal"
+        ],
+        "causal_links": [
+          "Moderate crowd density (steps 10–40) → higher exit throughput (~1.7 agents/step)",
+          "Low crowd density (after step 40) → reduced exit rate (long-tail effect)"
+        ],
+        "emergent_phenomena": [
+          "Density‐dependent throughput: an emergent acceleration phase followed by a pronounced slow‐down as remaining agents disperse",
+          "Long‐tail evacuation: final individuals take disproportionately long due to reduced collective pressure"
+        ]
+      },
+      {
+        "key": "spatial",
+        "title": "Spatial & Interaction Patterns",
+        "narrative": "At initialization (Step 0), agents are uniformly scattered across the 38×38 interior, indicating no pre-existing clustering. Over the first dozen steps, individuals orient directly toward the single exit at the east wall, creating converging trajectories.\nBy mid‐run (Step 48), a pronounced aggregation has formed immediately adjacent to the door: at least 11 agents occupy the 3×3 cell region around (x≈37–39, y≈17–20), demonstrating a self‐organized queue. Simultaneously, residual pockets of 12 agents remain deeper in the room (e.g. positions around (22, 25) and (19, 26)), reflecting segregation by proximity and congestion.\nCollision‐based blocking at the doorway triggers waiting behaviors—55 executions of decide_wait_briefly coincide with the static queue—and crowd‐following decisions (178 executions of decide_follow_crowd) reinforce movement into high‐density zones. Despite 40 calls to decide_seek_alternate_route, agents largely persisted along the primary path, deepening the door‐side cluster.\nBy Step 98, all 100 agents have exited (100 executions of exit_when_at_door), completing evacuation. The spatial dynamics reveal emergent queuing and delayed clearance of interior pockets caused by localized congestion rather than explicit interaction rules.",
+        "key_findings": [
+          "77 agents evacuated by Step 48 (23 remained) forming a 3×3 queue at the exit.",
+          "Mid‐run clustering: ≥11 agents within two cells of the door at Step 48.",
+          "12 agents formed interior pockets around (x≈19–26, y≈25–30) by Step 48.",
+          "Average travel distance per agent ≈36.4 cells (total 3,636.9).",
+          "441 executions of direct exit decisions vs. 40 alternate‐route attempts.",
+          "55 brief‐wait decisions coincide with door congestion."
+        ],
+        "causal_links": [
+          "Doorway collisions → 55 decide_wait_briefly executions (waiting behavior).",
+          "High local density near exit → 178 decide_follow_crowd executions (reinforced clustering)."
+        ],
+        "emergent_phenomena": [
+          "Self‐organized queuing at the single exit without explicit coordination.",
+          "Persistent interior pockets of slow evacuees due to congestion at egress."
+        ]
+      },
+      {
+        "key": "emergence",
+        "title": "Emergent Behavior & Causal Relationships",
+        "narrative": "The evacuation of 100 agents through a single 3-cell door completes in 96 steps, with an initial high-throughput phase followed by congestion-induced slowdown and a protracted end-game. By step 38 only 38 agents remain (62% evacuated), reflecting an average rate of over 1.5 agents/step. After step 24 the exit flow drops to 1–2 agents/step, producing a plateau in the population curve (58–56 persons from steps 24–27).  \n\nDespite 441 “proceed_to_exit” decisions, occasional “wait_briefly” (55) and “seek_alternate_route” (40) choices are too scarce to relieve the door bottleneck. Agents self-organize into narrow queues, generating stop-and-go bursts—for example, a jump of three exits between steps 23 and 24 following a brief stall at steps 21–23.  \n\nOnce the bulk has passed, a secondary plateau emerges at 6 agents (steps 65–68), and the final two agents require over 12 steps to exit (steps 80–92), with the very last agent lingering from step 92 to step 96. This long tail indicates local interactions can trap individuals long after global congestion subsides.",
+        "key_findings": [
+          "Total evacuation time is 96 steps.",
+          "62 agents (62%) exited by step 38, initial flow >1.5 agents/step.",
+          "Plateau at 58–56 persons between steps 24–27 signals bottleneck onset.",
+          "Secondary plateau at 6 agents (steps 65–68) and long tail for last two agents (steps 80–92).",
+          "Proceed_to_exit dominates decisions (441) vs wait_briefly (55) or reroute (40)."
+        ],
+        "causal_links": [
+          "Narrow 3-cell door width → bottleneck formation at step 24 → evacuation rate drops to 1–2 agents/step (steps 24–27).",
+          "High local density near exit → increased wait_briefly decisions → intermittent gaps that trigger exit bursts (e.g., steps 23–24).",
+          "Low remaining population (<6 agents) → reduced crowd pressure → agents wander longer → prolonged tail (steps 80–96)."
+        ],
+        "emergent_phenomena": [
+          "Self-organized queue formation at the exit producing stop-and-go flows.",
+          "Phase transition from free-flow to congested regime around step 24.",
+          "Cascading bursts of exits following jam resolution.",
+          "Long-tailed exit time distribution with end-game slowdown."
+        ]
+      }
+    ],
+    "executive_summary": "The simulation of 100 agents evacuating a 38×38 cell room through a single 3-cell door completed in 96 steps, displaying a two-phase dynamic: an accelerated throughput phase (steps 10–40) at roughly 1.7 agents per step, followed by a decelerating “long-tail” phase as density dropped, culminating in the final 20% of agents taking over half of the total evacuation time. The evacuation curve shows no reversals or gridlock, with throughput decline driven by low-density dispersal rather than door blockage.\n\nSpatial analysis reveals uniform initial distribution evolving into a self-organized 3×3 queue at the exit, interior pockets of slow evacuees, and stop-and-go bursts tied to collision-induced waiting (55 wait_briefly executions) and crowd-following behavior (178 decide_follow_crowd executions). Agent decision profiles were dominated by direct proceed_to_exit calls (441), with only sparse alternate-route attempts (40), reinforcing the bottleneck at the door.",
+    "conclusions": [
+      "Total evacuation completes in 96 steps with strictly monotonic but decelerating outflow.",
+      "Initial moderate-density phase (steps 10–40) yields high throughput (~1.7 agents/step), whereas low-density endgame produces a pronounced long tail.",
+      "Bottleneck onset around step 24 creates a plateau (58–56 agents), driven by narrow door width and limited rerouting.",
+      "Self-organized queuing and stop-and-go flows emerge from local collision and follow-the-crowd rules.",
+      "Dominance of proceed_to_exit over alternate-route and wait_briefly decisions intensifies congestion and prolongs evacuation of final agents."
+    ],
+    "recommendations": [
+      "Parameterize door width or add secondary exits to assess sensitivity of throughput and reduce plateau effects.",
+      "Increase the weight of decide_seek_alternate_route relative to crowd-following to encourage dispersion and relieve door congestion.",
+      "Introduce dynamic routing or signage rules to redirect agents away from the primary bottleneck once local density exceeds a threshold.",
+      "Calibrate late-stage agent behaviors (e.g. search patterns or communication) to mitigate the long-tail effect for residual individuals.",
+      "Run sensitivity experiments on initial spatial layouts and densities to explore interior pocket formation and its impact on overall evacuation time."
+    ]
+  },
+  "file": {
+    "uid": "54d4ad9c-6902-43e6-8948-8ba851a42210",
+    "name": "EXP-H2 F2 report 5.pdf",
+    "mime_type": "application/pdf",
+    "size": 104937,
+    "created_at": "2026-09-23T19:01:00.348Z"
+  },
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 11011,
+      "completion_tokens": 6141,
+      "reasoning_tokens": 4096,
+      "total_tokens": 17152,
+      "calls": 4,
+      "latency_ms": 60146
+    },
+    "by_model": [
+      {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini-2025-04-16",
+        "prompt_tokens": 11011,
+        "completion_tokens": 6141,
+        "reasoning_tokens": 4096,
+        "total_tokens": 17152,
+        "calls": 4,
+        "latency_ms": 60146
+      }
+    ]
+  },
+  "requests": 4,
+  "created_at": "2026-09-23T19:00:00.06Z",
+  "created_by": "dev.user",
+  "started_at": "2026-09-23T19:00:00.063Z",
+  "finished_at": "2026-09-23T19:01:00.348Z"
+}

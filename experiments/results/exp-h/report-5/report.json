@@ -1,0 +1,154 @@
+{
+  "id": "6a63a3744ccaa6983ac9831f",
+  "simulation_id": "6a6380584ccaa6983ac7ea1c",
+  "name": "EXP-H report 5",
+  "context_message": "Analyze this simulation's results. Context: People are evacuating a room through one door; some agent decisions during the run are made by a language model. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+  "language": "en",
+  "llm_target": {
+    "provider_uid": "openai",
+    "model_uid": "o4-mini"
+  },
+  "selection": {
+    "step_from": 0,
+    "step_to": 97
+  },
+  "status": "completed",
+  "status_text": "completed",
+  "progress": {
+    "stage": "completed",
+    "percent": 100
+  },
+  "simulation_status_at_analysis": "finished",
+  "steps_covered": {
+    "from": 0,
+    "to": 97,
+    "sampling": 1,
+    "count": 97
+  },
+  "report": {
+    "sections": [
+      {
+        "key": "dynamics",
+        "title": "Evacuation Dynamics Through Single-Exit Bottleneck",
+        "narrative": "The population of 100 agents decreases steadily from the start, with 11 evacuees by step 10 (100→89) and 42% evacuated by step 25 (100→58). The initial 25 steps exhibit the highest throughput, averaging ~1.7 agents per step and peaking with a four-agent evacuation in a single step (step 24→25).\nFrom step 25 to step 40, evacuation continues at a moderate rate, reducing the population from 58 to 32 (26 more evacuations over 15 steps, ~1.7 per step). After step 40, throughput declines markedly: between step 60 (10 remain) and step 96 (1 remains), only 9 agents evacuate over 36 steps (~0.25 per step), revealing a pronounced “last-mile” slowdown.\nRule‐execution statistics show that the \u001b[1mdecide_proceed_to_exit\u001b[0m rule (441 executions) predominates, driving most successful evacuations early, while \u001b[1mdecide_follow_crowd\u001b[0m (178 executions) contributes to clustering that likely generates congestion at the single door. The brief use of \u001b[1mdecide_seek_alternate_route\u001b[0m (40 executions) and \u001b[1mdecide_wait_briefly\u001b[0m (55 executions) suggests occasional rerouting and pause behavior but insufficient demand for sustained decongestion.\nThe simulation ends at step 98 with one straggler still inside, indicating that a single narrow exit produces emergent throughput oscillations and a persistent tail of isolated agents long after the bulk has evacuated.",
+        "key_findings": [
+          "Initial 25 steps evacuate 42% of agents (100→58), with a peak drop of four in one step (step 24→25).",
+          "Steps 25–40 maintain ~1.7 evacuations per step, reducing population to 32.",
+          "After step 40, evacuation rate falls to ~0.25 agents per step: 9 evacuees over 36 steps (step 60→96).",
+          "Simulation completes at step 98 with one straggler remaining.",
+          "\u001b[1mdecide_proceed_to_exit\u001b[0m drives 441 of 814 rule executions, dominating early evacuation.",
+          "\u001b[1mdecide_follow_crowd\u001b[0m executes 178 times, likely creating door-side congestion."
+        ],
+        "causal_links": [
+          "High frequency of decide_proceed_to_exit → rapid initial evacuation (441 executions corresponding to early throughput).",
+          "Decisions to follow the crowd → clustering at the exit → prolonged tail and throughput stalls.",
+          "Sparse use of seek_alternate_route and wait_briefly → insufficient decongestion → oscillatory evacuation bursts."
+        ],
+        "emergent_phenomena": [
+          "Bottleneck-induced intermittent bursts (e.g., 4 agents in one step) followed by multi-step stalls.",
+          "‘Last-mile’ slowdown: the final 9 agents exit at one-seventh the early-phase rate, persisting over 36 steps.",
+          "Persistent straggler: one agent remains past step 96 despite bulk clearance."
+        ]
+      },
+      {
+        "key": "spatial",
+        "title": "Spatial & Interaction Patterns",
+        "narrative": "At Step 0 agents are broadly dispersed across the 38×38 interior (positions in Step 0 range from x = 2…40 and y = 2…35), indicating no pre-evacuation clustering. By Step 48, only 24 agents remain and these are tightly clustered in front of the east door (positions in Step 48 cluster between x = 35…39 and y = 13…27), forming a pronounced queue. The majority of agents have moved directly toward the exit, as evidenced by the high execution count of decide_proceed_to_exit (441) versus seek_alternate_route (40). \n\nTotal movement distance across all agents is 3,636.9 cells, averaging ~36.4 cells per agent, reflecting predominantly radial trajectories from initial positions to the door. Block collisions and brief waits (55 executions of decide_wait_briefly) further concentrate agents at the bottleneck. Despite the absence of explicit agent-agent interactions beyond blocking, a self-organized density gradient emerges, funneling agents along converging paths to the door.",
+        "key_findings": [
+          "Initial positions (Step 0) span the room uniformly (x = 2…40, y = 2…35).",
+          "By Step 48 only 24 of 100 agents remain, clustered at x = 35…39, y = 13…27.",
+          "76 agents evacuated by Step 48, showing rapid outflow until bottleneck forms.",
+          "Decide_proceed_to_exit (441 execs) dominates over seek_alternate_route (40), driving straight paths.",
+          "Average path length ~36.4 cells per agent (3,636.9 total) reflects direct routing.",
+          "55 brief waits and 0 explicit interactions produce queuing via physical blocking."
+        ],
+        "causal_links": [
+          "High use of decide_proceed_to_exit → direct routing toward door → rapid early evacuation until congestion.",
+          "Narrow 3-cell door width → physical block collisions → queuing at exit.",
+          "Low execution of seek_alternate_route → limited dispersion → intensified clustering at bottleneck."
+        ],
+        "emergent_phenomena": [
+          "Self-organized queue in front of the exit without explicit queueing rule.",
+          "Density funneling: agents form a convergent flow pattern toward the door.",
+          "Synchronized clearing: bulk evacuation slows as a group only when door capacity is reached."
+        ]
+      },
+      {
+        "key": "emergence",
+        "title": "Emergent Behavior & Causal Relationships",
+        "narrative": "The evacuation curve of 100 agents through a single 3-cell door unfolds in three distinct phases: an initial rapid outflow (steps 0–20) averaging 1.5 persons per step, a mid-phase of fluctuating flow with intermittent pauses and bursts (steps 21–60), and a protracted tail phase where the last stragglers trickle out (steps 61–96). Plateaux in population (e.g., no exits at steps 3, 9, 26, 50, 56) reflect transient clogging at the door. Total evacuation completes by step 96, with a cumulative movement of 3,636.9 cell-steps.\n\nAgent decisions mediated by the LLM show a strong bias toward “proceed to exit” (441 calls, 54.2 %) and “follow crowd” (178 calls, 21.9 %), but only 40 calls (4.9 %) to “seek alternate route.” This imbalance reinforced clustering at the main door, producing bottleneck congestion and stop-and-go waves. As density fell below a threshold around step 60, exit rates dropped to near zero for extended spans, forcing the final 10 agents to take over 30 additional steps to evacuate. The system self-organized into transient queues at the exit, revealing a classic bottleneck‐driven intermittent flow.",
+        "key_findings": [
+          "All 100 agents evacuated by step 96; first 50 exited within 40 steps, last 20 took 56 steps.",
+          "Early phase exit rate peaked at –4 agents in a single step (steps 24, 40) then oscillated between bursts and stalls.",
+          "Zero-exit intervals occurred at least 10 times (e.g., steps 3, 9, 26, 50, 56, 59) indicating clogging events.",
+          "LLM rules executed: proceed_to_exit dominated (54 %), follow_crowd (22 %), but seek_alternate_route was rare (5 %).",
+          "Total movement distance 3,636.9 cells, averaging ~36.4 moves per agent.",
+          "exit_when_at_door fired exactly 100 times (once per agent) without spatial rerouting."
+        ],
+        "causal_links": [
+          "High local density at the door → collision blocking of agents → zero‐exit intervals at steps 3, 9, 26, 50, 56.",
+          "Frequent follow_crowd decisions (178 executions) → agents converged on the same approach path → amplified queue length at exit.",
+          "Low seek_alternate_route rate (40 executions) → lack of route diversification → persistent bottleneck → prolonged tail-phase evacuation.",
+          "Burst exit events (–4 in a step at steps 24, 40) follow brief pauses → release of temporary blockages → stop-and-go wave propagation."
+        ],
+        "emergent_phenomena": [
+          "Bottleneck-induced intermittent flow: alternating bursts and stalls at the door.",
+          "Self-organized queue formation at a single exit.",
+          "Decelerating tail-phase with straggler dynamics due to absence of guidance cues.",
+          "Stop-and-go wave propagation emerging from collision rules and crowd-following decisions."
+        ]
+      }
+    ],
+    "executive_summary": "This simulation of 100 agents evacuating through a single three-cell door reveals a three-phase evacuation curve: an initial rapid outflow (averaging ~1.7 agents/step, evacuating 42% by step 25), a moderate mid-phase until step 40 at similar throughput, and a pronounced tail-phase slowdown where the final 9 agents exit at ~0.25 agents/step over 36 steps. Peak bursts of up to four agents per step alternate with multi-step stalls, creating stop-and-go dynamics and a persistent straggler beyond step 96.\n\nRule‐execution data show a strong LLM bias toward “decide_proceed_to_exit” (441 calls, 54%) and “decide_follow_crowd” (178 calls, 22%), driving direct but congested routing. In contrast, “decide_seek_alternate_route” (40 calls, 5%) and “decide_wait_briefly” (55 calls, 7%) occurred too infrequently to relieve congestion. Emergent behaviors include self‐organized queuing at the door, oscillatory throughput, and prolonged last-mile evacuation, underscoring the interplay between exit capacity and decision‐rule diversity.",
+    "conclusions": [
+      "Evacuation proceeds in three distinct phases: rapid initial burst, intermittent mid-phase, and protracted tail slowdown.",
+      "A single narrow (3-cell) exit induces bottleneck-driven oscillatory flow with repeated stalls, bursts, and persistent stragglers.",
+      "High frequencies of “proceed_to_exit” and “follow_crowd” decisions promote swift convergence but exacerbate door-side congestion.",
+      "Low rates of “seek_alternate_route” and “wait_briefly” decisions prevent effective decongestion and route diversification.",
+      "Agents self-organize into queues and stop-and-go waves despite no explicit queueing rules.",
+      "The final 10% of agents require over one-third of total evacuation time, highlighting last-mile inefficiencies."
+    ],
+    "recommendations": [
+      "Widen the exit or add additional doors in the model to assess effects on throughput and tail-phase duration.",
+      "Rebalance LLM decision probabilities to increase “seek_alternate_route” and decrease crowd-following bias for better dispersion.",
+      "Implement explicit queue-management or line-formation rules to reduce collision blocking at the door.",
+      "Introduce environmental cues or signage guiding agents toward alternative routes to stimulate decentralized flow.",
+      "Incorporate adaptive waiting strategies where agents yield or pause when local density exceeds a threshold.",
+      "Conduct sensitivity analyses on rule weights and room layouts to identify optimal configurations for minimal evacuation time."
+    ]
+  },
+  "file": {
+    "uid": "0d3c6c9b-3eeb-44f4-913f-43743a97b39a",
+    "name": "EXP-H report 5.pdf",
+    "mime_type": "application/pdf",
+    "size": 108254,
+    "created_at": "2026-07-24T17:40:47.069Z"
+  },
+  "token_usage": {
+    "total": {
+      "prompt_tokens": 11338,
+      "completion_tokens": 5743,
+      "reasoning_tokens": 3264,
+      "total_tokens": 17081,
+      "calls": 4,
+      "latency_ms": 41956
+    },
+    "by_model": [
+      {
+        "provider_uid": "openai",
+        "model_uid": "o4-mini-2025-04-16",
+        "prompt_tokens": 11338,
+        "completion_tokens": 5743,
+        "reasoning_tokens": 3264,
+        "total_tokens": 17081,
+        "calls": 4,
+        "latency_ms": 41956
+      }
+    ]
+  },
+  "requests": 4,
+  "created_at": "2026-07-24T17:40:04.948Z",
+  "created_by": "dev.user",
+  "started_at": "2026-07-24T17:40:04.951Z",
+  "finished_at": "2026-07-24T17:40:47.069Z"
+}

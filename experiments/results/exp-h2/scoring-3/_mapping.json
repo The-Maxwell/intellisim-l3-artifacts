@@ -1,0 +1,254 @@
+{
+  "seed": 4094598122,
+  "offsets": [
+    8,
+    5,
+    2
+  ],
+  "run_permutation": [
+    10,
+    6,
+    7,
+    9,
+    2,
+    4,
+    1,
+    5,
+    3,
+    8
+  ],
+  "reports": [
+    {
+      "id": "R08",
+      "report_no": 7,
+      "arm": "orig",
+      "agent": "agent-01"
+    },
+    {
+      "id": "R25",
+      "report_no": 4,
+      "arm": "F2",
+      "agent": "agent-01"
+    },
+    {
+      "id": "R10",
+      "report_no": 3,
+      "arm": "A",
+      "agent": "agent-01"
+    },
+    {
+      "id": "R21",
+      "report_no": 8,
+      "arm": "A",
+      "agent": "agent-02"
+    },
+    {
+      "id": "R27",
+      "report_no": 9,
+      "arm": "orig",
+      "agent": "agent-02"
+    },
+    {
+      "id": "R26",
+      "report_no": 1,
+      "arm": "F2",
+      "agent": "agent-02"
+    },
+    {
+      "id": "R23",
+      "report_no": 10,
+      "arm": "A",
+      "agent": "agent-03"
+    },
+    {
+      "id": "R20",
+      "report_no": 5,
+      "arm": "F2",
+      "agent": "agent-03"
+    },
+    {
+      "id": "R17",
+      "report_no": 2,
+      "arm": "orig",
+      "agent": "agent-03"
+    },
+    {
+      "id": "R13",
+      "report_no": 4,
+      "arm": "orig",
+      "agent": "agent-04"
+    },
+    {
+      "id": "R05",
+      "report_no": 3,
+      "arm": "F2",
+      "agent": "agent-04"
+    },
+    {
+      "id": "R28",
+      "report_no": 6,
+      "arm": "A",
+      "agent": "agent-04"
+    },
+    {
+      "id": "R03",
+      "report_no": 7,
+      "arm": "A",
+      "agent": "agent-05"
+    },
+    {
+      "id": "R30",
+      "report_no": 8,
+      "arm": "F2",
+      "agent": "agent-05"
+    },
+    {
+      "id": "R16",
+      "report_no": 1,
+      "arm": "orig",
+      "agent": "agent-05"
+    },
+    {
+      "id": "R01",
+      "report_no": 5,
+      "arm": "orig",
+      "agent": "agent-06"
+    },
+    {
+      "id": "R09",
+      "report_no": 10,
+      "arm": "F2",
+      "agent": "agent-06"
+    },
+    {
+      "id": "R15",
+      "report_no": 9,
+      "arm": "A",
+      "agent": "agent-06"
+    },
+    {
+      "id": "R07",
+      "report_no": 3,
+      "arm": "orig",
+      "agent": "agent-07"
+    },
+    {
+      "id": "R02",
+      "report_no": 2,
+      "arm": "A",
+      "agent": "agent-07"
+    },
+    {
+      "id": "R22",
+      "report_no": 6,
+      "arm": "F2",
+      "agent": "agent-07"
+    },
+    {
+      "id": "R06",
+      "report_no": 8,
+      "arm": "orig",
+      "agent": "agent-08"
+    },
+    {
+      "id": "R14",
+      "report_no": 4,
+      "arm": "A",
+      "agent": "agent-08"
+    },
+    {
+      "id": "R24",
+      "report_no": 7,
+      "arm": "F2",
+      "agent": "agent-08"
+    },
+    {
+      "id": "R19",
+      "report_no": 9,
+      "arm": "F2",
+      "agent": "agent-09"
+    },
+    {
+      "id": "R04",
+      "report_no": 1,
+      "arm": "A",
+      "agent": "agent-09"
+    },
+    {
+      "id": "R29",
+      "report_no": 10,
+      "arm": "orig",
+      "agent": "agent-09"
+    },
+    {
+      "id": "R18",
+      "report_no": 6,
+      "arm": "orig",
+      "agent": "agent-10"
+    },
+    {
+      "id": "R12",
+      "report_no": 5,
+      "arm": "A",
+      "agent": "agent-10"
+    },
+    {
+      "id": "R11",
+      "report_no": 2,
+      "arm": "F2",
+      "agent": "agent-10"
+    }
+  ],
+  "agents": {
+    "agent-01": [
+      "R08",
+      "R25",
+      "R10"
+    ],
+    "agent-02": [
+      "R21",
+      "R27",
+      "R26"
+    ],
+    "agent-03": [
+      "R23",
+      "R20",
+      "R17"
+    ],
+    "agent-04": [
+      "R13",
+      "R05",
+      "R28"
+    ],
+    "agent-05": [
+      "R03",
+      "R30",
+      "R16"
+    ],
+    "agent-06": [
+      "R01",
+      "R09",
+      "R15"
+    ],
+    "agent-07": [
+      "R07",
+      "R02",
+      "R22"
+    ],
+    "agent-08": [
+      "R06",
+      "R14",
+      "R24"
+    ],
+    "agent-09": [
+      "R19",
+      "R04",
+      "R29"
+    ],
+    "agent-10": [
+      "R18",
+      "R12",
+      "R11"
+    ]
+  }
+}

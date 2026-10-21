@@ -1,0 +1,85 @@
+{
+  "pairs": [
+    {
+      "point": "lo",
+      "R0_index": 1.5,
+      "epidem_chance": 10,
+      "intellisim_final_mean": 0.123,
+      "intellisim_final_ci95": [
+        0.0893,
+        0.1567
+      ],
+      "intellisim_final_sd": 0.0902,
+      "intellisim_n": 30,
+      "epidem_final_mean": 0.0567,
+      "epidem_final_sd": 0.0165,
+      "epidem_n": 30,
+      "analytic_z": 0.5828,
+      "analytic_A_direction_ok": true,
+      "analytic_A_magnitude_ok": false,
+      "ks_D": 0.6,
+      "ks_p": 2.366488472641374e-05,
+      "tost_diff": 0.0663,
+      "tost_equivalent": false
+    },
+    {
+      "point": "med",
+      "R0_index": 2.1,
+      "epidem_chance": 20,
+      "intellisim_final_mean": 0.1153,
+      "intellisim_final_ci95": [
+        0.078,
+        0.1527
+      ],
+      "intellisim_final_sd": 0.1,
+      "intellisim_n": 30,
+      "epidem_final_mean": 0.07,
+      "epidem_final_sd": 0.0314,
+      "epidem_n": 30,
+      "analytic_z": 0.8221,
+      "analytic_A_direction_ok": true,
+      "analytic_A_magnitude_ok": false,
+      "ks_D": 0.3333,
+      "ks_p": 0.07088798787114439,
+      "tost_diff": 0.0453,
+      "tost_equivalent": false
+    },
+    {
+      "point": "hi",
+      "R0_index": 2.7,
+      "epidem_chance": 40,
+      "intellisim_final_mean": 0.4293,
+      "intellisim_final_ci95": [
+        0.3659,
+        0.4927
+      ],
+      "intellisim_final_sd": 0.1698,
+      "intellisim_n": 30,
+      "epidem_final_mean": 0.129,
+      "epidem_final_sd": 0.0462,
+      "epidem_n": 30,
+      "analytic_z": 0.9156,
+      "analytic_A_direction_ok": true,
+      "analytic_A_magnitude_ok": false,
+      "ks_D": 0.9,
+      "ks_p": 5.78702423789193e-13,
+      "tost_diff": 0.3003,
+      "tost_equivalent": false
+    }
+  ],
+  "ks_bh_adjusted_p": [
+    0.0,
+    0.0709,
+    0.0
+  ],
+  "ks_bh_reject": [
+    true,
+    false,
+    true
+  ],
+  "P2_monotone_intellisim": false,
+  "P2_monotone_epidem": true,
+  "analytic_A_all_magnitude_ok": false,
+  "analytic_A_all_direction_ok": true,
+  "docking_B_parity_points": 0
+}

@@ -1,0 +1,18 @@
+{
+  "simulation_id": "6a636be64ccaa6983aafedd5",
+  "body": {
+    "context_message": "Analyze this simulation's results. Context: An infectious disease spreads in a population of moving agents. Describe the observed dynamics, quantify the key outcomes, and note anything notable or unexpected.",
+    "language": "en",
+    "llm_target": {
+      "provider_uid": "openai",
+      "model_uid": "o4-mini",
+      "generation": {
+        "max_tokens": {
+          "uint": 16000
+        }
+      }
+    },
+    "selection": {},
+    "name": "EXP-H2 F2 report 9"
+  }
+}

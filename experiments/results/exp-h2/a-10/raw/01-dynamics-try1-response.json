@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ERMf9y9xhEG8VTs8bnL2LLqzB6273",
+  "object": "chat.completion",
+  "created": 1790190679,
+  "model": "o4-mini-2025-04-16",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"title\":\"Population & Property Dynamics\",\"narrative\":\"Надано метадані просторової SIR-моделі з 200 агентами на торі 50×50, проте у наданих даних відсутні агреговані часові ряди чисельності агентів чи властивостей. Через відсутність серій PopulationSeries або PropertySeries неможливо кількісно оцінити фазові переходи, піки інфекції чи встановлення рівноваги.\\nВідсутність даних перешкоджає виявленню закономірностей росту, згасання чи коливань популяцій «сприйнятливих», «інфікованих» та «одужалих», а також аналізу кореляцій між тривалістю інфекційного таймера й просторовими переміщеннями. Без часових рядів утруднено встановити моменти «tipping points» або масштабні зорієнтовані події у системі.\",\"key_findings\":[\"У наданих даних відсутні часові ряди популяцій і властивостей агентів.\",\"Неможливо визначити фази росту/падіння інфекції чи час досягнення епідеміологічної рівноваги.\",\"Немає інформації про числові тренди інфекційного таймера чи їхню просторову кореляцію.\"],\"causal_links\":[],\"emergent_phenomena\":[]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 870,
+    "completion_tokens": 799,
+    "total_tokens": 1669,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 448,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}
